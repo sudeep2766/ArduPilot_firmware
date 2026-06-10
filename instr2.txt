@@ -1,0 +1,6 @@
+Download a stock Mini Pix-compatible ArduPilot firmware (.apj).
+Build the same firmware from source on your PC.
+Add a simple AES decryption stage in the bootloader.
+Store the AES key in MCU-protected flash.
+Enable STM32 Readout Protection.
+Then move on to firmware signing and secure boot.
