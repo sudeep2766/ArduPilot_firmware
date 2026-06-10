@@ -2,3 +2,24 @@
 2 add AES decryption stage in bootloader
 3 Store the key in MCU-protected flash (in FC)
 4 Enable STM32 Readout Protection
+
+
+openssl genpkey -algorithm RSA -out private.pem
+openssl rsa -pubout -in private.pem -out public.pem
+
+
+
+Anything can be encrypted with public key
+Can only be decrypted with the private key
+
+
+Firmware signed with public key 
+
+Firmware is encrypted
+
+Secure bootloader
+
+
+Verify signature
+Decrypt firmware
+Run Application
