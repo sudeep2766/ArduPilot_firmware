@@ -1,0 +1,4 @@
+1 build firmware from the ardupilot git repo
+2 add AES decryption stage in bootloader
+3 Store the key in MCU-protected flash (in FC)
+4 Enable STM32 Readout Protection
