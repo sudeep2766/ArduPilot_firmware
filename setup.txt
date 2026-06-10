@@ -1,0 +1,775 @@
+┌──(flash㉿kali)-[~]
+└─$ git clone https://github.com/ardupilot/ardupilot.git             
+Cloning into 'ardupilot'...
+remote: Enumerating objects: 529551, done.
+remote: Counting objects: 100% (152/152), done.
+remote: Compressing objects: 100% (94/94), done.
+remote: Total 529551 (delta 87), reused 58 (delta 58), pack-reused 529399 (from 3)
+Receiving objects: 100% (529551/529551), 589.21 MiB | 14.21 MiB/s, done.
+Resolving deltas: 100% (393223/393223), done.
+Updating files: 100% (7740/7740), done.
+                                                                                                                                                                      
+┌──(flash㉿kali)-[~]
+└─$ cd ardupilot
+                                                                                                                                                                      
+┌──(flash㉿kali)-[~/ardupilot]
+└─$ l 
+AGENTS.md        ArduCopter/  ArduSub/     Blimp/    CODE_OF_CONDUCT.md  Dockerfile  Doxyfile.in  Makefile  pyproject.toml  Rover/  Tools/       waf*
+AntennaTracker/  ArduPlane/   benchmarks/  BUILD.md  COPYING.txt         docs/       libraries/   modules/  README.md       tests/  Vagrantfile  wscript
+                                                                                                                                                                      
+┌──(flash㉿kali)-[~/ardupilot]
+└─$ git submodule update --init --recursive             
+Submodule 'modules/ChibiOS' (https://github.com/ArduPilot/ChibiOS.git) registered for path 'modules/ChibiOS'
+Submodule 'modules/CrashDebug' (https://github.com/ardupilot/CrashDebug) registered for path 'modules/CrashDebug'
+Submodule 'modules/DroneCAN/DSDL' (https://github.com/DroneCAN/DSDL.git) registered for path 'modules/DroneCAN/DSDL'
+Submodule 'modules/DroneCAN/dronecan_dsdlc' (https://github.com/DroneCAN/dronecan_dsdlc) registered for path 'modules/DroneCAN/dronecan_dsdlc'
+Submodule 'modules/DroneCAN/libcanard' (https://github.com/DroneCAN/libcanard) registered for path 'modules/DroneCAN/libcanard'
+Submodule 'modules/DroneCAN/pydronecan' (https://github.com/DroneCAN/pydronecan) registered for path 'modules/DroneCAN/pydronecan'
+Submodule 'modules/Micro-CDR' (https://github.com/ardupilot/Micro-CDR.git) registered for path 'modules/Micro-CDR'
+Submodule 'modules/Micro-XRCE-DDS-Client' (https://github.com/ardupilot/Micro-XRCE-DDS-Client.git) registered for path 'modules/Micro-XRCE-DDS-Client'
+Submodule 'modules/gbenchmark' (https://github.com/google/benchmark.git) registered for path 'modules/gbenchmark'
+Submodule 'modules/gsoap' (https://github.com/ArduPilot/gsoap) registered for path 'modules/gsoap'
+Submodule 'gtest' (https://github.com/ArduPilot/googletest) registered for path 'modules/gtest'
+Submodule 'modules/littlefs' (https://github.com/ArduPilot/littlefs.git) registered for path 'modules/littlefs'
+Submodule 'modules/lwip' (https://github.com/ArduPilot/lwip.git) registered for path 'modules/lwip'
+Submodule 'modules/mavlink' (https://github.com/ArduPilot/mavlink) registered for path 'modules/mavlink'
+Submodule 'modules/waf' (https://github.com/ArduPilot/waf.git) registered for path 'modules/waf'
+Cloning into '/home/flash/ardupilot/modules/ChibiOS'...
+Cloning into '/home/flash/ardupilot/modules/CrashDebug'...
+Cloning into '/home/flash/ardupilot/modules/DroneCAN/DSDL'...
+Cloning into '/home/flash/ardupilot/modules/DroneCAN/dronecan_dsdlc'...
+Cloning into '/home/flash/ardupilot/modules/DroneCAN/libcanard'...
+Cloning into '/home/flash/ardupilot/modules/DroneCAN/pydronecan'...
+Cloning into '/home/flash/ardupilot/modules/Micro-CDR'...
+Cloning into '/home/flash/ardupilot/modules/Micro-XRCE-DDS-Client'...
+Cloning into '/home/flash/ardupilot/modules/gbenchmark'...
+Cloning into '/home/flash/ardupilot/modules/gsoap'...
+Cloning into '/home/flash/ardupilot/modules/gtest'...
+Cloning into '/home/flash/ardupilot/modules/littlefs'...
+Cloning into '/home/flash/ardupilot/modules/lwip'...
+Cloning into '/home/flash/ardupilot/modules/mavlink'...
+Cloning into '/home/flash/ardupilot/modules/waf'...
+Submodule path 'modules/ChibiOS': checked out '73f152d383775897584c60e3b597cf42a1dd74cd'
+Submodule path 'modules/CrashDebug': checked out '599965086437137ec0fe66e185611f43f335f889'
+Submodule 'CrashCatcher' (https://github.com/ardupilot/CrashCatcher.git) registered for path 'modules/CrashDebug/CrashCatcher'
+Submodule 'mri' (https://github.com/ardupilot/mri.git) registered for path 'modules/CrashDebug/mri'
+Cloning into '/home/flash/ardupilot/modules/CrashDebug/CrashCatcher'...
+Cloning into '/home/flash/ardupilot/modules/CrashDebug/mri'...
+Submodule path 'modules/CrashDebug/CrashCatcher': checked out '4cf6e11df3a081b0f573a7834ed8e1e4000af73e'
+Submodule 'CppUTest' (https://github.com/ardupilot/CppUTest.git) registered for path 'modules/CrashDebug/CrashCatcher/CppUTest'
+Cloning into '/home/flash/ardupilot/modules/CrashDebug/CrashCatcher/CppUTest'...
+Submodule path 'modules/CrashDebug/CrashCatcher/CppUTest': checked out '011f371fdb5d7e441fb023be67295783e053df4a'
+Submodule path 'modules/CrashDebug/mri': checked out 'b35c89451b41a45b7f5b580acaff555315ac88e2'
+Submodule 'CppUTest' (https://github.com/ardupilot/CppUTest.git) registered for path 'modules/CrashDebug/mri/CppUTest'
+Cloning into '/home/flash/ardupilot/modules/CrashDebug/mri/CppUTest'...
+Submodule path 'modules/CrashDebug/mri/CppUTest': checked out '011f371fdb5d7e441fb023be67295783e053df4a'
+Submodule path 'modules/DroneCAN/DSDL': checked out '04e0e818b06c180eb1720fcdf16484d0f12895ee'
+Submodule path 'modules/DroneCAN/dronecan_dsdlc': checked out 'de47a8972b7d8c59e50c3acfab5754db29798caa'
+Submodule path 'modules/DroneCAN/libcanard': checked out '601ed35467e0ac38819df17cd7c918de19f62d58'
+Submodule 'drivers/avr/avr-can-lib' (https://github.com/rennerm/avr-can-lib) registered for path 'modules/DroneCAN/libcanard/drivers/avr/avr-can-lib'
+Cloning into '/home/flash/ardupilot/modules/DroneCAN/libcanard/drivers/avr/avr-can-lib'...
+Submodule path 'modules/DroneCAN/libcanard/drivers/avr/avr-can-lib': checked out '9c6bc9118de66d6edaf1b8539e2b9717ba26d123'
+Submodule path 'modules/DroneCAN/pydronecan': checked out '08cda37aaf2958657399606653b99ceb5a6beae0'
+Submodule path 'modules/Micro-CDR': checked out '3d1b17703c7cf4f22def2910bc845bdb5152d7b5'
+Submodule path 'modules/Micro-XRCE-DDS-Client': checked out '97175304425c5bee87c6fddd99de1ef8d0c394dc'
+Submodule path 'modules/gbenchmark': checked out 'd572f4777349d43653b21d6c2fc63020ab326db2'
+Submodule path 'modules/gsoap': checked out 'e1f690585d4803402584962bfaa8240ecaf1db30'
+Submodule path 'modules/gtest': checked out 'c5fed93f941865a0e912e9baf46ded713506590a'
+Submodule path 'modules/littlefs': checked out '34be692aafaaf4319a18e415b08aa4332697408b'
+Submodule path 'modules/lwip': checked out 'a6bf350c679ed8ba042ad58bf81cc540d61bb605'
+Submodule path 'modules/mavlink': checked out '035ffa630d54de8e5fc0f4fafc32182287738819'
+Submodule 'pymavlink' (https://github.com/ArduPilot/pymavlink.git) registered for path 'modules/mavlink/pymavlink'
+Cloning into '/home/flash/ardupilot/modules/mavlink/pymavlink'...
+Submodule path 'modules/mavlink/pymavlink': checked out 'ec06837a50688b5974094876c3c9d1b8bf86629d'
+Submodule path 'modules/waf': checked out '35eadbb64e2052099a853b571e507c33032b392c'
+                                                                                                                                                                      
+┌──(flash㉿kali)-[~/ardupilot]
+└─$ Tools/environment_install/install-prereqs-ubuntu.sh -y
+---------- Tools/environment_install/install-prereqs-ubuntu.sh start ----------
++ '[' 1000 == 0 ']'
++ OPT=/opt
++ ARDUPILOT_TOOLS=Tools/autotest
++ ASSUME_YES=false
++ QUIET=false
++ sep='##############################################'
++ OPTIND=1
++ getopts yq opt
++ case "$opt" in
++ ASSUME_YES=true
++ getopts yq opt
++ APT_GET='sudo apt-get'
++ true
++ APT_GET='sudo apt-get --assume-yes'
++ false
++ sudo apt-get --assume-yes update
+Get:1 https://packages.microsoft.com/repos/code stable InRelease [3,590 B]
+Get:2 https://download.docker.com/linux/debian trixie InRelease [32.5 kB]                                                               
+Get:3 https://packages.microsoft.com/repos/code stable/main amd64 Packages [25.3 kB]
+Get:5 https://download.docker.com/linux/debian trixie/stable amd64 Packages [37.5 kB]                              
+Get:6 https://download.docker.com/linux/debian trixie/stable amd64 Contents (deb) [1,708 B]
+Get:4 http://kali.download/kali kali-rolling InRelease [34.0 kB]                              
+Get:7 http://kali.download/kali kali-rolling/main amd64 Packages [21.2 MB]
+Get:8 https://us-central1-apt.pkg.dev/projects/antigravity-auto-updater-dev antigravity-debian InRelease [1,296 B]
+Get:9 https://us-central1-apt.pkg.dev/projects/antigravity-auto-updater-dev antigravity-debian/main amd64 Packages [37.9 kB]
+Get:10 http://kali.download/kali kali-rolling/main amd64 Contents (deb) [53.2 MB]
+Get:11 http://kali.download/kali kali-rolling/contrib amd64 Packages [104 kB]
+Get:12 http://kali.download/kali kali-rolling/contrib amd64 Contents (deb) [189 kB]
+Get:13 http://kali.download/kali kali-rolling/non-free amd64 Packages [175 kB]
+Get:14 http://kali.download/kali kali-rolling/non-free amd64 Contents (deb) [891 kB]
+Get:15 http://kali.download/kali kali-rolling/non-free-firmware amd64 Packages [15.8 kB]
+Get:16 http://kali.download/kali kali-rolling/non-free-firmware amd64 Contents (deb) [38.9 kB]
+Fetched 76.0 MB in 8s (9,122 kB/s)                                                                                                                                   
+Reading package lists... Done
++ package_is_installed lsb-release
++ dpkg-query -W '-f=${Status}' lsb-release
++ grep -c 'ok installed'
+1
+++ lsb_release -c -s
++ RELEASE_CODENAME=kali-rolling
+++ lsb_release -i -s
+++ tr '[:upper:]' '[:lower:]'
++ RELEASE_DISTRIBUTOR=kali
++ case ${RELEASE_DISTRIBUTOR} in
++ PYTHON_V=python3
++ PIP=pip3
++ case "${RELEASE_CODENAME}" in
++ echo 'This install script does not handle installation for kali-rolling'
+This install script does not handle installation for kali-rolling
++ exit 1
+                                                                                                                                                                      
+┌──(flash㉿kali)-[~/ardupilot]
+└─$ source ~/.profile           
+                                                                                                                                                                      
+┌──(flash㉿kali)-[~/ardupilot]
+└─$ arm-none-eabi-gcc --version
+Command 'arm-none-eabi-gcc' not found, but can be installed with:
+sudo apt install gcc-arm-none-eabi
+Do you want to install it? (N/y)y
+sudo apt install gcc-arm-none-eabi
+The following packages were automatically installed and are no longer required:
+  containerd     libcrypt-dev          libjs-typedarray-to-buffer  libsimdutf27       mesa-vdpau-drivers         python3-fs              ruby-unf-ext
+  criu           libdlt2               libmupdf25.1                libsnmp40t64       node-is-typedarray         python3-protobuf        runc
+  libaudio2      libgav1-1             libplacebo351               libsphinxbase3t64  node-typedarray-to-buffer  python3-pycriu          tini-static
+  libavfilter10  libgdk-pixbuf2.0-bin  libpocketsphinx3            libswscale8        pocketsphinx-en-us         python3-pysnmp4         vdpau-driver-all
+  libavformat61  libio-pty-perl        libpostproc58               libteamdctl0       postgresql-common-dev      python3-terminaltables
+  libblosc2-4    libipc-run-perl       librubberband2              libtsk19t64        python3-aiocache           python3-wapiti-arsenic
+  libcompel1     libjs-is-typedarray   libsframe2                  libvdpau-va-gl1    python3-aiomcache          python3-yaswfp
+Use 'sudo apt autoremove' to remove them.
+
+Installing:
+  gcc-arm-none-eabi
+                                                                                                                                                                      
+Installing dependencies:
+  binutils-arm-none-eabi  picolibc-arm-none-eabi
+                                                                                                                                                                      
+Summary:
+  Upgrading: 0, Installing: 3, Removing: 0, Not Upgrading: 1400
+  Download size: 81.7 MB
+  Space needed: 1,071 MB / 16.7 GB available
+
+Continue? [Y/n] y
+Get:2 http://kali.download/kali kali-rolling/main amd64 gcc-arm-none-eabi amd64 15:15.2.rel1.1-3 [71.5 MB]
+Get:1 http://http.kali.org/kali kali-rolling/main amd64 binutils-arm-none-eabi amd64 2.46-1+28 [3,051 kB]
+Get:3 http://kali.download/kali kali-rolling/main amd64 picolibc-arm-none-eabi all 1.8.11-2 [7,151 kB]
+Fetched 81.7 MB in 6s (13.4 MB/s)                                                                                                                                    
+Selecting previously unselected package binutils-arm-none-eabi.
+(Reading database… 505054 files and directories currently installed.)
+Preparing to unpack …/binutils-arm-none-eabi_2.46-1+28_amd64.deb…
+Unpacking binutils-arm-none-eabi (2.46-1+28)…
+Selecting previously unselected package gcc-arm-none-eabi.
+Preparing to unpack …/gcc-arm-none-eabi_15%3a15.2.rel1.1-3_amd64.deb…
+Unpacking gcc-arm-none-eabi (15:15.2.rel1.1-3)…
+Selecting previously unselected package picolibc-arm-none-eabi.
+Preparing to unpack …/picolibc-arm-none-eabi_1.8.11-2_all.deb…
+Unpacking picolibc-arm-none-eabi (1.8.11-2)…
+Setting up binutils-arm-none-eabi (2.46-1+28)…
+Setting up gcc-arm-none-eabi (15:15.2.rel1.1-3)…
+Setting up picolibc-arm-none-eabi (1.8.11-2)…
+Processing triggers for libc-bin (2.42-13)…
+Processing triggers for man-db (2.13.1-1)…
+Processing triggers for kali-menu (2026.2.2)…
+                                                                                                                                                                      
+┌──(flash㉿kali)-[~/ardupilot]
+└─$ arm-none-eabi-gcc --version
+arm-none-eabi-gcc (15:15.2.rel1.1-3) 15.2.1 20251203
+Copyright (C) 2025 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+                                                                                                                                                                      
+┌──(flash㉿kali)-[~/ardupilot]
+└─$ ./waf list_boards | grep -i pixhawk
+3DR-L431-ASAUAV 3DRControlZeroG AcctonGodwit_GA1 ACNS-CM4Pilot ACNS-F405AIO AEDROXH7 aero AeroCogito-H7Digital AeroFox-Airspeed AeroFox-Airspeed-DLVR AeroFox-GNSS_F9P AEROFOX-H7 AeroFox-PMU Aeromind6X AET-H743-Basic airbotf4 AIRBRAINH743 AIRLink Airvolute-DCS2 AnyleafH7 Aocoda-RC-H743Dual AR-F407SmartBat ARK_CANNODE ARK_FPV ARK_GPS ARK_PI6X ARK_RTK_GPS ARKV6X ARKV6X-bdshot Atlas-Control AtomRCF405NAVI ATOMRCF405NAVI-Deluxe bbbmini BeastF7 BeastF7v2 BeastH7 BeastH7v2 bebop BETAFPV-F405 BETAFPV-F405-I2C bhat BirdCANdy BlitzF745 BlitzF745AIO BlitzH743Pro BlitzMiniF745 BlitzWingH743 blue BotBloxDroneNet BOTWINGF405 BrahmaF4 BROTHERHOBBYF405v3 BROTHERHOBBYH743 C-RTK2-HP canzero CarbonixF405 CBU-H7-LC-Stamp CBU-H7-Stamp CORVON405V2_1 CORVON743V1 CrazyF405 crazyflie2 CSKY405 CSKY_PMU CUAV-7-Nano CUAV-7-Nano-ODID CUAV-Nora CUAV-Nora-bdshot CUAV-Nora-ODID CUAV-Pixhack-v3 CUAV-V6X-v2 CUAV-V6X-v2-ODID CUAV-X25-EVO CUAV-X25-EVO-ODID CUAV-X7 CUAV-X7-bdshot CUAV-X7-ODID CUAV_GPS CUAVv5 CUAVv5-bdshot CUAVv5Nano CUAVv5Nano-bdshot CubeBlack CubeBlack+ CubeBlack-periph CubeGreen-solo CubeNode CubeNode-ETH CubeOrange CubeOrange-bdshot CubeOrange-joey CubeOrange-ODID CubeOrange-periph CubeOrange-periph-heavy CubeOrange-SimOnHardWare CubeOrangePlus CubeOrangePlus-bdshot CubeOrangePlus-ODID CubeOrangePlus-SimOnHardWare CubePurple CubeRedPrimary CubeRedPrimary-PPPGW CubeRedSecondary CubeRedSecondary-IO CubeSolo CubeYellow CubeYellow-bdshot DAKEFPVF405 DAKEFPVH743 DAKEFPVH743_SLIM DAKEFPVH743Pro dark DevEBoxH7v2 disco DroneerF405 DrotekP3Pro Durandal Durandal-bdshot edge erleboard erlebrain2 esp32buzz esp32diy esp32empty esp32icarus esp32imu_module_v11 esp32nick esp32s3devkit esp32s3empty esp32s3m5stampfly esp32tomte76 f103-ADSB f103-Airspeed f103-GPS f103-HWESC f103-QiotekPeriph f103-RangeFinder f103-Trigger f303-GPS f303-HWESC f303-M10025 f303-M10070 f303-MatekGPS f303-PWM f303-TempSensor f303-Universal F35Lightning f405-MatekAirspeed f405-MatekGPS F4BY F4BY_F427 F4BY_H743 FlyingMoonF407 FlyingMoonF427 FlyingMoonH743 FlysparkF4 FlywooF405HD-AIOv2 FlywooF405Pro FlywooF405S-AIO FlywooF745 FlywooF745Nano FlywooH743Pro fmuv2 fmuv3 fmuv3-bdshot fmuv5 FoxeerF405v2 FoxeerH743v1 FreeflyRTK G4-ESC GEPRC_TAKER_H743 GEPRCF745BTHD GreenSightUltraBlue H757I_EVAL H757I_EVAL_intf HEEWING-F405 HEEWING-F405v2 Here4AP Here4FC Hitec-Airspeed HitecMosaic HolybroF4_PMU HolybroG4_Airspeed HolybroG4_Compass HolybroG4_GPS HolybroGPS HWH7 IFLIGHT_2RAW_H7 iomcu iomcu-dshot iomcu-f103 iomcu-f103-8MHz-dshot iomcu-f103-dshot iomcu_f103_8MHz JFB100 JFB110 JFB200 JHEM_JHEF405 JHEMCU-GSF405A JHEMCU-GSF405A-RX2 JHEMCU-H743HD JHEMCUF405PRO JHEMCUF405WING JPilot-C KakuteF4 KakuteF4-Wing KakuteF4Mini KakuteF7 KakuteF7-bdshot KakuteF7Mini KakuteH7 KakuteH7-bdshot KakuteH7-Wing KakuteH7Mini KakuteH7Mini-Nand KakuteH7v2 kha_eth KT-FMU-F1 linux LongBowF405WING LumenierLUXF765-NDAA luminousbee4 luminousbee5 MambaF405-2022 MambaF405US-I2C MambaF405v2 MambaH743v4 MatekF405 MatekF405-bdshot MatekF405-CAN MatekF405-STD MatekF405-TE MatekF405-TE-bdshot MatekF405-Wing MatekF405-Wing-bdshot MatekF765-SE MatekF765-Wing MatekF765-Wing-bdshot MatekG474-DShot MatekG474-GPS MatekG474-Periph MatekH743 MatekH743-bdshot MatekH743-periph MatekH7A3 MatekH7A3-Wing MatekL431 MatekL431-ADSB MatekL431-Airspeed MatekL431-APDTelem MatekL431-AUAV MatekL431-BatteryTag MatekL431-BattMon MatekL431-bdshot MatekL431-DShot MatekL431-EFI MatekL431-GPS MatekL431-HWTelem MatekL431-MagHiRes MatekL431-Periph MatekL431-Proximity MatekL431-Rangefinder MatekL431-RC MatekL431-Serial MazzyStarDrone MFE_AirSpeed_CAN MFE_PDB_CAN MFE_POS3_CAN MFT-SEMA100 MicoAir405Mini MicoAir405v2 MicoAir743 MicoAir743-AIO MicoAir743-Lite MicoAir743v2 mindpx-v2 mini-pix ModalAI-VOXL2 ModalAI-VOXL3 modalai_fc-v1 Morakot mRo-M10095 mRoCANPWM-M10126 mRoControlZeroClassic mRoControlZeroF7 mRoControlZeroH7 mRoControlZeroH7-bdshot mRoControlZeroOEMH7 mRoCZeroOEMH7-bdshot mRoKitCANrevC mRoNexus mRoPixracerPro mRoPixracerPro-bdshot mRoX21 mRoX21-777 MUPilot NarinFC-H5 NarinFC-H7 NarinFC-X3 navigator navigator64 navio navio2 Nucleo-G491 Nucleo-L476 Nucleo-L496 NucleoH743 NucleoH753ZI NucleoH755 NxtPX4v2 obal ocpoc_zynq omnibusf4 omnibusf4pro omnibusf4pro-bdshot omnibusf4pro-one omnibusf4v6 OMNIBUSF7V2 OmnibusNanoV6 OmnibusNanoV6-bdshot ORBITH743 OrqaF405Pro OrqaH7QuadCore PH4-mini PH4-mini-bdshot PilotGaeaSH7V1-bdshot pilotpi Pix32v5 PixC4-Jetson PixFlamingo PixFlamingo-F767 Pixhawk1 Pixhawk1-1M Pixhawk1-1M-bdshot Pixhawk1-bdshot Pixhawk4 Pixhawk4-bdshot Pixhawk5X Pixhawk6C Pixhawk6C-bdshot Pixhawk6X Pixhawk6X-bdshot Pixhawk6X-ODID Pixhawk6X-PPPGW PixPilot-C3 PixPilot-V3 PixPilot-V6 PixPilot-V6PRO Pixracer Pixracer-bdshot Pixracer-periph PixSurveyA1 PixSurveyA1-IND PixSurveyA2-IND pocket pocket2 PrincipIoTH7Pi pxf pxfmini QioTekAdeptF407 QioTekZealotF427 QioTekZealotH743 QioTekZealotH743-bdshot QURTBoard R9Pilot RadiolinkF405 RadiolinkPIX6 RADIX2HD ReaperF745 ResoluteH7 revo-mini revo-mini-bdshot revo-mini-i2c revo-mini-i2c-bdshot revo-mini-sd rFCU rGNSS SDMODELH7V1 SDMODELH7V2 SequreH743 Sierra-F405 Sierra-F412 Sierra-F9P Sierra-L431 Sierra-PrecisionPoint Sierra-TrueNavIC Sierra-TrueNavPro Sierra-TrueNavPro-G4 Sierra-TrueNorth Sierra-TrueSpeed sitl SITL_arm_linux_gnueabihf sitl_periph_battery_tag sitl_periph_battmon sitl_periph_can_to_serial sitl_periph_gps sitl_periph_PPP sitl_periph_universal SITL_x86_64_linux_gnu SIYI_N7 SkyDroid-S3 SkyRukh_Surge_H7 SkySakuraH743 SkystarsF405v2 SkystarsH7HD SkystarsH7HD-bdshot SkystarsH7HDv2 skyviper-f412-rev1 skyviper-journey skyviper-v2450 sparknavi-blue sparky2 SPEDIXF405 SPEDIXH743 speedybeef4 SpeedyBeeF405AIO SpeedyBeeF405Mini SpeedyBeeF405WING speedybeef4v3 speedybeef4v4 speedybeef4v5 SPRacingH7 SPRacingH7RF StellarF4 StellarF4V2 StellarH7V2 SuccexF4 SULILGH7-P1-P2 SVehicle-E2 sw-boom-f407 sw-nav-f405 sw-spar-f407 Swan-K1 t3-gem-o1 TBS-Colibri-F7 TBS-L431 TBS-L431-Airspeed TBS-L431-BattMon TBS-L431-CurrMon TBS-L431-PWM TBS_LUCID_H7 TBS_LUCID_H7_WING TBS_LUCID_H7_WING_AIO TBS_LUCID_PRO thepeach-k1 thepeach-r1 TMotorH743 uav-dev-auav-g4 uav-dev-fc-um982 uav-dev-powermodule uav-dev_m10s VM-L431-BatteryTag VM-L431-BMS VM-L431-Periph-Pico VM-L431-SRV-Hub-4CHP vnav VRBrain-v51 VRBrain-v52 VRBrain-v54 VRCore-v10 VRUBrain-v51 VUAV-TinyV7 VUAV-V7pro X-MAV-AP-H743r1 X-MAV-AP-H743v2 YARI_GNSS YARIV6X YJUAV_A6 YJUAV_A6SE YJUAV_A6SE_H743 YJUAV_A6Ultra ZeroOneX6 ZeroOneX6_Air ZubaxGNSS zynq
+                                                                                                                                                                      
+┌──(flash㉿kali)-[~/ardupilot]
+└─$ ./waf list_boards | grep -i minipix
+                                                                                                                                                                      
+┌──(flash㉿kali)-[~/ardupilot]
+└─$ ./waf configure --board Pixhawk1   
+Setting top to                           : /home/flash/ardupilot 
+Setting out to                           : /home/flash/ardupilot/build 
+Autoconfiguration                        : enabled 
+Checking for program 'python'            : /usr/bin/python3 
+Checking for python version >= 3.9.0     : 3.13.12 
+Setting board to                         : Pixhawk1 
+Using toolchain                          : arm-none-eabi 
+Checking for 'g++' (C++ compiler)        : /usr/bin/arm-none-eabi-g++ 
+Checking for 'gcc' (C compiler)          : /usr/bin/arm-none-eabi-gcc 
+Checking for c flags '-MMD'              : yes 
+Checking for cxx flags '-MMD'            : yes 
+Checking for program 'arm-none-eabi-nm'  : /usr/bin/arm-none-eabi-nm 
+CXX Compiler                             : g++ 15.2.1 
+Checking for program 'make'              : /usr/bin/make 
+Checking for program 'arm-none-eabi-objcopy' : /usr/bin/arm-none-eabi-objcopy 
+Processing /home/flash/ardupilot/libraries/AP_HAL_ChibiOS/hwdef/Pixhawk1/hwdef.dat
+Processing /home/flash/ardupilot/libraries/AP_HAL_ChibiOS/hwdef/fmuv3/hwdef.dat
+Removing AP_BATTERY_SMBUS_SOLO_ENABLED
+Removing AP_BATTERY_SMBUS_SOLO_ENABLED
+Removing BOARD_CHECK_F427_USE_1M
+Removing BOARD_CHECK_F427_USE_1M
+Setup for MCU STM32F427xx
+No default parameter file found
+Writing hwdef setup in /home/flash/ardupilot/build/Pixhawk1/hwdef.h
+args=['AP_Baro_MS5611::probe', '"ms5611"']
+Writing DMA map
+Setting up as normal
+Generating ldscript.ld
+env set ENABLE_DFU_BOOT=0
+env set WITH_FATFS=1
+env set PROCESS_STACK=0x1C00
+env set MAIN_STACK=0x600
+env set IOMCU_FW=0
+env set IOMCU_FW_WITH_HEATER=0
+env set PERIPH_FW=0
+env set HAL_NUM_CAN_IFACES=2
+env set HAL_CANFD_SUPPORTED=0
+env set BOARD_FLASH_SIZE=2048
+env set EXT_FLASH_SIZE_MB=0
+env set INT_FLASH_PRIMARY=False
+env set ENABLE_CRASHDUMP=True
+env set CPU_FLAGS=['-mcpu=cortex-m4', '-mfpu=fpv4-sp-d16', '-mfloat-abi=hard', '-DARM_MATH_CM4', '-u_printf_float']
+env set CORTEX=cortex-m4
+env set APJ_BOARD_ID=9
+env set APJ_BOARD_TYPE=STM32F427xx
+env set USBID=0x1209/0x5741
+env set FLASH_RESERVE_START_KB=16
+env set EXT_FLASH_RESERVE_START_KB=0
+env set FLASH_TOTAL=2080768
+env set HAS_EXTERNAL_FLASH_SECTIONS=0
+env set ROMFS_FILES=[('bootloader.bin', '/home/flash/ardupilot/Tools/bootloaders/Pixhawk1_bl.bin'), ('hwdef.dat', '/home/flash/ardupilot/build/Pixhawk1/hw.dat'), ('io_firmware.bin', 'Tools/IO_Firmware/iofirmware_lowpolh.bin'), ('io_firmware_dshot.bin', 'Tools/IO_Firmware/iofirmware_dshot_lowpolh.bin')]
+env set CHIBIOS_BUILD_FLAGS=USE_FATFS=yes CHIBIOS_STARTUP_MK=os/common/startup/ARMCMx/compilers/GCC/mk/startup_stm32f4xx.mk CHIBIOS_PLATFORM_MK=os/hal/ports/STM32/STM32F4xx/platform.mk MCU=cortex-m4 ENV_UDEFS=-DCHPRINTF_USE_FLOAT=1
+Enabling ChibiOS asserts                     : no 
+Disabling Watchdog                           : no 
+Enabling malloc guard                        : no 
+Enabling ChibiOS thread statistics           : no 
+Enabling -Werror                             : no 
+Checking for intelhex module:                : disabled 
+Enabled OpenDroneID                          : no 
+Enabled firmware ID checking                 : no 
+GPS Debug Logging                            : no 
+Enabled custom controller                    : no 
+Checking for HAVE_CMATH_ISFINITE             : no 
+Checking for HAVE_CMATH_ISINF                : no 
+Checking for HAVE_CMATH_ISNAN                : no 
+Checking for NEED_CMATH_ISFINITE_STD_NAMESPACE : no 
+Checking for NEED_CMATH_ISINF_STD_NAMESPACE    : no 
+Checking for NEED_CMATH_ISNAN_STD_NAMESPACE    : no 
+Checking for header endian.h                   : not found 
+Checking for header byteswap.h                 : not found 
+Checking for HAVE_MEMRCHR                      : no 
+Configured VSCode Intellisense:                : no 
+DC_DSDL compiler in                            : /home/flash/ardupilot/modules/DroneCAN/dronecan_dsdlc 
+Source is git repository                       : yes 
+Update submodules                              : yes 
+Checking for program 'git'                     : /usr/bin/git 
+Gtest                                          : STM32 boards currently don't support compiling gtest 
+Checking for program 'arm-none-eabi-size'      : /usr/bin/arm-none-eabi-size 
+Benchmarks                                     : disabled 
+Unit tests                                     : disabled 
+Scripting                                      : maybe 
+Scripting runtime checks                       : enabled 
+Debug build                                    : disabled 
+Coverage build                                 : disabled 
+Consistent build                               : disabled 
+Force 32-bit build                             : disabled 
+Checking for program 'rsync'                   : /usr/bin/rsync 
+Removing target_list file /home/flash/ardupilot/build/Pixhawk1/target_list
+'configure' finished successfully (0.570s)
+                                                                                                                                                                      
+┌──(flash㉿kali)-[~/ardupilot]
+└─$ ./waf copter                    
+Waf: Entering directory `/home/flash/ardupilot/build/Pixhawk1'
+Embedding file bootloader.bin:/home/flash/ardupilot/Tools/bootloaders/Pixhawk1_bl.bin
+Embedding file hwdef.dat:/home/flash/ardupilot/build/Pixhawk1/hw.dat
+Embedding file io_firmware.bin:Tools/IO_Firmware/iofirmware_lowpolh.bin
+Embedding file io_firmware_dshot.bin:Tools/IO_Firmware/iofirmware_dshot_lowpolh.bin
+you need to install empy with 'python3 -m pip install empy==3.3.4'
+                                                                                                                                                                      
+┌──(flash㉿kali)-[~/ardupilot]
+└─$ python3 -m pip install empy==3.3.4
+error: externally-managed-environment
+
+× This environment is externally managed
+╰─> To install Python packages system-wide, try apt install
+    python3-xyz, where xyz is the package you are trying to
+    install.
+    
+    If you wish to install a non-Kali-packaged Python package,
+    create a virtual environment using python3 -m venv path/to/venv.
+    Then use path/to/venv/bin/python and path/to/venv/bin/pip. Make
+    sure you have pypy3-venv installed.
+    
+    If you wish to install a non-Kali-packaged Python application,
+    it may be easiest to use pipx install xyz, which will manage a
+    virtual environment for you. Make sure you have pipx installed.
+    
+    For more information, refer to the following:
+    * https://www.kali.org/docs/general-use/python3-external-packages/
+    * /usr/share/doc/python3.13/README.venv
+
+note: If you believe this is a mistake, please contact your Python installation or OS distribution provider. You can override this, at the risk of breaking your Python installation or OS, by passing --break-system-packages.
+hint: See PEP 668 for the detailed specification.
+                                                                                                                                                                      
+┌──(flash㉿kali)-[~/ardupilot]
+└─$ apt install python3-empy==3.3.4   
+Error: Could not open lock file /var/lib/dpkg/lock-frontend - open (13: Permission denied)
+Error: Unable to acquire the dpkg frontend lock (/var/lib/dpkg/lock-frontend), are you root?
+                                                                                                                                                                      
+┌──(flash㉿kali)-[~/ardupilot]
+└─$ sudo apt install python3-empy==3.3.4
+Error: Unable to locate package python3-empy=
+                                                                                                                                                                      
+┌──(flash㉿kali)-[~/ardupilot]
+└─$ sudo apt install python3-empy       
+The following packages were automatically installed and are no longer required:
+  containerd     libcrypt-dev          libjs-typedarray-to-buffer  libsimdutf27       mesa-vdpau-drivers         python3-fs              ruby-unf-ext
+  criu           libdlt2               libmupdf25.1                libsnmp40t64       node-is-typedarray         python3-protobuf        runc
+  libaudio2      libgav1-1             libplacebo351               libsphinxbase3t64  node-typedarray-to-buffer  python3-pycriu          tini-static
+  libavfilter10  libgdk-pixbuf2.0-bin  libpocketsphinx3            libswscale8        pocketsphinx-en-us         python3-pysnmp4         vdpau-driver-all
+  libavformat61  libio-pty-perl        libpostproc58               libteamdctl0       postgresql-common-dev      python3-terminaltables
+  libblosc2-4    libipc-run-perl       librubberband2              libtsk19t64        python3-aiocache           python3-wapiti-arsenic
+  libcompel1     libjs-is-typedarray   libsframe2                  libvdpau-va-gl1    python3-aiomcache          python3-yaswfp
+Use 'sudo apt autoremove' to remove them.
+
+Installing:
+  python3-empy
+                                                                                                                                                                      
+Summary:
+  Upgrading: 0, Installing: 1, Removing: 0, Not Upgrading: 1400
+  Download size: 66.1 kB
+  Space needed: 403 kB / 15.6 GB available
+
+Get:1 http://kali.download/kali kali-rolling/main amd64 python3-empy all 3.3.4-2 [66.1 kB]
+Fetched 66.1 kB in 1s (48.3 kB/s)       
+Selecting previously unselected package python3-empy.
+(Reading database… 508783 files and directories currently installed.)
+Preparing to unpack …/python3-empy_3.3.4-2_all.deb…
+Unpacking python3-empy (3.3.4-2)…
+Setting up python3-empy (3.3.4-2)…
+Processing triggers for kali-menu (2026.2.2)…
+Processing triggers for man-db (2.13.1-1)…
+                                                                                                                                                                      
+┌──(flash㉿kali)-[~/ardupilot]
+└─$ ./waf copter                        
+Waf: Entering directory `/home/flash/ardupilot/build/Pixhawk1'
+Embedding file bootloader.bin:/home/flash/ardupilot/Tools/bootloaders/Pixhawk1_bl.bin
+Embedding file hwdef.dat:/home/flash/ardupilot/build/Pixhawk1/hw.dat
+Embedding file io_firmware.bin:Tools/IO_Firmware/iofirmware_lowpolh.bin
+Embedding file io_firmware_dshot.bin:Tools/IO_Firmware/iofirmware_dshot_lowpolh.bin
+[ 4/11] Creating build/Pixhawk1/modules/ChibiOS/include_dirs
+[ 5/11] Compiling libraries/AP_Scripting/generator/src/main.c
+[ 6/11] Processing mavgen: modules/mavlink/message_definitions/v1.0/all.xml modules/mavlink/pymavlink/generator/C/include_v2.0/checksum.h modules/mavlink/pymavlink/generator/C/include_v2.0/mavlink_conversions.h modules/mavlink/pymavlink/generator/C/include_v2.0/mavlink_get_info.h modules/mavlink/pymavlink/generator/C/include_v2.0/mavlink_helpers.h modules/mavlink/pymavlink/generator/C/include_v2.0/mavlink_sha256.h modules/mavlink/pymavlink/generator/C/include_v2.0/mavlink_types.h modules/mavlink/pymavlink/generator/C/include_v2.0/protocol.h modules/mavlink/pymavlink/__init__.py modules/mavlink/pymavlink/generator/__init__.py modules/mavlink/pymavlink/generator/mavcrc.py modules/mavlink/pymavlink/generator/mavgen.py modules/mavlink/pymavlink/generator/mavgen_ada.py modules/mavlink/pymavlink/generator/mavgen_c.py modules/mavlink/pymavlink/generator/mavgen_cpp11.py modules/mavlink/pymavlink/generator/mavgen_cs.py modules/mavlink/pymavlink/generator/mavgen_java.py modules/mavlink/pymavlink/generator/mavgen_javascript.py modules/mavlink/pymavlink/generator/mavgen_javascript_stable.py modules/mavlink/pymavlink/generator/mavgen_lua.py modules/mavlink/pymavlink/generator/mavgen_objc.py modules/mavlink/pymavlink/generator/mavgen_python.py modules/mavlink/pymavlink/generator/mavgen_spin2.py modules/mavlink/pymavlink/generator/mavgen_swift.py modules/mavlink/pymavlink/generator/mavgen_typescript.py modules/mavlink/pymavlink/generator/mavgen_wlua.py modules/mavlink/pymavlink/generator/mavparse.py modules/mavlink/pymavlink/generator/mavtemplate.py                                                                                                    
+Validation skipped for /home/flash/ardupilot/modules/mavlink/message_definitions/v1.0/all.xml.
+Parsing /home/flash/ardupilot/modules/mavlink/message_definitions/v1.0/all.xml
+Validation skipped for /home/flash/ardupilot/modules/mavlink/message_definitions/v1.0/ardupilotmega.xml.
+Parsing /home/flash/ardupilot/modules/mavlink/message_definitions/v1.0/ardupilotmega.xml
+Validation skipped for /home/flash/ardupilot/modules/mavlink/message_definitions/v1.0/ASLUAV.xml.
+Parsing /home/flash/ardupilot/modules/mavlink/message_definitions/v1.0/ASLUAV.xml
+Validation skipped for /home/flash/ardupilot/modules/mavlink/message_definitions/v1.0/common.xml.
+Parsing /home/flash/ardupilot/modules/mavlink/message_definitions/v1.0/common.xml
+CAMERA_TRACKING_STATUS_FLAGS_IDLE has invalid values (bitmask must have powers of 2)
+Validation skipped for /home/flash/ardupilot/modules/mavlink/message_definitions/v1.0/development.xml.
+Parsing /home/flash/ardupilot/modules/mavlink/message_definitions/v1.0/development.xml
+Validation skipped for /home/flash/ardupilot/modules/mavlink/message_definitions/v1.0/icarous.xml.
+Parsing /home/flash/ardupilot/modules/mavlink/message_definitions/v1.0/icarous.xml
+Validation skipped for /home/flash/ardupilot/modules/mavlink/message_definitions/v1.0/minimal.xml.
+Parsing /home/flash/ardupilot/modules/mavlink/message_definitions/v1.0/minimal.xml
+Validation skipped for /home/flash/ardupilot/modules/mavlink/message_definitions/v1.0/python_array_test.xml.
+Parsing /home/flash/ardupilot/modules/mavlink/message_definitions/v1.0/python_array_test.xml
+Validation skipped for /home/flash/ardupilot/modules/mavlink/message_definitions/v1.0/standard.xml.
+Parsing /home/flash/ardupilot/modules/mavlink/message_definitions/v1.0/standard.xml
+MAV_BOOL_FALSE has invalid values (bitmask must have powers of 2)
+Validation skipped for /home/flash/ardupilot/modules/mavlink/message_definitions/v1.0/test.xml.
+Parsing /home/flash/ardupilot/modules/mavlink/message_definitions/v1.0/test.xml
+Validation skipped for /home/flash/ardupilot/modules/mavlink/message_definitions/v1.0/ualberta.xml.
+Parsing /home/flash/ardupilot/modules/mavlink/message_definitions/v1.0/ualberta.xml
+Validation skipped for /home/flash/ardupilot/modules/mavlink/message_definitions/v1.0/uAvionix.xml.
+Parsing /home/flash/ardupilot/modules/mavlink/message_definitions/v1.0/uAvionix.xml
+Validation skipped for /home/flash/ardupilot/modules/mavlink/message_definitions/v1.0/loweheiser.xml.
+Parsing /home/flash/ardupilot/modules/mavlink/message_definitions/v1.0/loweheiser.xml
+Validation skipped for /home/flash/ardupilot/modules/mavlink/message_definitions/v1.0/storm32.xml.
+Parsing /home/flash/ardupilot/modules/mavlink/message_definitions/v1.0/storm32.xml
+Validation skipped for /home/flash/ardupilot/modules/mavlink/message_definitions/v1.0/AVSSUAS.xml.
+Parsing /home/flash/ardupilot/modules/mavlink/message_definitions/v1.0/AVSSUAS.xml
+Validation skipped for /home/flash/ardupilot/modules/mavlink/message_definitions/v1.0/cubepilot.xml.
+Parsing /home/flash/ardupilot/modules/mavlink/message_definitions/v1.0/cubepilot.xml
+Validation skipped for /home/flash/ardupilot/modules/mavlink/message_definitions/v1.0/csAirLink.xml.
+Parsing /home/flash/ardupilot/modules/mavlink/message_definitions/v1.0/csAirLink.xml
+Merged enum MAV_CMD
+Merged enum MAV_CMD
+Merged enum MAV_CMD
+Merged enum MAV_CMD
+Merged enum MAV_CMD
+Merged enum MAV_CMD
+Found 351 MAVLink message types in 17 XML files
+Generating C implementation in directory /home/flash/ardupilot/build/Pixhawk1/libraries/GCS_MAVLink/include/mavlink/v2.0/all
+Generating C implementation in directory /home/flash/ardupilot/build/Pixhawk1/libraries/GCS_MAVLink/include/mavlink/v2.0/ardupilotmega
+[ 7/11] Processing dronecangen: modules/DroneCAN/DSDL/ardupilot modules/DroneCAN/DSDL/com modules/DroneCAN/DSDL/cuav modules/DroneCAN/DSDL/dronecan modules/DroneCAN/DSDL/mppt modules/DroneCAN/DSDL/tests modules/DroneCAN/DSDL/uavcan                                                                                                     
+[ 8/11] Creating build/Pixhawk1/ap_version.h
+[ 9/11] Creating build/Pixhawk1/chibios_flags.h
+Generating C implementation in directory /home/flash/ardupilot/build/Pixhawk1/libraries/GCS_MAVLink/include/mavlink/v2.0/ASLUAV
+Generating C implementation in directory /home/flash/ardupilot/build/Pixhawk1/libraries/GCS_MAVLink/include/mavlink/v2.0/common
+Generating C implementation in directory /home/flash/ardupilot/build/Pixhawk1/libraries/GCS_MAVLink/include/mavlink/v2.0/development
+Generating C implementation in directory /home/flash/ardupilot/build/Pixhawk1/libraries/GCS_MAVLink/include/mavlink/v2.0/icarous
+Generating C implementation in directory /home/flash/ardupilot/build/Pixhawk1/libraries/GCS_MAVLink/include/mavlink/v2.0/minimal
+Generating C implementation in directory /home/flash/ardupilot/build/Pixhawk1/libraries/GCS_MAVLink/include/mavlink/v2.0/python_array_test
+Generating C implementation in directory /home/flash/ardupilot/build/Pixhawk1/libraries/GCS_MAVLink/include/mavlink/v2.0/standard
+Generating C implementation in directory /home/flash/ardupilot/build/Pixhawk1/libraries/GCS_MAVLink/include/mavlink/v2.0/test
+Generating C implementation in directory /home/flash/ardupilot/build/Pixhawk1/libraries/GCS_MAVLink/include/mavlink/v2.0/ualberta
+Generating C implementation in directory /home/flash/ardupilot/build/Pixhawk1/libraries/GCS_MAVLink/include/mavlink/v2.0/uAvionix
+Generating C implementation in directory /home/flash/ardupilot/build/Pixhawk1/libraries/GCS_MAVLink/include/mavlink/v2.0/loweheiser
+Generating C implementation in directory /home/flash/ardupilot/build/Pixhawk1/libraries/GCS_MAVLink/include/mavlink/v2.0/storm32
+Generating C implementation in directory /home/flash/ardupilot/build/Pixhawk1/libraries/GCS_MAVLink/include/mavlink/v2.0/AVSSUAS
+Generating C implementation in directory /home/flash/ardupilot/build/Pixhawk1/libraries/GCS_MAVLink/include/mavlink/v2.0/cubepilot
+[10/11] Linking build/Pixhawk1/modules/ChibiOS/libch.a
+[11/11] Processing /home/flash/ardupilot/build/Pixhawk1/libraries/AP_Scripting/lua_generated_bindings.cpp,/home/flash/ardupilot/build/Pixhawk1/libraries/AP_Scripting/lua_generated_bindings.h: libraries/AP_Scripting/generator/description/bindings.desc build/Pixhawk1/gen-bindings -> build/Pixhawk1/libraries/AP_Scripting/lua_generated_bindings.cpp build/Pixhawk1/libraries/AP_Scripting/lua_generated_bindings.h                                                                                         
+Generating C implementation in directory /home/flash/ardupilot/build/Pixhawk1/libraries/GCS_MAVLink/include/mavlink/v2.0/csAirLink
+Copying fixed headers for protocol 2.0 to /home/flash/ardupilot/build/Pixhawk1/libraries/GCS_MAVLink/include/mavlink/v2.0
+expanding ardupilot.gnss.RelPosHeading
+expanding ardupilot.equipment.power.BatteryTag
+expanding ardupilot.equipment.proximity_sensor.Proximity
+expanding com.xacti.GnssStatus
+expanding com.tmotor.esc.ParamGet
+expanding com.hobbywing.esc.SetID
+expanding com.hobbywing.esc.SelfTest
+expanding com.hobbywing.esc.SetBaud
+expanding com.hobbywing.esc.GetMajorConfig
+expanding dronecan.sensors.rc.RCInput
+expanding dronecan.remoteid.Location
+expanding dronecan.protocol.Stats
+expanding uavcan.tunnel.SerialConfig
+expanding uavcan.equipment.air_data.StaticTemperature
+expanding uavcan.equipment.air_data.IndicatedAirspeed
+expanding uavcan.equipment.air_data.AngleOfAttack
+expanding uavcan.equipment.ice.reciprocating.CylinderStatus
+expanding uavcan.equipment.power.BatteryInfo
+expanding uavcan.equipment.camera_gimbal.Mode
+expanding uavcan.equipment.camera_gimbal.GEOPOICommand
+expanding uavcan.equipment.gnss.RTCMStream
+expanding uavcan.equipment.gnss.Fix2
+expanding uavcan.equipment.hardpoint.Command
+expanding uavcan.equipment.indication.BeepCommand
+expanding uavcan.equipment.indication.LightsCommand
+expanding uavcan.equipment.esc.RawCommand
+expanding uavcan.equipment.esc.Status
+expanding uavcan.equipment.range_sensor.Measurement
+expanding uavcan.protocol.NodeStatus
+expanding uavcan.protocol.AccessCommandShell
+expanding uavcan.protocol.HardwareVersion
+expanding uavcan.protocol.RestartNode
+expanding uavcan.protocol.param.ExecuteOpcode
+expanding uavcan.protocol.dynamic_node_id.server.Entry
+expanding uavcan.protocol.file.EntryType
+expanding uavcan.protocol.file.Delete
+expanding uavcan.protocol.file.GetDirectoryEntryInfo
+expanding ardupilot.gnss.Status
+expanding ardupilot.indication.NotifyState
+expanding ardupilot.equipment.power.BatteryContinuous
+expanding com.xacti.GimbalAttitudeStatus
+expanding com.hex.equipment.flow.Measurement
+expanding com.tmotor.esc.FocCtrl
+expanding com.hobbywing.esc.StatusMsg3
+expanding com.hobbywing.esc.StatusMsg1
+expanding com.hobbywing.esc.StatusMsg2
+expanding com.hobbywing.esc.SetThrottleSource
+expanding com.hobbywing.esc.SetDirection
+expanding com.hobbywing.esc.RawCommand
+expanding cuav.equipment.power.CBAT
+expanding dronecan.sensors.hygrometer.Hygrometer
+expanding dronecan.remoteid.SelfID
+expanding dronecan.remoteid.System
+expanding dronecan.remoteid.OperatorID
+expanding dronecan.protocol.GlobalTime
+expanding mppt.Stream
+expanding uavcan.tunnel.Targetted
+expanding uavcan.equipment.air_data.RawAirData
+expanding uavcan.equipment.ice.reciprocating.Status
+expanding uavcan.equipment.camera_gimbal.AngularCommand
+expanding uavcan.equipment.gnss.Auxiliary
+expanding uavcan.equipment.indication.RGB565
+expanding uavcan.equipment.esc.RPMCommand
+expanding uavcan.equipment.device.Temperature
+expanding uavcan.equipment.ahrs.Solution
+expanding uavcan.protocol.GlobalTimeSync
+expanding uavcan.protocol.SoftwareVersion
+expanding uavcan.protocol.GetNodeInfo
+expanding uavcan.protocol.param.NumericValue
+expanding uavcan.protocol.enumeration.Begin
+expanding uavcan.protocol.dynamic_node_id.server.Discovery
+expanding uavcan.protocol.file.Write
+expanding uavcan.protocol.file.BeginFirmwareUpdate
+expanding uavcan.protocol.debug.KeyValue
+expanding ardupilot.gnss.MovingBaselineData
+expanding ardupilot.indication.Button
+expanding ardupilot.indication.SafetyState
+expanding ardupilot.equipment.power.BatteryCells
+expanding ardupilot.equipment.trafficmonitor.TrafficReport
+expanding com.xacti.GnssStatusReq
+expanding com.tmotor.esc.PUSHCAN
+expanding com.tmotor.esc.PUSHSCI
+expanding com.himark.servo.ServoCmd
+expanding com.hobbywing.esc.SetReportingFrequency
+expanding com.hobbywing.esc.GetMaintenanceInformation
+expanding com.hobbywing.esc.GetEscID
+expanding dronecan.sensors.rpm.RPM
+expanding dronecan.remoteid.BasicID
+expanding dronecan.remoteid.SecureCommand
+expanding uavcan.CoarseOrientation
+expanding uavcan.tunnel.Protocol
+expanding uavcan.equipment.air_data.TrueAirspeed
+expanding uavcan.equipment.ice.FuelTankStatus
+expanding uavcan.equipment.power.PrimaryPowerSupplyStatus
+expanding uavcan.equipment.gnss.ECEFPositionVelocity
+expanding uavcan.equipment.hardpoint.Status
+expanding uavcan.equipment.indication.SingleLightCommand
+expanding uavcan.equipment.esc.StatusExtended
+expanding uavcan.equipment.actuator.Status
+expanding uavcan.equipment.ahrs.MagneticFieldStrength2
+expanding uavcan.protocol.GetDataTypeInfo
+expanding uavcan.protocol.CANIfaceStats
+expanding uavcan.protocol.param.Value
+expanding uavcan.protocol.param.Empty
+expanding uavcan.protocol.dynamic_node_id.Allocation
+expanding uavcan.protocol.dynamic_node_id.server.RequestVote
+expanding uavcan.protocol.file.Path
+expanding uavcan.protocol.file.Read
+expanding uavcan.protocol.debug.LogMessage
+expanding ardupilot.gnss.Heading
+expanding ardupilot.equipment.power.BatteryInfoAux
+expanding ardupilot.equipment.power.BatteryPeriodic
+expanding com.xacti.CopterAttStatus
+expanding com.xacti.GimbalControlData
+expanding com.tmotor.esc.ParamCfg
+expanding com.himark.servo.ServoInfo
+expanding com.hobbywing.esc.SetAngle
+expanding com.hobbywing.esc.SetLED
+expanding com.volz.servo.ActuatorStatus
+expanding dronecan.sensors.magnetometer.MagneticFieldStrengthHiRes
+expanding dronecan.remoteid.ArmStatus
+expanding dronecan.protocol.FlexDebug
+expanding dronecan.protocol.CanStats
+expanding mppt.OutputEnable
+expanding uavcan.Timestamp
+expanding uavcan.tunnel.Broadcast
+expanding uavcan.tunnel.Call
+expanding uavcan.equipment.air_data.Sideslip
+expanding uavcan.equipment.air_data.StaticPressure
+expanding uavcan.equipment.power.CircuitStatus
+expanding uavcan.equipment.camera_gimbal.Status
+expanding uavcan.equipment.gnss.Fix
+expanding uavcan.equipment.safety.ArmingStatus
+expanding uavcan.equipment.actuator.ArrayCommand
+expanding uavcan.equipment.actuator.Command
+expanding uavcan.equipment.ahrs.RawIMU
+expanding uavcan.equipment.ahrs.MagneticFieldStrength
+expanding uavcan.protocol.DataTypeKind
+expanding uavcan.protocol.Panic
+expanding uavcan.protocol.GetTransportStats
+expanding uavcan.protocol.param.GetSet
+expanding uavcan.protocol.enumeration.Indication
+expanding uavcan.protocol.dynamic_node_id.server.AppendEntries
+expanding uavcan.protocol.file.GetInfo
+expanding uavcan.protocol.file.Error
+expanding uavcan.protocol.debug.LogLevel
+expanding uavcan.navigation.GlobalNavigationSolution
+
+[1/115] ChibiOS: Compiling crt0_v7m.S
+[2/115] ChibiOS: Compiling vectors.S
+[3/115] ChibiOS: Compiling chcoreasm.S
+[4/115] ChibiOS: Compiling ff.c
+[5/115] ChibiOS: Compiling ffunicode.c
+[6/115] ChibiOS: Compiling chcore.c
+[7/115] ChibiOS: Compiling crt1.c
+[8/115] ChibiOS: Compiling bufstreams.c
+[9/115] ChibiOS: Compiling chprintf.c
+[10/115] ChibiOS: Compiling chscanf.c
+[11/115] ChibiOS: Compiling memstreams.c
+[12/115] ChibiOS: Compiling nullstreams.c
+[14/115] ChibiOS: Compiling hal_adc_lld.c
+[13/115] ChibiOS: Compiling osal.c
+[15/115] ChibiOS: Compiling hal_can_lld.c
+[16/115] ChibiOS: Compiling hal_crypto_lld.c
+[17/115] ChibiOS: Compiling hal_dac_lld.c
+[18/115] ChibiOS: Compiling stm32_dma.c
+[19/115] ChibiOS: Compiling stm32_exti.c
+[20/115] ChibiOS: Compiling hal_pal_lld.c
+[21/115] ChibiOS: Compiling hal_i2c_lld.c
+[22/115] ChibiOS: Compiling hal_mac_lld.c
+[23/115] ChibiOS: Compiling hal_usb_lld.c
+[24/115] ChibiOS: Compiling hal_wspi_lld.c
+[25/115] ChibiOS: Compiling hal_rtc_lld.c
+[26/115] ChibiOS: Compiling hal_sdc_lld.c
+[27/115] ChibiOS: Compiling hal_i2s_lld.c
+[28/115] ChibiOS: Compiling hal_spi_lld.c
+[29/115] ChibiOS: Compiling hal_st_lld.c
+[30/115] ChibiOS: Compiling hal_eicu_lld.c
+[31/115] ChibiOS: Compiling hal_gpt_lld.c
+[32/115] ChibiOS: Compiling hal_icu_lld.c
+[33/115] ChibiOS: Compiling hal_pwm_lld.c
+[34/115] ChibiOS: Compiling hal_serial_lld.c
+[35/115] ChibiOS: Compiling hal_uart_lld.c
+[36/115] ChibiOS: Compiling hal_wdg_lld.c
+[37/115] ChibiOS: Compiling hal_efl_lld.c
+[38/115] ChibiOS: Compiling hal_lld.c
+[39/115] ChibiOS: Compiling stm32_isr.c
+[40/115] ChibiOS: Compiling nvic.c
+[41/115] ChibiOS: Compiling hal.c
+[42/115] ChibiOS: Compiling hal_adc.c
+[43/115] ChibiOS: Compiling hal_buffers.c
+[44/115] ChibiOS: Compiling hal_can.c
+[45/115] ChibiOS: Compiling hal_crypto.c
+[46/115] ChibiOS: Compiling hal_dac.c
+[47/115] ChibiOS: Compiling hal_efl.c
+[48/115] ChibiOS: Compiling hal_eicu.c
+[49/115] ChibiOS: Compiling hal_flash.c
+[50/115] ChibiOS: Compiling hal_gpt.c
+[51/115] ChibiOS: Compiling hal_i2c.c
+[52/115] ChibiOS: Compiling hal_i2s.c
+[53/115] ChibiOS: Compiling hal_icu.c
+[54/115] ChibiOS: Compiling hal_mac.c
+[55/115] ChibiOS: Compiling hal_mmc_spi.c
+[56/115] ChibiOS: Compiling hal_mmcsd.c
+[57/115] ChibiOS: Compiling hal_pal.c
+[58/115] ChibiOS: Compiling hal_pwm.c
+[59/115] ChibiOS: Compiling hal_queues.c
+[60/115] ChibiOS: Compiling hal_rtc.c
+[61/115] ChibiOS: Compiling hal_safety.c
+[62/115] ChibiOS: Compiling hal_sdc.c
+[63/115] ChibiOS: Compiling hal_serial.c
+[64/115] ChibiOS: Compiling hal_serial_usb.c
+[65/115] ChibiOS: Compiling hal_sio.c
+[66/115] ChibiOS: Compiling hal_spi.c
+[67/115] ChibiOS: Compiling hal_st.c
+[68/115] ChibiOS: Compiling hal_trng.c
+[69/115] ChibiOS: Compiling hal_uart.c
+[70/115] ChibiOS: Compiling hal_usb.c
+[71/115] ChibiOS: Compiling hal_wdg.c
+[72/115] ChibiOS: Compiling hal_wspi.c
+[73/115] ChibiOS: Compiling chdelegates.c
+[74/115] ChibiOS: Compiling chfactory.c
+[75/115] ChibiOS: Compiling chmboxes.c
+[76/115] ChibiOS: Compiling chmemcore.c
+[77/115] ChibiOS: Compiling chmemheaps.c
+[78/115] ChibiOS: Compiling chmempools.c
+[79/115] ChibiOS: Compiling chobjcaches.c
+[80/115] ChibiOS: Compiling chpipes.c
+[81/115] ChibiOS: Compiling chcond.c
+[82/115] ChibiOS: Compiling chdebug.c
+[83/115] ChibiOS: Compiling chdynamic.c
+[84/115] ChibiOS: Compiling chevents.c
+[85/115] ChibiOS: Compiling chinstances.c
+[86/115] ChibiOS: Compiling chmsg.c
+[87/115] ChibiOS: Compiling chmtx.c
+[88/115] ChibiOS: Compiling chregistry.c
+[89/115] ChibiOS: Compiling chrfcu.c
+[90/115] ChibiOS: Compiling chschd.c
+[91/115] ChibiOS: Compiling chsem.c
+[92/115] ChibiOS: Compiling chstats.c
+[93/115] ChibiOS: Compiling chsys.c
+[94/115] ChibiOS: Compiling chthreads.c
+[95/115] ChibiOS: Compiling chtm.c
+[96/115] ChibiOS: Compiling chtrace.c
+[97/115] ChibiOS: Compiling chvt.c
+[98/115] ChibiOS: Compiling fatfs_diskio.c
+[99/115] ChibiOS: Compiling fatfs_syscall.c
+[100/115] ChibiOS: Compiling stubs.c
+[101/115] ChibiOS: Compiling board.c
+[102/115] ChibiOS: Compiling usbcfg.c
+[103/115] ChibiOS: Compiling usbcfg_dualcdc.c
+
+../../libraries/AP_HAL_ChibiOS/hwdef/common/stubs.c:89:18: error: 'struct _reent' declared inside parameter list will not be visible outside of this definition or declaration [-Werror]
+   89 | int _read(struct _reent *r, int file, char * ptr, int len)
+      |                  ^~~~~~
+../../libraries/AP_HAL_ChibiOS/hwdef/common/stubs.c:101:19: error: 'struct _reent' declared inside parameter list will not be visible outside of this definition or declaration [-Werror]
+  101 | int _lseek(struct _reent *r, int file, int ptr, int dir)
+      |                   ^~~~~~
+../../libraries/AP_HAL_ChibiOS/hwdef/common/stubs.c:114:19: error: 'struct _reent' declared inside parameter list will not be visible outside of this definition or declaration [-Werror]
+  114 | int _write(struct _reent *r, int file, char * ptr, int len)
+      |                   ^~~~~~
+../../libraries/AP_HAL_ChibiOS/hwdef/common/stubs.c:126:19: error: 'struct _reent' declared inside parameter list will not be visible outside of this definition or declaration [-Werror]
+  126 | int _close(struct _reent *r, int file)
+      |                   ^~~~~~
+../../libraries/AP_HAL_ChibiOS/hwdef/common/stubs.c:136:19: error: 'struct _reent' declared inside parameter list will not be visible outside of this definition or declaration [-Werror]
+  136 | int _fstat(struct _reent *r, int file, struct stat * st)
+      |                   ^~~~~~
+../../libraries/AP_HAL_ChibiOS/hwdef/common/stubs.c:147:20: error: 'struct _reent' declared inside parameter list will not be visible outside of this definition or declaration [-Werror]
+  147 | int _isatty(struct _reent *r, int fd)
+      |                    ^~~~~~
+cc1: all warnings being treated as errors
+make: *** [../../libraries/AP_HAL_ChibiOS/hwdef/common/chibios_common.mk:244: modules/ChibiOS/obj/stubs.o] Error 1
+make: *** Waiting for unfinished jobs....
+
+No target_list file found, creating
+Generating compile_commands.json
+Build commands will be stored in build/Pixhawk1/compile_commands.json
+Generating compile_commands.json
+Build commands will be stored in build/Pixhawk1/compile_commands.json
+Waf: Leaving directory `/home/flash/ardupilot/build/Pixhawk1'
+Build failed
+ -> task in 'ChibiOS_lib' failed (exit status 2):                                                                                                                     
+        {task 139691164374240: ChibiOS_lib hwdef.h,hw.dat,ldscript.ld,common.ld,include_dirs,board.c,board.h,bouncebuffer.c,bouncebuffer.h,chconf.h,crashdump.c,ffconf.h,flash.c,flash.h,halconf.h,hrt.c,hrt.h,malloc.c,mcuconf.h,poll.h,ppm.h,spi_hook.h,stdio.h,stm32_util.c,stm32_util.h,stm32f1_mcuconf.h,stm32f3_mcuconf.h,stm32f47_mcuconf.h,stm32g4_mcuconf.h,stm32h7_A3_mcuconf.h,stm32h7_mcuconf.h,stm32h7_type2_mcuconf.h,stm32l4+_mcuconf.h,stm32l4_mcuconf.h,stubs.c,sysperf.c,sysperf.h,usbcfg.c,usbcfg.h,usbcfg_common.c,usbcfg_dualcdc.c,watchdog.c,watchdog.h,chibios_board.mk,chibios_common.mk,board.c,board.h,board.c,board.h,board.c,board.h,board.c,board.h,board.c,board.h,board.c,board.h,board.c,board.h,board.c,board.h,board.c,board.h,board.c,board.h,board.c,board.h,board.c,board.h,board.c,board.h,board.c,board.h,board.c,board.h,board.c,board.h,board.c,board.h,board.c,board.h,board.c,board.h,board.c,board.h,board.c,board.h,board.c,board.h,board.c,board.h,board.c,board.h,board.c,board.h,buzzer.c,buzzer.h,board.c,board.h,board.c,board.h,board.c,board.h,board.c,board.h,board.c,board.h,board.c,board.h,board.c,board.h,board.c,board.h,board.c,board.h,board.c,board.h,board.c,board.h,board.c,board.h,board.c,board.h,board.c,board.h,board.c,board.h,board.c,board.h,board.c,board.h,board.c,board.h,board.c,board.h,board.c,board.h,board.c,board.h,board.c,board.h,board.c,board.h,board.c,board.h,board.c,board.h,board.c,board.h,board.c,board.h,board.c,board.h,board.c,board.h,board.c,board.h,board.c,board.h,board.c,board.h,board.c,board.h,board.c,board.h,board.c,board.h,board.c,board.h,board.c,board.h,board.c,board.h,board.c,board.h,board.c,board.h,board.c,board.h,board.c,board.h,board.c,board.h,board.c,board.h,board.c,board.h,board.c,board.h,board.c,board.h,board.c,board.h,board.c,board.h,board.c,board.h,board.c,board.h,board.c,board.h,board.c,board.h,board.c,board.h,board.c,board.h,board.c,board.h,board.c,board.h,board.c,board.h,board.c,board.h,board.c,board.h,board.c,board.h,board.c,board.h,board.c,board.h,board.c,board.h,board.c,board.h,board.c,board.h,board.c,board.h,board.c,board.h,board.c,board.h,board.c,board.h,board.c,board.h,board.c,board.h,board.c,board.h,board.c,board.h,board.c,board.h,board.c,board.h,board.c,board.h,board.c,board.h,board.c,board.h,board.c,board.h,board.c,board.h,board.c,board.h,board.c,board.h,board.c,board.h,board.c,board.h,board.c,board.h,board.c,board.h,board.c,board.h,board.c,board.h,board.c,board.h,board.c,board.h,board.c,board.h,board.c,board.h,board.c,board.h,board.c,board.h,board.c,board.h,board.c,board.h,board.c,board.h,board.c,board.h,board.c,board.h,board.c,board.h,board.c,board.h,board.c,board.h,board.c,board.h,board.c,board.h,board.c,board.h,board.c,board.h,board.c,board.h,board.c,board.h,board.c,board.h,board.c,board.h,board.c,board.h,board.c,board.h,board.c,board.h,board.c,board.h,hal.h,hal_adc.h,hal_buffered_serial.h,hal_buffers.h,hal_can.h,hal_channels.h,hal_crypto.h,hal_dac.h,hal_efl.h,hal_eicu.h,hal_files.h,hal_flash.h,hal_gpt.h,hal_i2c.h,hal_i2s.h,hal_icu.h,hal_ioblock.h,hal_mac.h,hal_mii.h,hal_mmc_spi.h,hal_mmcsd.h,hal_objects.h,hal_pal.h,hal_persistent.h,hal_pwm.h,hal_queues.h,hal_rtc.h,hal_safety.h,hal_sdc.h,hal_serial.h,hal_serial_usb.h,hal_sio.h,hal_spi.h,hal_spi_v1.h,hal_spi_v2.h,hal_st.h,hal_streams.h,hal_trng.h,hal_uart.h,hal_usb.h,hal_usb_cdc.h,hal_usb_msd.h,hal_wdg.h,hal_wspi.h,hal_buffered_sio.c,hal_buffered_sio.h,hal_mfs.c,hal_mfs.h,hal_flash_device.c,hal_flash_device.h,hal_flash_device.c,hal_flash_device.h,hal_serial_nor.c,hal_serial_nor.h,hal_xsnor_macronix_mx25.c,hal_xsnor_macronix_mx25.h,hal_xsnor_micron_n25q.c,hal_xsnor_micron_n25q.h,hal_xsnor_device_template.c,hal_xsnor_device_template.h,hal_flash_interface.h,hal_xsnor_base.h,hal_xsnor_base.c,hal_i2c_lld.c,hal_i2c_lld.h,bufstreams.c,bufstreams.h,chprintf.c,chprintf.h,chscanf.c,chscanf.h,memstreams.c,memstreams.h,nullstreams.c,nullstreams.h,osal_vt.c,osal_vt.h,osal.c,osal.h,osal.c,osal.h,chcore_timer.h,osal.c,osal.h,osal.c,osal.h,aducm_cc.h,aducm_gp.h,aducm_isr.c,aducm_isr.h,aducm_registry.h,hal_lld.c,hal_lld.h,hal_pal_lld.c,hal_pal_lld.h,hal_spi_lld.c,hal_spi_lld.h,hal_st_lld.c,hal_st_lld.h,aducm_uart.h,hal_serial_lld.c,hal_serial_lld.h,aducm_wut.h,hal_st_lld.c,hal_st_lld.h,avr_pins.h,avr_timers.h,hal_lld.c,hal_lld.h,hal_adc_lld.c,hal_adc_lld.h,hal_ext_lld.c,hal_ext_lld.h,hal_pal_lld.c,hal_pal_lld.h,avr_int.h,avr_pcint.h,hal_pal_lld.c,hal_pal_lld.h,hal_i2c_lld.c,hal_i2c_lld.h,hal_spi_lld.c,hal_spi_lld.h,hal_st_lld.c,hal_st_lld.h,hal_gpt_lld.c,hal_gpt_lld.h,hal_icu_lld.c,hal_icu_lld.h,hal_pwm_lld.c,hal_pwm_lld.h,hal_st_lld.c,hal_st_lld.h,hal_serial_lld.c,hal_serial_lld.h,hal_usb_lld.c,hal_usb_lld.h,hal_lld.c,hal_lld.h,hal_pal_lld.c,hal_pal_lld.h,hal_st_lld.c,hal_st_lld.h,hal_st_lld.c,hal_st_lld.h,hal_uart_lld.c,hal_uart_lld.h,avr_pins.h,avr_timers.h,hal_lld.c,hal_lld.h,hal_crc.c,hal_crc.h,hal_crc_lld.c,hal_crc_lld.h,xmega_crc.h,hal_crypto_lld.c,hal_crypto_lld.h,hal_dac_lld.c,hal_dac_lld.h,xmega_dma_lld.c,xmega_dma_lld.h,hal_pal_lld.c,hal_pal_lld.h,hal_spi_lld.c,hal_spi_lld.h,hal_st_lld.c,hal_st_lld.h,hal_st_lld.c,hal_st_lld.h,hal_serial_lld.c,hal_serial_lld.h,hal_uart_lld.c,hal_uart_lld.h,hal_wdg_lld.c,hal_wdg_lld.h,hal_lld.c,hal_lld.h,hal_pal_lld.c,hal_pal_lld.h,hal_serial_lld.c,hal_serial_lld.h,hal_spi_lld.c,hal_spi_lld.h,hal_st_lld.c,hal_st_lld.h,vic.c,vic.h,hal_lld.c,hal_lld.h,hal_pal_lld.c,hal_pal_lld.h,hal_st_lld.c,hal_st_lld.h,max32_clkman.h,max32_gpio.h,max32_isr.c,max32_isr.h,max32_registry.h,rp_dma.c,rp_dma.h,hal_pal_lld.c,hal_pal_lld.h,hal_i2c_lld.c,hal_i2c_lld.h,hal_rtc_lld.c,hal_rtc_lld.h,hal_spi_lld.c,hal_spi_lld.h,hal_st_lld.c,hal_st_lld.h,hal_sio_lld.c,hal_sio_lld.h,hal_wdg_lld.c,hal_wdg_lld.h,hal_lld.c,hal_lld.h,rp_fifo.h,rp_isr.c,rp_isr.h,rp_registry.h,hal_spi_lld.c,hal_spi_lld.h,spc5_dspi.h,spc5_edma.c,spc5_edma.h,hal_serial_lld.c,hal_serial_lld.h,hal_serial_lld.c,hal_serial_lld.h,spc5_linflex.h,hal_pal_lld.c,hal_pal_lld.h,hal_pal_lld.c,hal_pal_lld.h,hal_st_lld.c,hal_st_lld.h,hal_lld.c,hal_lld.h,registers.h,spc5_registry.h,typedefs.h,xpc560bc.h,hal_lld.c,hal_lld.h,registers.h,spc5_registry.h,typedefs.h,xpc560b.h,hal_lld.c,hal_lld.h,registers.h,spc5_registry.h,typedefs.h,xpc560d.h,hal_lld.c,hal_lld.h,registers.h,spc5_registry.h,typedefs.h,xpc560p.h,hal_lld.c,hal_lld.h,registers.h,spc5_registry.h,typedefs.h,xpc563m.h,hal_lld.c,hal_lld.h,registers.h,spc5_registry.h,typedefs.h,xpc564a.h,hal_lld.c,hal_lld.h,registers.h,spc5_registry.h,typedefs.h,xpc56ec.h,hal_lld.c,hal_lld.h,registers.h,spc5_registry.h,typedefs.h,xpc56el.h,hal_adc_lld.c,hal_adc_lld.h,hal_adc_lld.c,hal_adc_lld.h,hal_adc_lld.c,hal_adc_lld.h,hal_adc_lld.c,hal_adc_lld.h,hal_adc_lld.c,hal_adc_lld.h,hal_adc_lld.c,hal_adc_lld.h,hal_adc_lld.c,hal_adc_lld.h,stm32_bdma.c,stm32_bdma.h,hal_can_lld.c,hal_can_lld.h,hal_crypto_lld.c,hal_crypto_lld.h,hal_dac_lld.c,hal_dac_lld.h,hal_dac_lld.c,hal_dac_lld.h,stm32_dma3.c,stm32_dma3.h,stm32_dma.c,stm32_dma.h,stm32_dma.c,stm32_dma.h,stm32_exti.c,stm32_exti.h,hal_can_lld.c,hal_can_lld.h,stm32_fdcan.h,hal_can_lld.c,hal_can_lld.h,stm32_fdcan.h,stm32_gpdma.c,stm32_gpdma.h,hal_pal_lld.c,hal_pal_lld.h,hal_pal_lld.c,hal_pal_lld.h,stm32_gpio.h,hal_pal_lld.c,hal_pal_lld.h,stm32_gpio.h,hal_i2c_lld.c,hal_i2c_lld.h,hal_i2c_lld.c,hal_i2c_lld.h,hal_i2c_lld.c,hal_i2c_lld.h,hal_i2c_lld.c,hal_i2c_lld.h,hal_mac_lld.c,hal_mac_lld.h,hal_mac_lld.c,hal_mac_lld.h,stm32_mdma.c,stm32_mdma.h,hal_wspi_lld.c,hal_wspi_lld.h,hal_wspi_lld.c,hal_wspi_lld.h,hal_usb_lld.c,hal_usb_lld.h,stm32_otg.h,hal_wspi_lld.c,hal_wspi_lld.h,hal_wspi_lld.c,hal_wspi_lld.h,hal_trng_lld.c,hal_trng_lld.h,hal_rtc_lld.c,hal_rtc_lld.h,hal_rtc_lld.c,hal_rtc_lld.h,hal_rtc_lld.c,hal_rtc_lld.h,hal_rtc_lld.c,hal_rtc_lld.h,hal_sdc_lld.c,hal_sdc_lld.h,hal_sdc_lld.c,hal_sdc_lld.h,hal_sdc_lld.c,hal_sdc_lld.h,hal_i2s_lld.c,hal_i2s_lld.h,hal_spi_lld.c,hal_spi_lld.h,hal_spi_v2_lld.c,hal_spi_v2_lld.h,hal_i2s_lld.c,hal_i2s_lld.h,hal_spi_lld.c,hal_spi_lld.h,hal_spi_v2_lld.c,hal_spi_v2_lld.h,hal_spi_lld.c,hal_spi_lld.h,hal_spi_v2_lld.c,hal_spi_v2_lld.h,hal_spi_v2_lld.c,hal_spi_v2_lld.h,hal_st_lld.c,hal_st_lld.h,hal_st_lld.c,hal_st_lld.h,hal_eicu_lld.c,hal_eicu_lld.h,hal_gpt_lld.c,hal_gpt_lld.h,hal_icu_lld.c,hal_icu_lld.h,hal_pwm_lld.c,hal_pwm_lld.h,stm32_tim.h,hal_serial_lld.c,hal_serial_lld.h,hal_uart_lld.c,hal_uart_lld.h,hal_serial_lld.c,hal_serial_lld.h,hal_sio_lld.c,hal_sio_lld.h,hal_uart_lld.c,hal_uart_lld.h,stm32_usart.h,hal_serial_lld.c,hal_serial_lld.h,hal_sio_lld.c,hal_sio_lld.h,hal_uart_lld.c,hal_uart_lld.h,stm32_usart.h,hal_usb_lld.c,hal_usb_lld.h,stm32_usb.h,hal_usb_lld.c,hal_usb_lld.h,hal_wdg_lld.c,hal_wdg_lld.h,hal_lld.c,hal_lld.h,stm32_dmamux.h,stm32_isr.c,stm32_isr.h,stm32_rcc.h,stm32_registry.h,hal_efl_lld.c,hal_efl_lld.h,hal_lld.c,hal_lld.h,stm32_isr.c,stm32_isr.h,stm32_rcc.h,stm32_registry.h,hal_adc_lld.c,hal_adc_lld.h,hal_efl_lld.c,hal_efl_lld.h,hal_lld.c,hal_lld.h,hal_lld_f100.h,hal_lld_f103.h,hal_lld_f105_f107.h,stm32_isr.c,stm32_isr.h,stm32_rcc.h,stm32_registry.h,hal_adc_lld.c,hal_adc_lld.h,hal_lld.c,hal_lld.h,stm32_isr.c,stm32_isr.h,stm32_rcc.h,stm32_registry.h,hal_efl_lld.c,hal_efl_lld.h,hal_lld.c,hal_lld.h,stm32_isr.c,stm32_isr.h,stm32_rcc.h,stm32_registry.h,hal_efl_lld.c,hal_efl_lld.h,hal_lld.c,hal_lld.h,hal_lld_type1.h,hal_lld_type2.h,stm32_isr.c,stm32_isr.h,stm32_rcc.h,stm32_registry.h,hal_efl_lld.c,hal_efl_lld.h,hal_lld.c,hal_lld.h,stm32_isr.c,stm32_isr.h,stm32_rcc.h,stm32_registry.h,hal_efl_lld.c,hal_efl_lld.h,hal_lld.c,hal_lld.h,stm32_dmamux.h,stm32_isr.c,stm32_isr.h,stm32_limits.h,stm32_rcc.h,stm32_registry.h,hal_efl_lld.c,hal_efl_lld.h,hal_lld.c,hal_lld.h,stm32_dmamux.h,stm32_isr.c,stm32_isr.h,stm32_rcc.h,stm32_registry.h,hal_efl_lld.c,hal_efl_lld.h,hal_lld.c,hal_lld.h,stm32_dmamux.h,stm32_isr.c,stm32_isr.h,stm32_limits.h,stm32_rcc.h,stm32_registry.h,hal_efl_lld.c,hal_efl_lld.h,hal_lld.c,hal_lld.h,stm32_dmamux.h,stm32_isr.c,stm32_isr.h,stm32_rcc.h,stm32_registry.h,hal_lld.c,hal_lld.h,stm32_isr.c,stm32_isr.h,stm32_limits.h,stm32_rcc.h,stm32_registry.h,hal_lld.c,hal_lld.h,hal_lld_type1.h,hal_lld_type2.h,hal_lld_type3.h,stm32_dmamux.h,stm32_isr.c,stm32_isr.h,stm32_rcc.h,stm32_registry.h,hal_lld.c,hal_lld.h,stm32_isr.c,stm32_isr.h,stm32_rcc.h,stm32_registry.h,hal_adc_lld.c,hal_adc_lld.h,hal_lld.c,hal_lld.h,stm32_isr.c,stm32_isr.h,stm32_rcc.h,stm32_registry.h,hal_efl_lld.c,hal_efl_lld.h,hal_lld.c,hal_lld.h,stm32_isr.c,stm32_isr.h,stm32_rcc.h,stm32_registry.h,hal_efl_lld.c,hal_efl_lld.h,hal_lld.c,hal_lld.h,stm32_dmamux.h,stm32_isr.c,stm32_isr.h,stm32_rcc.h,stm32_registry.h,hal_lld.c,hal_lld.h,stm32_dmamux.h,stm32_isr.c,stm32_isr.h,stm32_rcc.h,stm32_registry.h,hal_lld.c,hal_lld.h,stm32_dmamux.h,stm32_isr.c,stm32_isr.h,stm32_rcc.h,stm32_registry.h,hal_lld.c,hal_lld.h,stm32_dmamux.h,stm32_isr.c,stm32_isr.h,stm32_limits.h,stm32_rcc.h,stm32_registry.h,hal_lld.c,hal_lld.h,stm32_isr.c,stm32_isr.h,stm32_limits.h,stm32_rcc.h,stm32_registry.h,hal_lld.c,hal_lld.h,stm32_isr.c,stm32_isr.h,stm32_limits.h,stm32_rcc.h,stm32_registry.h,hal_lld.c,hal_lld.h,stm32_dmamux.h,stm32_isr.c,stm32_isr.h,stm32_rcc.h,stm32_registry.h,hal_efl_lld.c,hal_efl_lld.h,hal_lld.c,hal_lld.h,stm32_dmamux.h,stm32_isr.c,stm32_isr.h,stm32_rcc.h,stm32_registry.h,cache.h,mpu_v7m.h,nvic.c,nvic.h,sau.c,sau.h,hal_lld.c,hal_lld.h,hal_pal_lld.c,hal_pal_lld.h,hal_sio_lld.c,hal_sio_lld.h,hal_st_lld.c,hal_st_lld.h,console.c,console.h,hal_efl_lld.c,hal_efl_lld.h,hal_pal_lld.c,hal_pal_lld.h,hal_st_lld.c,hal_st_lld.h,hal_lld.c,hal_lld.h,hal_serial_lld.c,hal_serial_lld.h,hal_lld.c,hal_lld.h,hal_serial_lld.c,hal_serial_lld.h,hal.c,hal_adc.c,hal_buffered_serial.c,hal_buffers.c,hal_can.c,hal_crypto.c,hal_dac.c,hal_efl.c,hal_eicu.c,hal_flash.c,hal_gpt.c,hal_i2c.c,hal_i2s.c,hal_icu.c,hal_mac.c,hal_mmc_spi.c,hal_mmcsd.c,hal_pal.c,hal_pwm.c,hal_queues.c,hal_rtc.c,hal_safety.c,hal_sdc.c,hal_serial.c,hal_serial_usb.c,hal_sio.c,hal_spi.c,hal_st.c,hal_trng.c,hal_uart.c,hal_usb.c,hal_usb_msd.c,hal_wdg.c,hal_wspi.c,board.c,board.h,hal_adc_lld.c,hal_adc_lld.h,hal_can_lld.c,hal_can_lld.h,hal_crypto_lld.c,hal_crypto_lld.h,hal_dac_lld.c,hal_dac_lld.h,hal_efl_lld.c,hal_efl_lld.h,hal_gpt_lld.c,hal_gpt_lld.h,hal_i2c_lld.c,hal_i2c_lld.h,hal_i2s_lld.c,hal_i2s_lld.h,hal_icu_lld.c,hal_icu_lld.h,hal_lld.c,hal_lld.h,hal_mac_lld.c,hal_mac_lld.h,hal_pal_lld.c,hal_pal_lld.h,hal_pwm_lld.c,hal_pwm_lld.h,hal_rtc_lld.c,hal_rtc_lld.h,hal_sdc_lld.c,hal_sdc_lld.h,hal_serial_lld.c,hal_serial_lld.h,hal_sio_lld.c,hal_sio_lld.h,hal_spi_lld.c,hal_spi_lld.h,hal_spi_v2_lld.c,hal_spi_v2_lld.h,hal_st_lld.c,hal_st_lld.h,hal_trng_lld.c,hal_trng_lld.h,hal_uart_lld.c,hal_uart_lld.h,hal_usb_lld.c,hal_usb_lld.h,hal_wdg_lld.c,hal_wdg_lld.h,hal_wspi_lld.c,hal_wspi_lld.h,halconf.h,mcuconf.h,osal.c,osal.h,board.mk,board.mk,board.mk,board.mk,board.mk,board.mk,board.mk,board.mk,board.mk,board.mk,board.mk,board.mk,board.mk,board.mk,board.mk,board.mk,board.mk,board.mk,board.mk,board.mk,board.mk,board.mk,board.mk,board.mk,board.mk,board.mk,board.mk,board.mk,board.mk,board.mk,board.mk,board.mk,board.mk,board.mk,board.mk,board.mk,board.mk,board.mk,board.mk,board.mk,board.mk,board.mk,board.mk,board.mk,board.mk,board.mk,board.mk,board.mk,board.mk,board.mk,board.mk,board.mk,board.mk,board.mk,board.mk,board.mk,board.mk,board.mk,board.mk,board.mk,board.mk,board.mk,board.mk,board.mk,board.mk,board.mk,board.mk,board.mk,board.mk,board.mk,board.mk,board.mk,board.mk,board.mk,board.mk,board.mk,board.mk,board.mk,board.mk,board.mk,board.mk,board.mk,board.mk,board.mk,board.mk,board.mk,board.mk,board.mk,board.mk,board.mk,board.mk,board.mk,board.mk,board.mk,board.mk,board.mk,board.mk,board.mk,board.mk,board.mk,board.mk,board.mk,board.mk,board.mk,board.mk,board.mk,board.mk,board.mk,board.mk,board.mk,board.mk,board.mk,board.mk,board.mk,board.mk,board.mk,board.mk,board.mk,board.mk,board.mk,board.mk,board.mk,board.mk,board.mk,board.mk,board.mk,board.mk,board.mk,board.mk,board.mk,board.mk,board.mk,board.mk,board.mk,board.mk,board.mk,hal.mk,hal_buffered_sio.mk,hal_mfs.mk,hal_flash_device.mk,hal_flash_device.mk,hal_xsnor_macronix_mx25.mk,hal_xsnor_micron_n25q.mk,hal_xsnor.mk,streams.mk,osal.mk,osal.mk,osal.mk,osal.mk,platform.mk,driver.mk,driver.mk,platform.mk,driver.mk,driver.mk,driver.mk,driver.mk,driver.mk,driver.mk,driver.mk,driver.mk,driver.mk,driver.mk,platform.mk,driver.mk,driver.mk,driver.mk,driver.mk,platform.mk,driver.mk,driver.mk,driver.mk,driver.mk,driver.mk,driver.mk,driver.mk,driver.mk,driver.mk,driver.mk,platform.mk,platform.mk,driver.mk,driver.mk,driver.mk,driver.mk,driver.mk,driver.mk,driver.mk,platform.mk,platform.mk,platform.mk,platform.mk,platform.mk,platform.mk,platform.mk,platform.mk,platform.mk,driver.mk,driver.mk,driver.mk,driver.mk,driver.mk,driver.mk,driver.mk,driver.mk,driver.mk,driver.mk,driver.mk,driver.mk,driver.mk,driver.mk,driver.mk,driver.mk,driver.mk,driver.mk,driver.mk,driver.mk,driver.mk,driver.mk,driver.mk,driver.mk,driver.mk,driver.mk,driver.mk,driver.mk,driver.mk,driver.mk,driver.mk,driver.mk,driver.mk,driver.mk,driver.mk,driver.mk,driver.mk,driver.mk,driver.mk,driver.mk,driver.mk,driver.mk,driver.mk,driver.mk,driver.mk,driver.mk,driver_v2.mk,driver.mk,driver_v2.mk,driver.mk,driver_v2.mk,driver.mk,driver.mk,driver.mk,driver.mk,driver.mk,driver.mk,driver.mk,driver.mk,driver.mk,driver.mk,platform.mk,platform.mk,platform.mk,platform_f105_f107.mk,platform.mk,platform.mk,platform.mk,platform.mk,platform.mk,platform.mk,platform.mk,platform.mk,platform.mk,platform.mk,platform_type2.mk,platform.mk,platform.mk,platform.mk,platform_l412_l422.mk,platform_l432.mk,platform.mk,platform_l4p5_l4q5.mk,platform.mk,platform.mk,platform.mk,platform.mk,platform.mk,platform.mk,platform.mk,platform_v2.mk,platform.mk,platform.mk,platform.mk,board.mk,osal.mk,platform.mk,ap_romfs_embedded.h -> libch.a,libcc.a}                          
+ (run with -v to display more information)                                                                                                                            
+                                                                                                                                                                      
+┌──(flash㉿kali)-[~/ardupilot]
+└─$ ls
+AGENTS.md       ArduPlane   Blimp     CODE_OF_CONDUCT.md  docs         Makefile        README.md      tests        waf
+AntennaTracker  ArduSub     build     COPYING.txt         Doxyfile.in  modules         Rover          Tools        wscript
+ArduCopter      benchmarks  BUILD.md  Dockerfile          libraries    pyproject.toml  tasklist.json  Vagrantfile
+                                                                                                                                                                      
+┌──(flash㉿kali)-[~/ardupilot]
+└─$ cd build    
+                                                                                                                                                                      
+┌──(flash㉿kali)-[~/ardupilot/build]
+└─$ ls                           
+c4che  config.log  Pixhawk1
+                                                                                                                                                                      
+┌──(flash㉿kali)-[~/ardupilot/build]
+└─$ cd Pixhawk1 
+                                                                                                                                                                      
+┌──(flash㉿kali)-[~/ardupilot/build/Pixhawk1]
+└─$ ls
+ap_config.h          ap_version.h  bin              common.ld              gen-bindings  hwdef.h      lib        Makefile  target_list
+ap_romfs_embedded.h  ArduCopter    chibios_flags.h  compile_commands.json  hw.dat        ldscript.ld  libraries  modules
+                                                                                                                                                                      
+┌──(flash㉿kali)-[~/ardupilot/build/Pixhawk1]
+└─$ cd ..      
+                                                                                                                                                                      
+┌──(flash㉿kali)-[~/ardupilot/build]
+└─$ ls
+c4che  config.log  Pixhawk1
+                                                                                                                                                                      
+┌──(flash㉿kali)-[~/ardupilot/build]
+└─$ cd Pixhawk1
+                                                                                                                                                                      
+┌──(flash㉿kali)-[~/ardupilot/build/Pixhawk1]
+└─$ ls
+ap_config.h          ap_version.h  bin              common.ld              gen-bindings  hwdef.h      lib        Makefile  target_list
+ap_romfs_embedded.h  ArduCopter    chibios_flags.h  compile_commands.json  hw.dat        ldscript.ld  libraries  modules
+                                                                                                                                                                      
+┌──(flash㉿kali)-[~/ardupilot/build/Pixhawk1]
+└─$ cd bin     
+                                                                                                                                                                      
+┌──(flash㉿kali)-[~/ardupilot/build/Pixhawk1/bin]
+└─$ ls
+                                                                                                                                                                      
+┌──(flash㉿kali)-[~/ardupilot/build/Pixhawk1/bin]
