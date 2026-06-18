@@ -63,3 +63,32 @@ Created Tools/bootloaders/mini-pix_bl.hex
 (venv-signing) flash@be6c13119726:~/ardupilot$ ./Tools/scripts/signing/make_secure_fw.py build/mini-pix/bin/arducopter.apj mykey_private_key.dat
 Applying signature
 Wrote build/mini-pix/bin/arducopter.apj
+
+
+
+
+
+in short:
+
+Generate keys:
+  python3 -m pip install pymonocypher==3.1.3.2
+
+  Tools/scripts/signing/generate_keys.py mykey
+
+
+Build secure bootloader:
+ Tools/scripts/build_bootloaders.py RadiolinkF405 --signing-key=mykey_public_key.dat
+
+
+Build firmware:
+ ./waf configure --board RadiolinkF405 --signed-fw
+ ./waf copter
+
+Sign it:
+ # requires pymonocypher
+ source venv-signing/bin/activate
+
+ ./Tools/scripts/signing/make_secure_fw.py build/RadiolinkF405/bin/arducopter.apj mykey_private_key.dat
+
+
+Flash BL
