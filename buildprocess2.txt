@@ -1,0 +1,3139 @@
+Welcome to Ubuntu 24.04.3 LTS (GNU/Linux 6.17.0-29-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/pro
+
+Expanded Security Maintenance for Applications is not enabled.
+
+277 updates can be applied immediately.
+To see these additional updates run: apt list --upgradable
+
+101 additional security updates can be applied with ESM Apps.
+Learn more about enabling ESM Apps service at https://ubuntu.com/esm
+
+*** System restart required ***
+Last login: Wed Jun 17 13:37:28 2026 from 100.102.225.29
+(venv) appliedsni02@appliedsni02:~$ mavproxy --version
+mavproxy: command not found
+(venv) appliedsni02@appliedsni02:~$ find ./ -name mavproxy.py
+find: ‘./Desktop/dev/digital-twin/.docker/postgres/data’: Permission denied
+find: ‘./Desktop/Appliedsni/digital-twin/.docker/postgres/data’: Permission denied
+./Desktop/Appliedsni/digital-twin/objvenv/bin/mavproxy.py
+./Desktop/Appliedsni/digital-twin/objvenv/lib/python3.12/site-packages/MAVProxy/mavproxy.py
+^C
+(venv) appliedsni02@appliedsni02:~$ find ./ -name mavproxy.py 2>/dev/null
+./Desktop/Appliedsni/digital-twin/objvenv/bin/mavproxy.py
+./Desktop/Appliedsni/digital-twin/objvenv/lib/python3.12/site-packages/MAVProxy/mavproxy.py
+./Desktop/Appliedsni/Akashpu/digital-twin/objvenv/bin/mavproxy.py
+./Desktop/Appliedsni/Akashpu/digital-twin/objvenv/lib/python3.12/site-packages/MAVProxy/mavproxy.py
+./Desktop/Appliedsni/Akashpu/digital-twin-new/digital-twin/objvenv/bin/mavproxy.py
+./Desktop/Appliedsni/Akashpu/digital-twin-new/digital-twin/objvenv/lib/python3.12/site-packages/MAVProxy/mavproxy.py
+./Desktop/RPi_files/digital-twin/objvenv/bin/mavproxy.py
+^C
+(venv) appliedsni02@appliedsni02:~$ ls
+Android       ardupilot_sitl          CameraTesting22_device  development  drone.py             intel   Pictures  RPi_device_agent  simulator.sh  test   Videos
+Applications  bin                     cane.zip                Documents    dronerec             Music   pi-gen    rpi_env           snap          utils
+Arduino       Camera_8e3b7ee4_device  Desktop                 Downloads    firmware_encryption  nvidia  Public    self-host         Templates     venv
+(venv) appliedsni02@appliedsni02:~$ ip a
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+2: enp1s0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UP group default qlen 1000
+    link/ether 48:9e:bd:9e:3c:60 brd ff:ff:ff:ff:ff:ff
+    inet 192.168.1.159/24 brd 192.168.1.255 scope global dynamic noprefixroute enp1s0
+       valid_lft 6621sec preferred_lft 6621sec
+    inet6 fe80::4a9e:bdff:fe9e:3c60/64 scope link noprefixroute 
+       valid_lft forever preferred_lft forever
+3: tailscale0: <POINTOPOINT,MULTICAST,NOARP,UP,LOWER_UP> mtu 1280 qdisc fq_codel state UNKNOWN group default qlen 500
+    link/none 
+    inet 100.94.230.100/32 scope global tailscale0
+       valid_lft forever preferred_lft forever
+4: docker0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc noqueue state DOWN group default 
+    link/ether 4e:c1:d1:45:c1:94 brd ff:ff:ff:ff:ff:ff
+    inet 172.17.0.1/16 brd 172.17.255.255 scope global docker0
+       valid_lft forever preferred_lft forever
+214: br-c25e95c0a0c4: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc noqueue state DOWN group default 
+    link/ether ca:26:e1:35:4d:db brd ff:ff:ff:ff:ff:ff
+    inet 172.18.0.1/16 brd 172.18.255.255 scope global br-c25e95c0a0c4
+       valid_lft forever preferred_lft forever
+407: br-3ce7d01f7398: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc noqueue state DOWN group default 
+    link/ether 42:f0:11:b2:36:2c brd ff:ff:ff:ff:ff:ff
+    inet 172.19.0.1/16 brd 172.19.255.255 scope global br-3ce7d01f7398
+       valid_lft forever preferred_lft forever
+431: br-fb1ad8bcb666: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default 
+    link/ether 5e:ec:74:30:ab:2e brd ff:ff:ff:ff:ff:ff
+    inet 172.20.0.1/16 brd 172.20.255.255 scope global br-fb1ad8bcb666
+       valid_lft forever preferred_lft forever
+432: vethed33742@if2: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master br-fb1ad8bcb666 state UP group default 
+    link/ether 92:e9:90:ca:e2:f0 brd ff:ff:ff:ff:ff:ff link-netnsid 0
+433: veth59a11e3@if2: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master br-fb1ad8bcb666 state UP group default 
+    link/ether aa:99:e9:ef:e6:f4 brd ff:ff:ff:ff:ff:ff link-netnsid 1
+436: vetha879f1f@if2: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master br-fb1ad8bcb666 state UP group default 
+    link/ether ee:7b:d4:af:68:73 brd ff:ff:ff:ff:ff:ff link-netnsid 2
+468: br-816a4fc65f20: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default 
+    link/ether de:c4:cf:8e:4a:45 brd ff:ff:ff:ff:ff:ff
+    inet 172.21.0.1/16 brd 172.21.255.255 scope global br-816a4fc65f20
+       valid_lft forever preferred_lft forever
+469: vethd7be88a@if2: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master br-816a4fc65f20 state UP group default 
+    link/ether ea:a5:83:7a:84:4e brd ff:ff:ff:ff:ff:ff link-netnsid 3
+470: veth683df18@if2: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master br-816a4fc65f20 state UP group default 
+    link/ether da:49:e4:03:67:93 brd ff:ff:ff:ff:ff:ff link-netnsid 4
+471: vethae296d2@if2: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master br-816a4fc65f20 state UP group default 
+    link/ether d2:b1:fb:34:9a:d9 brd ff:ff:ff:ff:ff:ff link-netnsid 5
+472: vetha78176c@if2: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master br-816a4fc65f20 state UP group default 
+    link/ether c6:bb:ac:1a:a9:f4 brd ff:ff:ff:ff:ff:ff link-netnsid 6
+474: vethdf135ca@if2: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master br-816a4fc65f20 state UP group default 
+    link/ether 82:68:50:2d:c3:ec brd ff:ff:ff:ff:ff:ff link-netnsid 8
+476: vethcd053df@if2: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master br-816a4fc65f20 state UP group default 
+    link/ether 6e:30:f2:ad:bd:e2 brd ff:ff:ff:ff:ff:ff link-netnsid 7
+(venv) appliedsni02@appliedsni02:~$ cd firmware_encryption/
+(venv) appliedsni02@appliedsni02:~/firmware_encryption$ ls
+ardupilot  c0abd34e272e  commands.txt  Pixhawk1  private.pem  public.pem
+(venv) appliedsni02@appliedsni02:~/firmware_encryption$ cd ardupilot
+(venv) appliedsni02@appliedsni02:~/firmware_encryption/ardupilot$ ls
+AGENTS.md       ArduSub     BUILD.md            docs                    libraries              mykey_public_key.dat  tasklist.json  venv-signing
+AntennaTracker  benchmarks  CODE_OF_CONDUCT.md  Doxyfile.in             Makefile               pyproject.toml        tests          waf
+ArduCopter      Blimp       COPYING.txt         --help_private_key.dat  modules                README.md             Tools          wscript
+ArduPlane       build       Dockerfile          --help_public_key.dat   mykey_private_key.dat  Rover                 Vagrantfile
+(venv) appliedsni02@appliedsni02:~/firmware_encryption/ardupilot$ cd Tools
+(venv) appliedsni02@appliedsni02:~/firmware_encryption/ardupilot/Tools$ ls
+AP_Bootloader  autotest         CHDK-Scripts  CPUInfo              FilterTestTool  GIT_Test  IO_Firmware           Pozyx            ros2      terrain-tools  Vicon
+AP_Periph      bootloaders      CodeStyle     debug                Frame_params    gittools  Linux_HAL_Essentials  PrintVersion.py  scripts   UDP_Proxy
+ardupilotwaf   cameras_gimbals  completion    environment_install  geotag          Hello     mavproxy_modules      Replay           simulink  vagrant
+(venv) appliedsni02@appliedsni02:~/firmware_encryption/ardupilot/Tools$ cd bootloaders
+(venv) appliedsni02@appliedsni02:~/firmware_encryption/ardupilot/Tools/bootloaders$ ls mini*
+mini-pix_bl.bin  mini-pix_bl.elf  mini-pix_bl.hex
+(venv) appliedsni02@appliedsni02:~/firmware_encryption/ardupilot/Tools/bootloaders$ strings mini-pix_bl.bin
+6H6I
+XBXA
+;#`ch
+M+x3
+2#c`+x
+zsc`8
+"Z`pGX"
+ #K$J
+nYlZdYnZfZnZiB
+ZaZi"
+ZaZi
+F]`>F
+M)hO
+F"F(F
+F F0
+        N       M0
+$(h3
+ pGh#
+(h D
+(h D
+SapG
+A,%F(
+!HF/b
+$hbm
+say h
+ pGpG
+aJy     2C
+E !*O
+ pG"*
+)F F
+i]hE
+cpG8
+1F(F
+@=CE
+)F F
+P Ch
+F ^h
+H0 F
+L0%dy
+N0 F
+OP!p
+##pch
++F*F)F F
++F*F)F F
+66666
++F*F)F
+400#
+400#
+`X`pG
+`X`pG
+h(u"h
+)F F
++F      JhF
+%#pe`
+JQhSh[
+D,BiC
+@,      JC
+h#`\`
+`L`!`Y`
+'F5F
+"F1F
+QF(F
+JF)F8F
+E !*
+2F)F
+&I(F
+)F F
+"IF(F
+"QF(F
+I#x{
+##pQ
+@s+a+i;C+aQ
+@s#a#i;C#a
+L#hC
+`pGd-
+#C@i
+*KDm
+)KZkB
+ZcZmB
+ZeZmZiB
+ZaZi"
+!C [i
+##`nmO
+8pG-
+7CoP
+!FS`(F
+SH4d
+JZ`(F!F
+X1CmI
+H1CmI
+`KhS`pG
+A$Mnm
+h(F[h
+hCmli&h
+@  ` h.
+OKMnm
+!F(F
+4/Do
+!F(F
+LemO
+QF`m
+QF F
+`Z`Y
+;pGCm
+9pGCm
+;pGCm
+`pG0
+)F F
+CjCa
+GpGp
+AF F
+j@3@6
+0FZF
+j[D^D
+CjCa
+)F F
+IF F
+)F:F
+j;D=D
+CXjpGO
+`pGO
+CXcpG
+ KhC`
+iCaKi
+&K&H
+IJk"
+Jch3
+        IB
+iZiXa
+!ZiYaZi
+jZjXbZjYbZj
+gSh#
+@3KO
+d2JO
+JShY
+BZdZnB
+BZf[npG@
+STM32F???
+STM32F40x
+STM32F42x
+STM32F446XX
+ ArduPilot
+%BOARD%-BL
+%SERIAL%
+%BOARD%
+mini-pix
+0123456789ABCDEF
+main
+idle
+(venv) appliedsni02@appliedsni02:~/firmware_encryption/ardupilot/Tools/bootloaders$ ls -lh mini*
+-rwxrwxr-x 1 appliedsni02 appliedsni02  14K Jun 15 14:20 mini-pix_bl.bin
+-rwxrwxr-x 1 appliedsni02 appliedsni02 157K Jun 15 14:20 mini-pix_bl.elf
+-rw-rw-r-- 1 appliedsni02 appliedsni02  38K Jun 15 14:20 mini-pix_bl.hex
+(venv) appliedsni02@appliedsni02:~/firmware_encryption/ardupilot/Tools/bootloaders$ ls
+3DRControlZeroG_bl.bin        CubeOrange-bdshot_bl.hex        Hitec-Airspeed_bl.bin         mini-pix_bl.elf                 revo-mini-sd_bl.bin
+3DRControlZeroG_bl.hex        CubeOrange_bl.bin               Hitec-Airspeed_bl.elf         mini-pix_bl.hex                 revo-mini-sd_bl.elf
+3DR-L431-ASAUAV_bl.bin        CubeOrange_bl.elf               Hitec-Airspeed_bl.hex         modalai_fc-v1_bl.bin            revo-mini-sd_bl.hex
+3DR-L431-ASAUAV_bl.hex        CubeOrange_bl.hex               HitecMosaic_bl.bin            Morakot_bl.bin                  rFCU_bl.bin
+AcctonGodwit_GA1_bl.bin       CubeOrange-joey_bl.bin          HitecMosaic_bl.elf            Morakot_bl.hex                  rGNSS_bl.bin
+AcctonGodwit_GA1_bl.hex       CubeOrange-joey_bl.hex          HitecMosaic_bl.hex            mRoCANPWM-M10126_bl.bin         SDMODELH7V1_bl.bin
+ACNS-CM4Pilot_bl.bin          CubeOrange-ODID_bl.bin          HolybroF4_PMU_bl.bin          mRoControlZeroClassic_bl.bin    SDMODELH7V1_bl.elf
+ACNS-F405AIO_bl.bin           CubeOrange-periph_bl.bin        HolybroF4_PMU_bl.elf          mRoControlZeroF7_bl.bin         SDMODELH7V1_bl.hex
+AEDROXH7_bl.bin               CubeOrange-periph_bl.hex        HolybroF4_PMU_bl.hex          mRoControlZeroF7_bl.elf         SDMODELH7V2_bl.bin
+AEDROXH7_bl.hex               CubeOrange-periph-heavy_bl.bin  HolybroG4_Airspeed_bl.bin     mRoControlZeroF7_bl.hex         SDMODELH7V2_bl.hex
+AeroCogito-H7Digital_bl.bin   CubeOrange-periph-heavy_bl.hex  HolybroG4_Airspeed_bl.elf     mRoControlZeroH7-bdshot_bl.bin  SequreH743_bl.bin
+AeroCogito-H7Digital_bl.hex   CubeOrangePlus-bdshot_bl.bin    HolybroG4_Airspeed_bl.hex     mRoControlZeroH7-bdshot_bl.hex  SequreH743_bl.hex
+aerofcv1_bl.bin               CubeOrangePlus-bdshot_bl.hex    HolybroG4_Compass_bl.bin      mRoControlZeroH7_bl.bin         Sierra-L431_bl.bin
+AeroFox-Airspeed_bl.bin       CubeOrangePlus_bl.bin           HolybroG4_Compass_bl.elf      mRoControlZeroOEMH7_bl.bin      Sierra-PrecisionPoint_bl.bin
+AeroFox-Airspeed-DLVR_bl.bin  CubeOrangePlus_bl.elf           HolybroG4_Compass_bl.hex      mRoControlZeroOEMH7_bl.elf      Sierra-PrecisionPoint_bl.hex
+AeroFox-GNSS_F9P_bl.bin       CubeOrangePlus_bl.hex           HolybroG4_GPS_bl.bin          mRoControlZeroOEMH7_bl.hex      Sierra-TrueNavIC_bl.bin
+AEROFOX-H7_bl.bin             CubeOrangePlus-ODID_bl.bin      HolybroG4_GPS_bl.elf          mRoCZeroOEMH7-bdshot_bl.bin     Sierra-TrueNavIC_bl.hex
+AeroFox-PMU_bl.bin            CubePurple_bl.bin               HolybroG4_GPS_bl.hex          mRoCZeroOEMH7-bdshot_bl.hex     Sierra-TrueNavPro_bl.bin
+Aeromind6X_bl.bin             CubePurple_bl.hex               HolybroGPS_bl.bin             mRoKitCANrevC_bl.bin            Sierra-TrueNavPro-G4_bl.bin
+Aeromind6X_bl.hex             CubeRedPrimary_bl.bin           HolybroGPS_bl.elf             mRoKitCANrevC_bl.hex            Sierra-TrueNavPro-G4_bl.hex
+AET-H743-Basic_bl.bin         CubeRedPrimary_bl.hex           HolybroGPS_bl.hex             mRo-M10095_bl.bin               Sierra-TrueNorth_bl.bin
+AET-H743-Basic_bl.hex         CubeRedPrimary-PPPGW_bl.bin     HWH7_bl.bin                   mRo-M10095_bl.elf               Sierra-TrueSpeed_bl.bin
+airbotf4_bl.bin               CubeRedSecondary_bl.bin         HWH7_bl.hex                   mRo-M10095_bl.hex               SIYI_N7_bl.bin
+airbotf4_bl.elf               CubeRedSecondary_bl.hex         IFLIGHT_2RAW_H7_bl.bin        mRoNexus_bl.bin                 SkyDroid-S3_bl.bin
+airbotf4_bl.hex               CubeSolo_bl.bin                 IFLIGHT_2RAW_H7_bl.hex        mRoNexus_bl.elf                 SkyDroid-S3_bl.hex
+AIRBRAINH743_bl.bin           CubeSolo_bl.hex                 iomcu_bl.bin                  mRoNexus_bl.hex                 SkyRukh_Surge_H7_bl.bin
+AIRBRAINH743_bl.hex           CubeYellow-bdshot_bl.bin        iomcu_bl.elf                  mRoPixracerPro-bdshot_bl.bin    SkyRukh_Surge_H7_bl.hex
+AIRLink_bl.bin                CubeYellow-bdshot_bl.hex        iomcu_f103_8MHz_bl.bin        mRoPixracerPro_bl.bin           SkySakuraH743_bl.bin
+Airvolute-DCS2_bl.bin         CubeYellow_bl.bin               JFB100_bl.bin                 mRoPixracerPro_bl.elf           SkystarsF405v2_bl.bin
+Airvolute-DCS2_bl.hex         CubeYellow_bl.elf               JFB100_bl.hex                 mRoPixracerPro_bl.hex           SkystarsF405v2_bl.hex
+AnyleafH7_bl.bin              CubeYellow_bl.hex               JFB110_bl.bin                 mRoX21-777_bl.bin               SkystarsH7HD-bdshot_bl.bin
+AnyleafH7_bl.hex              DAKEFPVF405_bl.bin              JFB200_bl.bin                 mRoX21-777_bl.elf               SkystarsH7HD-bdshot_bl.hex
+Aocoda-RC-H743Dual_bl.bin     DAKEFPVF405_bl.hex              JFB200_bl.hex                 mRoX21-777_bl.hex               SkystarsH7HD_bl.bin
+Aocoda-RC-H743Dual_bl.hex     DAKEFPVH743_bl.bin              JHEMCUF405PRO_bl.bin          mRoX21_bl.bin                   SkystarsH7HD_bl.hex
+AR-F407SmartBat_bl.bin        DAKEFPVH743_bl.hex              JHEMCUF405PRO_bl.hex          mRoX21_bl.elf                   SkystarsH7HDv2_bl.bin
+AR-F407SmartBat_bl.elf        DAKEFPVH743Pro_bl.bin           JHEMCUF405WING_bl.bin         mRoX21_bl.hex                   SkystarsH7HDv2_bl.hex
+AR-F407SmartBat_bl.hex        DAKEFPVH743Pro_bl.hex           JHEMCUF405WING_bl.hex         MUPilot_bl.bin                  skyviperf412_bl.bin
+ARK_CANNODE_bl.bin            DAKEFPVH743_SLIM_bl.bin         JHEMCU-GSF405A_bl.bin         NarinFC-H5_bl.bin               skyviperf412_bl.elf
+ARK_CANNODE_bl.hex            DAKEFPVH743_SLIM_bl.hex         JHEMCU-GSF405A_bl.hex         NarinFC-H7_bl.bin               skyviper_v2450_bl.bin
+ARK_FPV_bl.bin                DevEBoxH7v2_bl.bin              JHEMCU-GSF405A-RX2_bl.bin     NarinFC-H7_bl.hex               sparknavi-blue_bl.bin
+ARK_GPS_bl.bin                DevEBoxH7v2_bl.hex              JHEMCU-GSF405A-RX2_bl.hex     NarinFC-X3_bl.bin               sparknavi-blue_bl.hex
+ARK_GPS_bl.hex                DroneerF405_bl.bin              JHEMCU-H743HD_bl.bin          NarinFC-X3_bl.hex               sparky2_bl.bin
+ARK_PI6X_bl.bin               DroneerF405_bl.hex              JHEM_JHEF405_bl.bin           Nucleo-G491_bl.bin              sparky2_bl.elf
+ARK_PI6X_bl.hex               DrotekP3Pro_bl.bin              JHEM_JHEF405_bl.hex           Nucleo-G491_bl.elf              sparky2_bl.hex
+ARK_RTK_GPS_bl.bin            DrotekP3Pro_bl.hex              JPilot-C_bl.bin               Nucleo-G491_bl.hex              SPEDIXF405_bl.bin
+ARK_RTK_GPS_bl.hex            Durandal-bdshot_bl.bin          JPilot-C_bl.hex               NucleoH743_bl.bin               SPEDIXF405_bl.hex
+ARKV6X_bl.bin                 Durandal_bl.bin                 KakuteF4_bl.bin               NucleoH743_bl.elf               SPEDIXH743_bl.bin
+ARKV6X_bl.hex                 Durandal_bl.elf                 KakuteF4_bl.elf               NucleoH743_bl.hex               SPEDIXH743_bl.hex
+Atlas-Control_bl.bin          Durandal_bl.hex                 KakuteF4_bl.hex               NucleoH753ZI_bl.bin             SpeedyBeeF405AIO_bl.bin
+Atlas-Control_bl.hex          f103-ADSB_bl.bin                KakuteF4Mini_bl.bin           NucleoH753ZI_bl.hex             SpeedyBeeF405AIO_bl.hex
+AtomRCF405NAVI_bl.bin         f103-ADSB_bl.elf                KakuteF4Mini_bl.hex           Nucleo-L496_bl.bin              SpeedyBeeF405Mini_bl.bin
+ATOMRCF405NAVI-Deluxe_bl.bin  f103-ADSB_bl.hex                KakuteF4-Wing_bl.bin          Nucleo-L496_bl.hex              SpeedyBeeF405Mini_bl.hex
+BeastF7_bl.bin                f103-Airspeed_bl.bin            KakuteF4-Wing_bl.hex          NxtPX4v2_bl.bin                 SpeedyBeeF405WING_bl.bin
+BeastF7_bl.hex                f103-Airspeed_bl.elf            KakuteF7-bdshot_bl.bin        NxtPX4v2_bl.hex                 speedybeef4_bl.bin
+BeastF7v2_bl.bin              f103-Airspeed_bl.hex            KakuteF7_bl.bin               omnibusf4_bl.bin                speedybeef4_bl.elf
+BeastF7v2_bl.hex              f103-GPS_bl.bin                 KakuteF7_bl.elf               omnibusf4_bl.elf                speedybeef4_bl.hex
+BeastH7_bl.bin                f103-GPS_bl.hex                 KakuteF7_bl.hex               omnibusf4_bl.hex                speedybeef4v3_bl.bin
+BeastH7_bl.hex                f103-HWESC_bl.bin               KakuteF7Mini_bl.bin           omnibusf4pro-bdshot_bl.bin      speedybeef4v3_bl.hex
+BeastH7v2_bl.bin              f103-HWESC_bl.hex               KakuteF7Mini_bl.elf           omnibusf4pro_bl.bin             speedybeef4v4_bl.bin
+BeastH7v2_bl.hex              f103-periph_bl.bin              KakuteF7Mini_bl.hex           omnibusf4pro_bl.elf             speedybeef4v4_bl.hex
+BETAFPV-F405_bl.bin           f103-periph_bl.elf              KakuteH7-bdshot_bl.bin        omnibusf4pro_bl.hex             speedybeef4v5_bl.bin
+BETAFPV-F405_bl.hex           f103-periph_bl.hex              KakuteH7-bdshot_bl.hex        omnibusf4v6_bl.bin              speedybeef4v5_bl.hex
+BETAFPV-F405-I2C_bl.bin       f103-QiotekPeriph_bl.bin        KakuteH7_bl.bin               omnibusf4v6_bl.elf              SPRacingH7_bl.bin
+BETAFPV-F405-I2C_bl.hex       f103-QiotekPeriph_bl.hex        KakuteH7_bl.elf               omnibusf4v6_bl.hex              SPRacingH7_bl.hex
+BirdCANdy_bl.bin              f103-RangeFinder_bl.bin         KakuteH7_bl.hex               OMNIBUSF7V2_bl.bin              SPRacingH7RF_bl.bin
+BirdCANdy_bl.elf              f103-RangeFinder_bl.elf         KakuteH7Mini_bl.bin           OMNIBUSF7V2_bl.elf              SPRacingH7RF_bl.hex
+BirdCANdy_bl.hex              f103-RangeFinder_bl.hex         KakuteH7Mini_bl.hex           OMNIBUSF7V2_bl.hex              StellarF4_bl.bin
+BlitzF745AIO_bl.bin           f103-Trigger_bl.bin             KakuteH7Mini-Nand_bl.bin      OmnibusNanoV6-bdshot_bl.bin     StellarF4_bl.hex
+BlitzF745AIO_bl.hex           f103-Trigger_bl.elf             KakuteH7Mini-Nand_bl.hex      OmnibusNanoV6_bl.bin            StellarF4V2_bl.bin
+BlitzF745_bl.bin              f103-Trigger_bl.hex             KakuteH7v2_bl.bin             OmnibusNanoV6_bl.elf            StellarF4V2_bl.hex
+BlitzF745_bl.hex              f303-GPS_bl.bin                 KakuteH7v2_bl.hex             OmnibusNanoV6_bl.hex            StellarH7V2_bl.bin
+BlitzH743Pro_bl.bin           f303-GPS_bl.hex                 KakuteH7-Wing_bl.bin          ORBITH743_bl.bin                StellarH7V2_bl.hex
+BlitzH743Pro_bl.hex           f303-HWESC_bl.bin               KakuteH7-Wing_bl.hex          ORBITH743_bl.hex                SuccexF4_bl.bin
+BlitzMiniF745_bl.bin          f303-HWESC_bl.hex               KT-FMU-F1_bl.bin              OrqaF405Pro_bl.bin              SuccexF4_bl.elf
+BlitzMiniF745_bl.hex          f303-M10025_bl.bin              KT-FMU-F1_bl.hex              OrqaF405Pro_bl.hex              SuccexF4_bl.hex
+BlitzWingH743_bl.bin          f303-M10025_bl.hex              LongBowF405WING_bl.bin        OrqaH743Pro_bl.bin              SULILGH7-P1-P2_bl.bin
+BlitzWingH743_bl.hex          f303-M10070_bl.bin              LumenierLUXF765-NDAA_bl.bin   OrqaH743Pro_bl.hex              SVehicle-E2_bl.bin
+BotBloxDroneNet_bl.bin        f303-M10070_bl.elf              LumenierLUXF765-NDAA_bl.hex   OrqaH7QuadCore_bl.bin           SVehicle-E2_bl.hex
+BOTWINGF405_bl.bin            f303-M10070_bl.hex              luminousbee5_bl.bin           OrqaH7QuadCore_bl.hex           Swan-K1_bl.bin
+BrahmaF4_bl.bin               f303-MatekGPS_bl.bin            luminousbee5_bl.hex           PH4-mini-bdshot_bl.bin          Swan-K1_bl.hex
+BrahmaF4_bl.hex               f303-MatekGPS_bl.elf            MambaF405-2022_bl.bin         PH4-mini_bl.bin                 sw-boom-f407_bl.bin
+BROTHERHOBBYF405v3_bl.bin     f303-MatekGPS_bl.hex            MambaF405-2022_bl.hex         PH4-mini_bl.elf                 sw-boom-f407_bl.hex
+BROTHERHOBBYF405v3_bl.hex     f303-periph_bl.bin              MambaF405US-I2C_bl.bin        PH4-mini_bl.hex                 sw-nav-f405_bl.bin
+BROTHERHOBBYH743_bl.bin       f303-periph_bl.hex              MambaF405US-I2C_bl.elf        PilotGaeaSH7V1-bdshot_bl.bin    sw-nav-f405_bl.hex
+BROTHERHOBBYH743_bl.hex       f303-PWM_bl.bin                 MambaF405US-I2C_bl.hex        PilotGaeaSH7V1-bdshot_bl.hex    sw-spar-f407_bl.bin
+CarbonixF405_bl.bin           f303-TempSensor_bl.bin          MambaF405v2_bl.bin            Pix32v5_bl.bin                  sw-spar-f407_bl.hex
+CBU-H7-LC-Stamp_bl.bin        f303-Universal_bl.bin           MambaF405v2_bl.hex            Pix32v5_bl.elf                  TBS-Colibri-F7_bl.bin
+CBU-H7-LC-Stamp_bl.hex        f303-Universal_bl.elf           MambaH743v4_bl.bin            Pix32v5_bl.hex                  TBS-Colibri-F7_bl.elf
+CBU-H7-Stamp_bl.bin           f303-Universal_bl.hex           MambaH743v4_bl.hex            PixC4-Jetson_bl.bin             TBS-Colibri-F7_bl.hex
+CBU-H7-Stamp_bl.hex           F35Lightning_bl.bin             MatekF405-bdshot_bl.bin       PixC4-Jetson_bl.hex             TBS-L431_bl.bin
+CORVON405V2_1_bl.bin          F35Lightning_bl.elf             MatekF405_bl.bin              PixFlamingo_bl.bin              TBS-L431_bl.hex
+CORVON743V1_bl.bin            F35Lightning_bl.hex             MatekF405_bl.elf              PixFlamingo-F767_bl.bin         TBS_LUCID_H7_bl.bin
+CrazyF405_bl.bin              f405-MatekAirspeed_bl.bin       MatekF405_bl.hex              Pixhawk1-1M_bl.bin              TBS_LUCID_H7_bl.hex
+CrazyF405_bl.hex              f405-MatekAirspeed_bl.hex       MatekF405-CAN_bl.bin          Pixhawk1-1M_bl.elf              TBS_LUCID_H7_WING_AIO_bl.bin
+crazyflie2_bl.bin             f405-MatekGPS_bl.bin            MatekF405-CAN_bl.hex          Pixhawk1-1M_bl.hex              TBS_LUCID_H7_WING_AIO_bl.hex
+crazyflie2_bl.elf             f405-MatekGPS_bl.hex            MatekF405-STD_bl.bin          Pixhawk1-bdshot_bl.bin          TBS_LUCID_H7_WING_bl.bin
+crazyflie2_bl.hex             F4BY_bl.bin                     MatekF405-STD_bl.elf          Pixhawk1_bl.bin                 TBS_LUCID_H7_WING_bl.hex
+C-RTK2-HP_bl.bin              F4BY_bl.elf                     MatekF405-STD_bl.hex          Pixhawk1_bl.elf                 TBS_LUCID_PRO_bl.bin
+C-RTK2_HP_bl.bin              F4BY_bl.hex                     MatekF405-TE-bdshot_bl.bin    Pixhawk1_bl.hex                 TBS_LUCID_PRO_bl.hex
+CSKY405_bl.bin                F4BY_F427_bl.bin                MatekF405-TE-bdshot_bl.hex    Pixhawk4-bdshot_bl.bin          thepeach-k1_bl.bin
+CSKY405_bl.hex                F4BY_H743_bl.bin                MatekF405-TE_bl.bin           Pixhawk4-bdshot_bl.hex          thepeach-r1_bl.bin
+CSKY_PMU_bl.bin               F4BY_H743_bl.hex                MatekF405-TE_bl.hex           Pixhawk4_bl.bin                 TMotorH743_bl.bin
+CSKY_PMU_bl.hex               FlyingMoonF407_bl.bin           MatekF405-Wing-bdshot_bl.bin  Pixhawk4_bl.elf                 TMotorH743_bl.hex
+CUAV-7-Nano_bl.bin            FlyingMoonF407_bl.elf           MatekF405-Wing_bl.bin         Pixhawk4_bl.hex                 uav-dev-auav-g4_bl.bin
+CUAV-7-Nano_bl.hex            FlyingMoonF407_bl.hex           MatekF405-Wing_bl.elf         Pixhawk5X_bl.bin                uav-dev-auav-g4_bl.hex
+CUAV-7-Nano-ODID_bl.bin       FlyingMoonF427_bl.bin           MatekF405-Wing_bl.hex         Pixhawk5X_bl.hex                uav-dev-fc-um982_bl.bin
+CUAV-7-Nano-ODID_bl.hex       FlyingMoonF427_bl.elf           MatekF765-SE_bl.bin           Pixhawk6C-bdshot_bl.bin         uav-dev-fc-um982_bl.hex
+CUAV_GPS_bl.bin               FlyingMoonF427_bl.hex           MatekF765-SE_bl.elf           Pixhawk6C-bdshot_bl.hex         uav-dev_m10s_bl.bin
+CUAV_GPS_bl.elf               FlyingMoonH743_bl.bin           MatekF765-SE_bl.hex           Pixhawk6C_bl.bin                uav-dev_m10s_bl.hex
+CUAV_GPS_bl.hex               FlyingMoonH743_bl.elf           MatekF765-Wing-bdshot_bl.bin  Pixhawk6X-bdshot_bl.bin         uav-dev-powermodule_bl.bin
+CUAV-Nora-bdshot_bl.bin       FlyingMoonH743_bl.hex           MatekF765-Wing-bdshot_bl.hex  Pixhawk6X_bl.bin                uav-dev-powermodule_bl.hex
+CUAV-Nora-bdshot_bl.hex       FlysparkF4_bl.bin               MatekF765-Wing_bl.bin         Pixhawk6X_bl.elf                VM-L431-BatteryTag_bl.bin
+CUAV-Nora_bl.bin              FlysparkF4_bl.hex               MatekF765-Wing_bl.elf         Pixhawk6X-ODID_bl.bin           VM-L431-BatteryTag_bl.hex
+CUAV-Nora_bl.elf              FlywooF405HD-AIOv2_bl.bin       MatekF765-Wing_bl.hex         Pixhawk6X-PPPGW_bl.bin          VM-L431-BMS_bl.bin
+CUAV-Nora_bl.hex              FlywooF405HD-AIOv2_bl.hex       MatekG474-DShot_bl.bin        PixPilot-C3_bl.bin              VM-L431-BMS_bl.hex
+CUAV-Nora-ODID_bl.bin         FlywooF405Pro_bl.bin            MatekG474-DShot_bl.hex        PixPilot-V3_bl.bin              VM-L431-Periph-Pico_bl.bin
+CUAV-Nora-ODID_bl.hex         FlywooF405Pro_bl.hex            MatekG474-GPS_bl.bin          PixPilot-V6_bl.bin              VM-L431-Periph-Pico_bl.hex
+CUAVv5-bdshot_bl.bin          FlywooF405S-AIO_bl.bin          MatekG474-GPS_bl.hex          PixPilot-V6_bl.hex              VM-L431-SRV-Hub-4CHP_bl.bin
+CUAVv5-bdshot_bl.hex          FlywooF405S-AIO_bl.hex          MatekG474-Periph_bl.bin       PixPilot-V6PRO_bl.bin           VM-L431-SRV-Hub-4CHP_bl.hex
+CUAVv5_bl.bin                 FlywooF745_bl.bin               MatekG474-Periph_bl.hex       Pixracer-bdshot_bl.bin          VRBrain-v51_bl.bin
+CUAVv5_bl.elf                 FlywooF745_bl.hex               MatekH743-bdshot_bl.bin       Pixracer_bl.bin                 VRBrain-v51_bl.hex
+CUAVv5_bl.hex                 FlywooF745Nano_bl.bin           MatekH743-bdshot_bl.hex       Pixracer_bl.elf                 VRBrain-v52_bl.bin
+CUAVv5Nano-bdshot_bl.bin      FlywooF745Nano_bl.hex           MatekH743_bl.bin              Pixracer_bl.hex                 VRBrain-v52_bl.elf
+CUAVv5Nano-bdshot_bl.hex      FlywooH743Pro_bl.bin            MatekH743_bl.hex              Pixracer-periph_bl.bin          VRBrain-v52_bl.hex
+CUAVv5Nano_bl.bin             FlywooH743Pro_bl.hex            MatekH7A3_bl.bin              Pixracer-periph_bl.hex          VRBrain-v54_bl.bin
+CUAVv5Nano_bl.elf             fmuv3-bdshot_bl.bin             MatekH7A3_bl.hex              PixSurveyA1_bl.bin              VRBrain-v54_bl.hex
+CUAVv5Nano_bl.hex             fmuv3_bl.bin                    MatekH7A3-Wing_bl.bin         PixSurveyA1-IND_bl.bin          VRCore-v10_bl.bin
+CUAV-V6X-v2_bl.bin            fmuv3_bl.elf                    MatekH7A3-Wing_bl.elf         PixSurveyA2-IND_bl.bin          VRCore-v10_bl.hex
+CUAV-V6X-v2_bl.hex            fmuv3_bl.hex                    MatekH7A3-Wing_bl.hex         PrincipIoTH7Pi_bl.bin           VRUBrain-v51_bl.bin
+CUAV-V6X-v2-ODID_bl.bin       fmuv5_bl.bin                    MatekL431_bl.bin              PrincipIoTH7Pi_bl.hex           VRUBrain-v51_bl.elf
+CUAV-V6X-v2-ODID_bl.hex       fmuv5_bl.elf                    MatekL431_bl.elf              QioTekAdeptF407_bl.bin          VRUBrain-v51_bl.hex
+CUAV-X25-EVO_bl.bin           fmuv5_bl.hex                    MatekL431_bl.hex              QioTekAdeptF407_bl.elf          VUAV-TinyV7_bl.bin
+CUAV-X25-EVO_bl.hex           FoxeerF405v2_bl.bin             MazzyStarDrone_bl.bin         QioTekAdeptF407_bl.hex          VUAV-TinyV7_bl.hex
+CUAV-X25-EVO-ODID_bl.bin      FoxeerF405v2_bl.hex             MFE_AirSpeed_CAN_bl.bin       QioTekZealotF427_bl.bin         VUAV-V7pro_bl.bin
+CUAV-X25-EVO-ODID_bl.hex      FoxeerH743v1_bl.bin             MFE_PDB_CAN_bl.bin            QioTekZealotF427_bl.elf         X-MAV-AP-H743r1_bl.bin
+CUAV-X7-bdshot_bl.bin         FoxeerH743v1_bl.hex             MFE_POS3_CAN_bl.bin           QioTekZealotF427_bl.hex         X-MAV-AP-H743v2_bl.bin
+CUAV-X7_bl.bin                FreeflyRTK_bl.bin               MFT-SEMA100_bl.bin            QioTekZealotH743-bdshot_bl.bin  YARI_GNSS_bl.bin
+CUAV-X7_bl.elf                FreeflyRTK_bl.elf               MicoAir405Mini_bl.bin         QioTekZealotH743-bdshot_bl.hex  YARI_GNSS_bl.hex
+CUAV-X7_bl.hex                FreeflyRTK_bl.hex               MicoAir405Mini_bl.hex         QioTekZealotH743_bl.bin         YARIV6X_bl.bin
+CUAV-X7-ODID_bl.bin           G4-ESC_bl.bin                   MicoAir405v2_bl.bin           QioTekZealotH743_bl.hex         YJUAV_A6_bl.bin
+CUAV-X7-ODID_bl.hex           GEPRCF745BTHD_bl.bin            MicoAir405v2_bl.hex           R9Pilot_bl.bin                  YJUAV_A6SE_bl.bin
+CubeBlack+_bl.bin             GEPRCF745BTHD_bl.hex            MicoAir743-AIO_bl.bin         R9Pilot_bl.elf                  YJUAV_A6SE_H743_bl.bin
+CubeBlack_bl.bin              GEPRC_TAKER_H743_bl.bin         MicoAir743-AIO_bl.hex         R9Pilot_bl.hex                  YJUAV_A6SE_H743_bl.hex
+CubeBlack_bl.elf              GEPRC_TAKER_H743_bl.hex         MicoAir743_bl.bin             RadiolinkF405_bl.bin            YJUAV_A6Ultra_bl.bin
+CubeBlack+_bl.hex             GreenSightUltraBlue_bl.bin      MicoAir743_bl.hex             RadiolinkPIX6_bl.bin            ZeroOneX6_Air_bl.bin
+CubeBlack_bl.hex              GreenSightUltraBlue_bl.hex      MicoAir743-Lite_bl.bin        README.md                       ZeroOneX6_Air_bl.hex
+CubeGreen-solo_bl.bin         HEEWING-F405_bl.bin             MicoAir743-Lite_bl.hex        ReaperF745_bl.bin               ZeroOneX6_bl.bin
+CubeGreen-solo_bl.hex         HEEWING-F405_bl.hex             MicoAir743v2_bl.bin           ReaperF745_bl.hex               ZeroOneX6_bl.hex
+CubeNode_bl.bin               HEEWING-F405v2_bl.bin           MicoAir743v2_bl.hex           ResoluteH7_bl.bin               ZubaxGNSS_bl.bin
+CubeNode_bl.hex               HEEWING-F405v2_bl.hex           mindpx-v2_bl.bin              ResoluteH7_bl.hex               ZubaxGNSS_bl.elf
+CubeNode-ETH_bl.bin           Here4AP_bl.bin                  mindpx-v2_bl.elf              revo-mini_bl.bin                ZubaxGNSS_bl.hex
+CubeNode-ETH_bl.hex           Here4FC_bl.bin                  mindpx-v2_bl.hex              revo-mini_bl.elf
+CubeOrange-bdshot_bl.bin      Here4FC_bl.hex                  mini-pix_bl.bin               revo-mini_bl.hex
+(venv) appliedsni02@appliedsni02:~/firmware_encryption/ardupilot/Tools/bootloaders$ cd ../..
+(venv) appliedsni02@appliedsni02:~/firmware_encryption/ardupilot$ cd build
+(venv) appliedsni02@appliedsni02:~/firmware_encryption/ardupilot/build$ ls
+c4che  config.log  mini-pix
+(venv) appliedsni02@appliedsni02:~/firmware_encryption/ardupilot/build$ rm -fr mini-pix
+(venv) appliedsni02@appliedsni02:~/firmware_encryption/ardupilot/build$ ls
+c4che  config.log
+(venv) appliedsni02@appliedsni02:~/firmware_encryption/ardupilot/build$ cd ..
+(venv) appliedsni02@appliedsni02:~/firmware_encryption/ardupilot$ ls
+AGENTS.md       ArduSub     BUILD.md            docs                    libraries              mykey_public_key.dat  tasklist.json  venv-signing
+AntennaTracker  benchmarks  CODE_OF_CONDUCT.md  Doxyfile.in             Makefile               pyproject.toml        tests          waf
+ArduCopter      Blimp       COPYING.txt         --help_private_key.dat  modules                README.md             Tools          wscript
+ArduPlane       build       Dockerfile          --help_public_key.dat   mykey_private_key.dat  Rover                 Vagrantfile
+(venv) appliedsni02@appliedsni02:~/firmware_encryption/ardupilot$ ./waf configure --board mini-pix --signed-fw
+invalid lock file in /home/appliedsni02/firmware_encryption/ardupilot
+Setting top to                           : /home/appliedsni02/firmware_encryption/ardupilot 
+Setting out to                           : /home/appliedsni02/firmware_encryption/ardupilot/build 
+Autoconfiguration                        : enabled 
+Checking for program 'python'            : /home/appliedsni02/venv/bin/python3 
+Checking for python version >= 3.9.0     : 3.12.3 
+Setting board to                         : mini-pix 
+Using toolchain                          : arm-none-eabi 
+Checking for 'g++' (C++ compiler)        : /usr/lib/ccache/arm-none-eabi-g++ 
+Checking for 'gcc' (C compiler)          : /usr/lib/ccache/arm-none-eabi-gcc 
+Checking for c flags '-MMD'              : yes 
+Checking for cxx flags '-MMD'            : yes 
+Checking for program 'arm-none-eabi-nm'  : /opt/gcc-arm-none-eabi-10-2020-q4-major/bin/arm-none-eabi-nm 
+CXX Compiler                             : g++ 10.2.1 
+Checking for program 'make'              : /usr/bin/make 
+Checking for program 'arm-none-eabi-objcopy' : /opt/gcc-arm-none-eabi-10-2020-q4-major/bin/arm-none-eabi-objcopy 
+Processing /home/appliedsni02/firmware_encryption/ardupilot/libraries/AP_HAL_ChibiOS/hwdef/mini-pix/hwdef.dat
+Processing /home/appliedsni02/firmware_encryption/ardupilot/libraries/AP_HAL_ChibiOS/hwdef/include/minimize_features.inc
+Processing /home/appliedsni02/firmware_encryption/ardupilot/libraries/AP_HAL_ChibiOS/hwdef/include/minimize_common.inc
+Removing HAL_MSP_GPS_ENABLED
+Removing HAL_MSP_GPS_ENABLED
+Setup for MCU STM32F405xx
+No default parameter file found
+Writing hwdef setup in /home/appliedsni02/firmware_encryption/ardupilot/build/mini-pix/hwdef.h
+args=['AP_Baro_LPS2XH::probe', '"lps22h"']
+Writing DMA map
+Setting up as normal
+Generating ldscript.ld
+env set ENABLE_DFU_BOOT=0
+env set WITH_FATFS=1
+env set PROCESS_STACK=0x1C00
+env set MAIN_STACK=0x600
+env set IOMCU_FW=0
+env set IOMCU_FW_WITH_HEATER=0
+env set PERIPH_FW=0
+env set BOARD_FLASH_SIZE=1024
+env set EXT_FLASH_SIZE_MB=0
+env set INT_FLASH_PRIMARY=False
+env set ENABLE_CRASHDUMP=False
+env set CPU_FLAGS=['-mcpu=cortex-m4', '-mfpu=fpv4-sp-d16', '-mfloat-abi=hard', '-DARM_MATH_CM4', '-u_printf_float']
+env set CORTEX=cortex-m4
+env set APJ_BOARD_ID=3
+env set APJ_BOARD_TYPE=STM32F405xx
+env set USBID=0x1209/0x5741
+env set FLASH_RESERVE_START_KB=16
+env set EXT_FLASH_RESERVE_START_KB=0
+env set FLASH_TOTAL=1032192
+env set HAS_EXTERNAL_FLASH_SECTIONS=0
+env set ROMFS_FILES=[('bootloader.bin', '/home/appliedsni02/firmware_encryption/ardupilot/Tools/bootloaders/mini-pix_bl.bin'), ('hwdef.dat', '/home/appliedsni02/firmware_encryption/ardupilot/build/mini-pix/hw.dat')]
+env set CHIBIOS_BUILD_FLAGS=USE_FATFS=yes CHIBIOS_STARTUP_MK=os/common/startup/ARMCMx/compilers/GCC/mk/startup_stm32f4xx.mk CHIBIOS_PLATFORM_MK=os/hal/ports/STM32/STM32F4xx/platform.mk MCU=cortex-m4 ENV_UDEFS=-DCHPRINTF_USE_FLOAT=1
+Enabling ChibiOS asserts                     : no 
+Disabling Watchdog                           : no 
+Enabling malloc guard                        : no 
+Enabling ChibiOS thread statistics           : no 
+Enabling -Werror                             : yes 
+Checking for intelhex module:                : disabled 
+Enabled OpenDroneID                          : no 
+Enabled firmware ID checking                 : yes 
+GPS Debug Logging                            : no 
+Enabled custom controller                    : no 
+Checking for HAVE_CMATH_ISFINITE             : yes 
+Checking for HAVE_CMATH_ISINF                : yes 
+Checking for HAVE_CMATH_ISNAN                : yes 
+Checking for NEED_CMATH_ISFINITE_STD_NAMESPACE : yes 
+Checking for NEED_CMATH_ISINF_STD_NAMESPACE    : yes 
+Checking for NEED_CMATH_ISNAN_STD_NAMESPACE    : yes 
+Checking for header endian.h                   : not found 
+Checking for header byteswap.h                 : not found 
+Checking for HAVE_MEMRCHR                      : no 
+Configured VSCode Intellisense:                : no 
+DC_DSDL compiler in                            : /home/appliedsni02/firmware_encryption/ardupilot/modules/DroneCAN/dronecan_dsdlc 
+Source is git repository                       : yes 
+Update submodules                              : yes 
+Checking for program 'git'                     : /usr/bin/git 
+Gtest                                          : STM32 boards currently don't support compiling gtest 
+Checking for program 'arm-none-eabi-size'      : /opt/gcc-arm-none-eabi-10-2020-q4-major/bin/arm-none-eabi-size 
+Benchmarks                                     : disabled 
+Unit tests                                     : disabled 
+Scripting                                      : maybe 
+Scripting runtime checks                       : enabled 
+Debug build                                    : disabled 
+Coverage build                                 : disabled 
+Consistent build                               : disabled 
+Force 32-bit build                             : disabled 
+Checking for program 'rsync'                   : /usr/bin/rsync 
+Removing target_list file /home/appliedsni02/firmware_encryption/ardupilot/build/mini-pix/target_list
+'configure' finished successfully (3.525s)
+(venv) appliedsni02@appliedsni02:~/firmware_encryption/ardupilot$ ls
+AGENTS.md       ArduSub     BUILD.md            docs                    libraries              mykey_public_key.dat  tasklist.json  venv-signing
+AntennaTracker  benchmarks  CODE_OF_CONDUCT.md  Doxyfile.in             Makefile               pyproject.toml        tests          waf
+ArduCopter      Blimp       COPYING.txt         --help_private_key.dat  modules                README.md             Tools          wscript
+ArduPlane       build       Dockerfile          --help_public_key.dat   mykey_private_key.dat  Rover                 Vagrantfile
+(venv) appliedsni02@appliedsni02:~/firmware_encryption/ardupilot$ docker ps
+CONTAINER ID   IMAGE                                COMMAND                  CREATED      STATUS                PORTS                                                                    NAMES
+dd185ddca81d   digital-twin-backend:latest          "sh -c 'cd /app/comm…"   4 days ago   Up 4 days             0.0.0.0:5000->5000/tcp, 0.0.0.0:8001->8001/tcp, 0.0.0.0:8010->8000/tcp   backend-server
+61888015c4a5   postgres:14                          "docker-entrypoint.s…"   4 days ago   Up 4 days (healthy)   0.0.0.0:5435->5432/tcp                                                   postgres-db
+492097b42580   redis:7                              "docker-entrypoint.s…"   4 days ago   Up 4 days             0.0.0.0:6379->6379/tcp                                                   redis-server
+c2c7a960b349   digital-twin-nginx                   "/docker-entrypoint.…"   4 days ago   Up 4 days             0.0.0.0:80->80/tcp, 0.0.0.0:443->443/tcp                                 nginx-server
+b5f14f951034   digital-twin-digital-front-end       "docker-entrypoint.s…"   4 days ago   Up 4 days             0.0.0.0:3000->3000/tcp                                                   digital-twin-frontend
+9e7b9fe9daf6   digital-twin-mosquitto               "/docker-entrypoint.…"   4 days ago   Up 4 days             1883/tcp, 0.0.0.0:8883->8883/tcp                                         mosquitto-broker
+a91ae8cc1290   ghcr.io/toeverything/affine:stable   "docker-entrypoint.s…"   8 days ago   Up 8 days             0.0.0.0:3010->3010/tcp                                                   affine_server
+92ac56b4e90d   redis:7                              "docker-entrypoint.s…"   8 days ago   Up 8 days (healthy)   6379/tcp                                                                 affine_redis
+d05a857ef553   pgvector/pgvector:pg16               "docker-entrypoint.s…"   8 days ago   Up 8 days (healthy)   5432/tcp                                                                 affine_postgres
+(venv) appliedsni02@appliedsni02:~/firmware_encryption/ardupilot$ docker run -it firmwareenc:latese
+Unable to find image 'firmwareenc:latese' locally
+docker: Error response from daemon: pull access denied for firmwareenc, repository does not exist or may require 'docker login'
+
+Run 'docker run --help' for more information
+(venv) appliedsni02@appliedsni02:~/firmware_encryption/ardupilot$ ^C
+(venv) appliedsni02@appliedsni02:~/firmware_encryption/ardupilot$ docker run -it firmwareenc:latest
+root@be6c13119726:/# su flash
+(venv-ardupilot) flash@be6c13119726:/$ ls
+bin  boot  dev  etc  home  lib  lib64  media  mnt  opt  proc  root  run  sbin  srv  sys  tmp  usr  var
+(venv-ardupilot) flash@be6c13119726:/$ cd 
+(venv-ardupilot) flash@be6c13119726:~$ cd ardupilot
+(venv-ardupilot) flash@be6c13119726:~/ardupilot$ ls
+--help_private_key.dat  ArduCopter  Blimp               Doxyfile.in  Tools        docs                   mykey_public_key.dat  venv-signing
+--help_public_key.dat   ArduPlane   CODE_OF_CONDUCT.md  Makefile     Vagrantfile  libraries              pyproject.toml        waf
+AGENTS.md               ArduSub     COPYING.txt         README.md    benchmarks   modules                tasklist.json         wscript
+AntennaTracker          BUILD.md    Dockerfile          Rover        build        mykey_private_key.dat  tests
+(venv-ardupilot) flash@be6c13119726:~/ardupilot$ cd build
+(venv-ardupilot) flash@be6c13119726:~/ardupilot/build$ ls
+c4che  config.log  mini-pix
+(venv-ardupilot) flash@be6c13119726:~/ardupilot/build$ rm -fr nimi*
+(venv-ardupilot) flash@be6c13119726:~/ardupilot/build$ ls
+c4che  config.log  mini-pix
+(venv-ardupilot) flash@be6c13119726:~/ardupilot/build$ rm -fr mini*
+(venv-ardupilot) flash@be6c13119726:~/ardupilot/build$ ls
+c4che  config.log
+(venv-ardupilot) flash@be6c13119726:~/ardupilot/build$ cd ..
+(venv-ardupilot) flash@be6c13119726:~/ardupilot$ ls
+--help_private_key.dat  ArduCopter  Blimp               Doxyfile.in  Tools        docs                   mykey_public_key.dat  venv-signing
+--help_public_key.dat   ArduPlane   CODE_OF_CONDUCT.md  Makefile     Vagrantfile  libraries              pyproject.toml        waf
+AGENTS.md               ArduSub     COPYING.txt         README.md    benchmarks   modules                tasklist.json         wscript
+AntennaTracker          BUILD.md    Dockerfile          Rover        build        mykey_private_key.dat  tests
+(venv-ardupilot) flash@be6c13119726:~/ardupilot$ ./waf configure --board mini-pix --signed-fw
+Setting top to                           : /home/flash/ardupilot 
+Setting out to                           : /home/flash/ardupilot/build 
+Autoconfiguration                        : enabled 
+Checking for program 'python'            : /home/flash/venv-ardupilot/bin/python3 
+Checking for python version >= 3.9.0     : 3.14.4 
+Setting board to                         : mini-pix 
+Using toolchain                          : arm-none-eabi 
+Checking for 'g++' (C++ compiler)        : /usr/lib/ccache/arm-none-eabi-g++ 
+Checking for 'gcc' (C compiler)          : /usr/lib/ccache/arm-none-eabi-gcc 
+Checking for c flags '-MMD'              : yes 
+Checking for cxx flags '-MMD'            : yes 
+Checking for program 'arm-none-eabi-nm'  : /opt/gcc-arm-none-eabi-10-2020-q4-major/bin/arm-none-eabi-nm 
+CXX Compiler                             : g++ 10.2.1 
+Checking for program 'make'              : /usr/bin/make 
+Checking for program 'arm-none-eabi-objcopy' : /opt/gcc-arm-none-eabi-10-2020-q4-major/bin/arm-none-eabi-objcopy 
+Processing /home/flash/ardupilot/libraries/AP_HAL_ChibiOS/hwdef/mini-pix/hwdef.dat
+Processing /home/flash/ardupilot/libraries/AP_HAL_ChibiOS/hwdef/include/minimize_features.inc
+Processing /home/flash/ardupilot/libraries/AP_HAL_ChibiOS/hwdef/include/minimize_common.inc
+Removing HAL_MSP_GPS_ENABLED
+Removing HAL_MSP_GPS_ENABLED
+Setup for MCU STM32F405xx
+No default parameter file found
+Writing hwdef setup in /home/flash/ardupilot/build/mini-pix/hwdef.h
+args=['AP_Baro_LPS2XH::probe', '"lps22h"']
+Writing DMA map
+Setting up as normal
+Generating ldscript.ld
+env set ENABLE_DFU_BOOT=0
+env set WITH_FATFS=1
+env set PROCESS_STACK=0x1C00
+env set MAIN_STACK=0x600
+env set IOMCU_FW=0
+env set IOMCU_FW_WITH_HEATER=0
+env set PERIPH_FW=0
+env set BOARD_FLASH_SIZE=1024
+env set EXT_FLASH_SIZE_MB=0
+env set INT_FLASH_PRIMARY=False
+env set ENABLE_CRASHDUMP=False
+env set CPU_FLAGS=['-mcpu=cortex-m4', '-mfpu=fpv4-sp-d16', '-mfloat-abi=hard', '-DARM_MATH_CM4', '-u_printf_float']
+env set CORTEX=cortex-m4
+env set APJ_BOARD_ID=3
+env set APJ_BOARD_TYPE=STM32F405xx
+env set USBID=0x1209/0x5741
+env set FLASH_RESERVE_START_KB=16
+env set EXT_FLASH_RESERVE_START_KB=0
+env set FLASH_TOTAL=1032192
+env set HAS_EXTERNAL_FLASH_SECTIONS=0
+env set ROMFS_FILES=[('bootloader.bin', '/home/flash/ardupilot/Tools/bootloaders/mini-pix_bl.bin'), ('hwdef.dat', '/home/flash/ardupilot/build/mini-pix/hw.dat')]
+env set CHIBIOS_BUILD_FLAGS=USE_FATFS=yes CHIBIOS_STARTUP_MK=os/common/startup/ARMCMx/compilers/GCC/mk/startup_stm32f4xx.mk CHIBIOS_PLATFORM_MK=os/hal/ports/STM32/STM32F4xx/platform.mk MCU=cortex-m4 ENV_UDEFS=-DCHPRINTF_USE_FLOAT=1
+Enabling ChibiOS asserts                     : no 
+Disabling Watchdog                           : no 
+Enabling malloc guard                        : no 
+Enabling ChibiOS thread statistics           : no 
+Enabling -Werror                             : yes 
+Checking for intelhex module:                : OK 
+Enabled OpenDroneID                          : no 
+Enabled firmware ID checking                 : yes 
+GPS Debug Logging                            : no 
+Enabled custom controller                    : no 
+Checking for HAVE_CMATH_ISFINITE             : yes 
+Checking for HAVE_CMATH_ISINF                : yes 
+Checking for HAVE_CMATH_ISNAN                : yes 
+Checking for NEED_CMATH_ISFINITE_STD_NAMESPACE : yes 
+Checking for NEED_CMATH_ISINF_STD_NAMESPACE    : yes 
+Checking for NEED_CMATH_ISNAN_STD_NAMESPACE    : yes 
+Checking for header endian.h                   : not found 
+Checking for header byteswap.h                 : not found 
+Checking for HAVE_MEMRCHR                      : no 
+Configured VSCode Intellisense:                : no 
+DC_DSDL compiler in                            : /home/flash/ardupilot/modules/DroneCAN/dronecan_dsdlc 
+Source is git repository                       : yes 
+Update submodules                              : yes 
+Checking for program 'git'                     : /usr/bin/git 
+Gtest                                          : STM32 boards currently don't support compiling gtest 
+Checking for program 'arm-none-eabi-size'      : /opt/gcc-arm-none-eabi-10-2020-q4-major/bin/arm-none-eabi-size 
+Benchmarks                                     : disabled 
+Unit tests                                     : disabled 
+Scripting                                      : maybe 
+Scripting runtime checks                       : enabled 
+Debug build                                    : disabled 
+Coverage build                                 : disabled 
+Consistent build                               : disabled 
+Force 32-bit build                             : disabled 
+Checking for program 'rsync'                   : not found 
+Removing target_list file /home/flash/ardupilot/build/mini-pix/target_list
+'configure' finished successfully (3.783s)
+(venv-ardupilot) flash@be6c13119726:~/ardupilot$ waf copter
+bash: waf: command not found
+(venv-ardupilot) flash@be6c13119726:~/ardupilot$ ./waf copter
+Waf: Entering directory `/home/flash/ardupilot/build/mini-pix'
+Embedding file bootloader.bin:/home/flash/ardupilot/Tools/bootloaders/mini-pix_bl.bin
+Embedding file hwdef.dat:/home/flash/ardupilot/build/mini-pix/hw.dat
+[ 4/10] Creating build/mini-pix/modules/ChibiOS/include_dirs
+[ 5/10] Compiling libraries/AP_Scripting/generator/src/main.c
+[ 6/10] Processing mavgen: modules/mavlink/message_definitions/v1.0/all.xml modules/mavlink/pymavlink/generator/C/include_v2.0/checksum.h modules/mavlink/pymavlink/generator/C/include_v2.0/mavlink_conversions.h modules/mavlink/pymavlink/generator/C/include_v2.0/mavlink_get_info.h modules/mavlink/pymavlink/generator/C/include_v2.0/mavlink_helpers.h modules/mavlink/pymavlink/generator/C/include_v2.0/mavlink_sha256.h modules/mavlink/pymavlink/generator/C/include_v2.0/mavlink_types.h modules/mavlink/pymavlink/generator/C/include_v2.0/protocol.h modules/mavlink/pymavlink/__init__.py modules/mavlink/pymavlink/generator/__init__.py modules/mavlink/pymavlink/generator/mavcrc.py modules/mavlink/pymavlink/generator/mavgen.py modules/mavlink/pymavlink/generator/mavgen_ada.py modules/mavlink/pymavlink/generator/mavgen_c.py modules/mavlink/pymavlink/generator/mavgen_cpp11.py modules/mavlink/pymavlink/generator/mavgen_cs.py modules/mavlink/pymavlink/generator/mavgen_java.py modules/mavlink/pymavlink/generator/mavgen_javascript.py modules/mavlink/pymavlink/generator/mavgen_javascript_stable.py modules/mavlink/pymavlink/generator/mavgen_lua.py modules/mavlink/pymavlink/generator/mavgen_objc.py modules/mavlink/pymavlink/generator/mavgen_python.py modules/mavlink/pymavlink/generator/mavgen_spin2.py modules/mavlink/pymavlink/generator/mavgen_swift.py modules/mavlink/pymavlink/generator/mavgen_typescript.py modules/mavlink/pymavlink/generator/mavgen_wlua.py modules/mavlink/pymavlink/generator/mavparse.py modules/mavlink/pymavlink/generator/mavtemplate.py                                                                                                              
+[ 7/10] Creating build/mini-pix/ap_version.h
+[ 8/10] Creating build/mini-pix/chibios_flags.h
+Validation skipped for /home/flash/ardupilot/modules/mavlink/message_definitions/v1.0/all.xml.
+Parsing /home/flash/ardupilot/modules/mavlink/message_definitions/v1.0/all.xml
+Validation skipped for /home/flash/ardupilot/modules/mavlink/message_definitions/v1.0/ardupilotmega.xml.
+Parsing /home/flash/ardupilot/modules/mavlink/message_definitions/v1.0/ardupilotmega.xml
+Validation skipped for /home/flash/ardupilot/modules/mavlink/message_definitions/v1.0/ASLUAV.xml.
+Parsing /home/flash/ardupilot/modules/mavlink/message_definitions/v1.0/ASLUAV.xml
+Validation skipped for /home/flash/ardupilot/modules/mavlink/message_definitions/v1.0/common.xml.
+Parsing /home/flash/ardupilot/modules/mavlink/message_definitions/v1.0/common.xml
+CAMERA_TRACKING_STATUS_FLAGS_IDLE has invalid values (bitmask must have powers of 2)
+Validation skipped for /home/flash/ardupilot/modules/mavlink/message_definitions/v1.0/development.xml.
+Parsing /home/flash/ardupilot/modules/mavlink/message_definitions/v1.0/development.xml
+Validation skipped for /home/flash/ardupilot/modules/mavlink/message_definitions/v1.0/icarous.xml.
+Parsing /home/flash/ardupilot/modules/mavlink/message_definitions/v1.0/icarous.xml
+Validation skipped for /home/flash/ardupilot/modules/mavlink/message_definitions/v1.0/minimal.xml.
+Parsing /home/flash/ardupilot/modules/mavlink/message_definitions/v1.0/minimal.xml
+Validation skipped for /home/flash/ardupilot/modules/mavlink/message_definitions/v1.0/python_array_test.xml.
+Parsing /home/flash/ardupilot/modules/mavlink/message_definitions/v1.0/python_array_test.xml
+Validation skipped for /home/flash/ardupilot/modules/mavlink/message_definitions/v1.0/standard.xml.
+Parsing /home/flash/ardupilot/modules/mavlink/message_definitions/v1.0/standard.xml
+MAV_BOOL_FALSE has invalid values (bitmask must have powers of 2)
+Validation skipped for /home/flash/ardupilot/modules/mavlink/message_definitions/v1.0/test.xml.
+Parsing /home/flash/ardupilot/modules/mavlink/message_definitions/v1.0/test.xml
+Validation skipped for /home/flash/ardupilot/modules/mavlink/message_definitions/v1.0/ualberta.xml.
+Parsing /home/flash/ardupilot/modules/mavlink/message_definitions/v1.0/ualberta.xml
+Validation skipped for /home/flash/ardupilot/modules/mavlink/message_definitions/v1.0/uAvionix.xml.
+Parsing /home/flash/ardupilot/modules/mavlink/message_definitions/v1.0/uAvionix.xml
+Validation skipped for /home/flash/ardupilot/modules/mavlink/message_definitions/v1.0/loweheiser.xml.
+Parsing /home/flash/ardupilot/modules/mavlink/message_definitions/v1.0/loweheiser.xml
+Validation skipped for /home/flash/ardupilot/modules/mavlink/message_definitions/v1.0/storm32.xml.
+Parsing /home/flash/ardupilot/modules/mavlink/message_definitions/v1.0/storm32.xml
+Validation skipped for /home/flash/ardupilot/modules/mavlink/message_definitions/v1.0/AVSSUAS.xml.
+Parsing /home/flash/ardupilot/modules/mavlink/message_definitions/v1.0/AVSSUAS.xml
+Validation skipped for /home/flash/ardupilot/modules/mavlink/message_definitions/v1.0/cubepilot.xml.
+Parsing /home/flash/ardupilot/modules/mavlink/message_definitions/v1.0/cubepilot.xml
+Validation skipped for /home/flash/ardupilot/modules/mavlink/message_definitions/v1.0/csAirLink.xml.
+Parsing /home/flash/ardupilot/modules/mavlink/message_definitions/v1.0/csAirLink.xml
+Merged enum MAV_CMD
+Merged enum MAV_CMD
+Merged enum MAV_CMD
+Merged enum MAV_CMD
+Merged enum MAV_CMD
+Merged enum MAV_CMD
+Found 351 MAVLink message types in 17 XML files
+Generating C implementation in directory /home/flash/ardupilot/build/mini-pix/libraries/GCS_MAVLink/include/mavlink/v2.0/all
+Generating C implementation in directory /home/flash/ardupilot/build/mini-pix/libraries/GCS_MAVLink/include/mavlink/v2.0/ardupilotmega
+Generating C implementation in directory /home/flash/ardupilot/build/mini-pix/libraries/GCS_MAVLink/include/mavlink/v2.0/ASLUAV
+Generating C implementation in directory /home/flash/ardupilot/build/mini-pix/libraries/GCS_MAVLink/include/mavlink/v2.0/common
+Generating C implementation in directory /home/flash/ardupilot/build/mini-pix/libraries/GCS_MAVLink/include/mavlink/v2.0/development
+Generating C implementation in directory /home/flash/ardupilot/build/mini-pix/libraries/GCS_MAVLink/include/mavlink/v2.0/icarous
+Generating C implementation in directory /home/flash/ardupilot/build/mini-pix/libraries/GCS_MAVLink/include/mavlink/v2.0/minimal
+Generating C implementation in directory /home/flash/ardupilot/build/mini-pix/libraries/GCS_MAVLink/include/mavlink/v2.0/python_array_test
+Generating C implementation in directory /home/flash/ardupilot/build/mini-pix/libraries/GCS_MAVLink/include/mavlink/v2.0/standard
+Generating C implementation in directory /home/flash/ardupilot/build/mini-pix/libraries/GCS_MAVLink/include/mavlink/v2.0/test
+Generating C implementation in directory /home/flash/ardupilot/build/mini-pix/libraries/GCS_MAVLink/include/mavlink/v2.0/ualberta
+Generating C implementation in directory /home/flash/ardupilot/build/mini-pix/libraries/GCS_MAVLink/include/mavlink/v2.0/uAvionix
+Generating C implementation in directory /home/flash/ardupilot/build/mini-pix/libraries/GCS_MAVLink/include/mavlink/v2.0/loweheiser
+Generating C implementation in directory /home/flash/ardupilot/build/mini-pix/libraries/GCS_MAVLink/include/mavlink/v2.0/storm32
+Generating C implementation in directory /home/flash/ardupilot/build/mini-pix/libraries/GCS_MAVLink/include/mavlink/v2.0/AVSSUAS
+Generating C implementation in directory /home/flash/ardupilot/build/mini-pix/libraries/GCS_MAVLink/include/mavlink/v2.0/cubepilot
+Generating C implementation in directory /home/flash/ardupilot/build/mini-pix/libraries/GCS_MAVLink/include/mavlink/v2.0/csAirLink
+Copying fixed headers for protocol 2.0 to /home/flash/ardupilot/build/mini-pix/libraries/GCS_MAVLink/include/mavlink/v2.0
+[ 9/10] Linking build/mini-pix/modules/ChibiOS/libch.a
+[10/10] Processing /home/flash/ardupilot/build/mini-pix/libraries/AP_Scripting/lua_generated_bindings.cpp,/home/flash/ardupilot/build/mini-pix/libraries/AP_Scripting/lua_generated_bindings.h: libraries/AP_Scripting/generator/description/bindings.desc build/mini-pix/gen-bindings -> build/mini-pix/libraries/AP_Scripting/lua_generated_bindings.cpp build/mini-pix/libraries/AP_Scripting/lua_generated_bindings.h                                                                                            
+[1/112] ChibiOS: Compiling crt0_v7m.S
+[2/112] ChibiOS: Compiling vectors.S
+[3/112] ChibiOS: Compiling chcoreasm.S
+[4/112] ChibiOS: Compiling ff.c
+[5/112] ChibiOS: Compiling ffunicode.c
+[6/112] ChibiOS: Compiling chcore.c
+[7/112] ChibiOS: Compiling crt1.c
+[8/112] ChibiOS: Compiling bufstreams.c
+[9/112] ChibiOS: Compiling chprintf.c
+[10/112] ChibiOS: Compiling chscanf.c
+[11/112] ChibiOS: Compiling memstreams.c
+[12/112] ChibiOS: Compiling nullstreams.c
+[13/112] ChibiOS: Compiling osal.c
+[14/112] ChibiOS: Compiling hal_adc_lld.c
+[15/112] ChibiOS: Compiling hal_can_lld.c
+[16/112] ChibiOS: Compiling hal_crypto_lld.c
+[17/112] ChibiOS: Compiling hal_dac_lld.c
+[18/112] ChibiOS: Compiling stm32_dma.c
+[19/112] ChibiOS: Compiling stm32_exti.c
+[20/112] ChibiOS: Compiling hal_pal_lld.c
+[21/112] ChibiOS: Compiling hal_i2c_lld.c
+[22/112] ChibiOS: Compiling hal_mac_lld.c
+[23/112] ChibiOS: Compiling hal_usb_lld.c
+[24/112] ChibiOS: Compiling hal_wspi_lld.c
+[25/112] ChibiOS: Compiling hal_rtc_lld.c
+[26/112] ChibiOS: Compiling hal_sdc_lld.c
+[27/112] ChibiOS: Compiling hal_i2s_lld.c
+[28/112] ChibiOS: Compiling hal_spi_lld.c
+[29/112] ChibiOS: Compiling hal_st_lld.c
+[30/112] ChibiOS: Compiling hal_eicu_lld.c
+[31/112] ChibiOS: Compiling hal_gpt_lld.c
+[32/112] ChibiOS: Compiling hal_icu_lld.c
+[33/112] ChibiOS: Compiling hal_pwm_lld.c
+[34/112] ChibiOS: Compiling hal_serial_lld.c
+[35/112] ChibiOS: Compiling hal_uart_lld.c
+[36/112] ChibiOS: Compiling hal_wdg_lld.c
+[37/112] ChibiOS: Compiling hal_efl_lld.c
+[38/112] ChibiOS: Compiling hal_lld.c
+[39/112] ChibiOS: Compiling stm32_isr.c
+[40/112] ChibiOS: Compiling nvic.c
+[41/112] ChibiOS: Compiling hal.c
+[42/112] ChibiOS: Compiling hal_adc.c
+[43/112] ChibiOS: Compiling hal_buffers.c
+[44/112] ChibiOS: Compiling hal_can.c
+[45/112] ChibiOS: Compiling hal_crypto.c
+[46/112] ChibiOS: Compiling hal_dac.c
+[47/112] ChibiOS: Compiling hal_efl.c
+[48/112] ChibiOS: Compiling hal_eicu.c
+[49/112] ChibiOS: Compiling hal_flash.c
+[50/112] ChibiOS: Compiling hal_gpt.c
+[51/112] ChibiOS: Compiling hal_i2c.c
+[52/112] ChibiOS: Compiling hal_i2s.c
+[53/112] ChibiOS: Compiling hal_icu.c
+[54/112] ChibiOS: Compiling hal_mac.c
+[55/112] ChibiOS: Compiling hal_mmc_spi.c
+[56/112] ChibiOS: Compiling hal_mmcsd.c
+[57/112] ChibiOS: Compiling hal_pal.c
+[58/112] ChibiOS: Compiling hal_pwm.c
+[59/112] ChibiOS: Compiling hal_queues.c
+[60/112] ChibiOS: Compiling hal_rtc.c
+[61/112] ChibiOS: Compiling hal_safety.c
+[62/112] ChibiOS: Compiling hal_sdc.c
+[63/112] ChibiOS: Compiling hal_serial.c
+[64/112] ChibiOS: Compiling hal_serial_usb.c
+[65/112] ChibiOS: Compiling hal_sio.c
+[66/112] ChibiOS: Compiling hal_spi.c
+[67/112] ChibiOS: Compiling hal_st.c
+[68/112] ChibiOS: Compiling hal_trng.c
+[69/112] ChibiOS: Compiling hal_uart.c
+[70/112] ChibiOS: Compiling hal_usb.c
+[71/112] ChibiOS: Compiling hal_wdg.c
+[72/112] ChibiOS: Compiling hal_wspi.c
+[73/112] ChibiOS: Compiling chdelegates.c
+[74/112] ChibiOS: Compiling chfactory.c
+[75/112] ChibiOS: Compiling chmboxes.c
+[76/112] ChibiOS: Compiling chmemcore.c
+[77/112] ChibiOS: Compiling chmemheaps.c
+[78/112] ChibiOS: Compiling chmempools.c
+[79/112] ChibiOS: Compiling chobjcaches.c
+[80/112] ChibiOS: Compiling chpipes.c
+[81/112] ChibiOS: Compiling chcond.c
+[82/112] ChibiOS: Compiling chdebug.c
+[83/112] ChibiOS: Compiling chdynamic.c
+[84/112] ChibiOS: Compiling chevents.c
+[85/112] ChibiOS: Compiling chinstances.c
+[86/112] ChibiOS: Compiling chmsg.c
+[87/112] ChibiOS: Compiling chmtx.c
+[88/112] ChibiOS: Compiling chregistry.c
+[89/112] ChibiOS: Compiling chrfcu.c
+[90/112] ChibiOS: Compiling chschd.c
+[91/112] ChibiOS: Compiling chsem.c
+[92/112] ChibiOS: Compiling chstats.c
+[93/112] ChibiOS: Compiling chsys.c
+[94/112] ChibiOS: Compiling chthreads.c
+[95/112] ChibiOS: Compiling chtm.c
+[96/112] ChibiOS: Compiling chtrace.c
+[97/112] ChibiOS: Compiling chvt.c
+[98/112] ChibiOS: Compiling fatfs_diskio.c
+[99/112] ChibiOS: Compiling fatfs_syscall.c
+[100/112] ChibiOS: Compiling stubs.c
+[101/112] ChibiOS: Compiling board.c
+[102/112] ChibiOS: Compiling usbcfg.c
+[103/112] ChibiOS: Compiling usbcfg_dualcdc.c
+[104/112] ChibiOS: Compiling usbcfg_common.c
+[105/112] ChibiOS: Compiling flash.c
+[106/112] ChibiOS: Compiling malloc.c
+[107/112] ChibiOS: Compiling hrt.c
+[108/112] ChibiOS: Compiling stm32_util.c
+[109/112] ChibiOS: Compiling bouncebuffer.c
+[110/112] ChibiOS: Compiling watchdog.c
+[111/112] ChibiOS: Compiling sysperf.c
+[112/112] ChibiOS: Compiling ch.cpp
+
+ChibiOS: Done!
+
+arm-none-eabi-ar: creating modules/ChibiOS/libch.a
+
+No target_list file found, creating
+Generating compile_commands.json
+Build commands will be stored in build/mini-pix/compile_commands.json
+Generating compile_commands.json
+Build commands will be stored in build/mini-pix/compile_commands.json
+[  11/1050] Compiling libraries/AC_AttitudeControl/AC_CommandModel.cpp
+[  12/1050] Compiling libraries/AC_AttitudeControl/AC_AttitudeControl_Multi.cpp
+[  13/1050] Compiling libraries/AC_AttitudeControl/AC_AttitudeControl_Heli.cpp
+[  14/1050] Compiling libraries/AC_AttitudeControl/AC_AttitudeControl_TS.cpp
+[  15/1050] Compiling libraries/AC_AttitudeControl/AC_AttitudeControl_Sub.cpp
+[  16/1050] Compiling libraries/AC_AttitudeControl/AC_AttitudeControl_Logging.cpp
+[  17/1050] Compiling libraries/AC_AttitudeControl/AC_PosControl_Logging.cpp
+[  18/1050] Compiling libraries/AC_AttitudeControl/AC_AttitudeControl_Multi_6DoF.cpp
+[  19/1050] Compiling libraries/AC_AutoTune/AC_AutoTune_Heli.cpp
+[  20/1050] Compiling libraries/AC_AutoTune/AC_AutoTune_FreqResp.cpp
+[  21/1050] Compiling libraries/AC_Autorotation/RSC_Autorotation.cpp
+[  22/1050] Compiling libraries/AC_Autorotation/AC_Autorotation.cpp
+[  23/1050] Compiling libraries/AC_Avoidance/AP_OAPathPlanner.cpp
+[  24/1050] Compiling libraries/AC_Avoidance/AC_Avoidance_Logging.cpp
+[  25/1050] Compiling libraries/AC_Avoidance/AP_OADijkstra.cpp
+[  26/1050] Compiling libraries/AC_Avoidance/AP_OAVisGraph.cpp
+[  27/1050] Compiling libraries/AC_InputManager/AC_InputManager.cpp
+[  28/1050] Compiling libraries/AC_InputManager/AC_InputManager_Heli.cpp
+[  29/1050] Compiling libraries/AC_PID/AC_P_2D.cpp
+[  30/1050] Compiling libraries/AC_PID/AC_HELI_PID.cpp
+[  31/1050] Compiling libraries/AC_PID/AC_P.cpp
+[  32/1050] Compiling libraries/AC_PID/AC_PI.cpp
+[  33/1050] Compiling libraries/AC_PID/AC_PID.cpp
+[  34/1050] Compiling libraries/AC_PID/AC_PID_2D.cpp
+[  35/1050] Compiling libraries/AC_PID/AC_PID_Basic.cpp
+[  36/1050] Compiling libraries/AC_PID/AC_PI_2D.cpp
+[  37/1050] Compiling libraries/AC_PID/AC_P_1D.cpp
+[  38/1050] Compiling libraries/AC_PrecLand/AC_PrecLand_StateMachine.cpp
+[  39/1050] Compiling libraries/AC_PrecLand/PosVelEKF.cpp
+[  40/1050] Compiling libraries/AC_PrecLand/AC_PrecLand_IRLock.cpp
+[  41/1050] Compiling libraries/AC_PrecLand/AC_PrecLand_MAVLink.cpp
+[  42/1050] Compiling libraries/AC_PrecLand/AC_PrecLand_SITL.cpp
+[  43/1050] Compiling libraries/AC_PrecLand/AC_PrecLand_SITL_Gazebo.cpp
+[  44/1050] Compiling libraries/AC_Sprayer/AC_Sprayer.cpp
+[  45/1050] Compiling libraries/AC_WPNav/AC_WPNav_OA.cpp
+[  46/1050] Compiling libraries/AP_ADC/AP_ADC_ADS1115.cpp
+[  47/1050] Compiling libraries/AP_ADSB/AP_ADSB_Backend.cpp
+[  48/1050] Compiling libraries/AP_ADSB/AP_ADSB_Sagetech.cpp
+[  49/1050] Compiling libraries/AP_ADSB/AP_ADSB_uAvionix_MAVLink.cpp
+[  50/1050] Compiling libraries/AP_ADSB/AP_ADSB_uAvionix_UCP.cpp
+[  51/1050] Compiling libraries/AP_AHRS/AP_AHRS_NavEKF3.cpp
+[  52/1050] Compiling libraries/AP_AHRS/AP_AHRS_SIM.cpp
+[  53/1050] Compiling libraries/AP_AHRS/AP_AHRS_View.cpp
+[  54/1050] Compiling libraries/AP_AHRS/AP_AHRS_External.cpp
+[  55/1050] Compiling libraries/AP_AHRS/AP_AHRS_Logging.cpp
+[  56/1050] Compiling libraries/AP_AHRS/AP_AHRS_NavEKF2.cpp
+[  57/1050] Compiling libraries/AP_AIS/AP_AIS_Vessel.cpp
+[  58/1050] Compiling libraries/AP_AccelCal/AP_AccelCal.cpp
+[  59/1050] Compiling libraries/AP_AccelCal/AccelCalibrator.cpp
+[  60/1050] Compiling libraries/AP_AdvancedFailsafe/AP_AdvancedFailsafe.cpp
+[  61/1050] Compiling libraries/AP_Airspeed/Airspeed_Calibration.cpp
+[  62/1050] Compiling libraries/AP_Airspeed/AP_Airspeed_DroneCAN.cpp
+[  63/1050] Compiling libraries/AP_Airspeed/AP_Airspeed_External.cpp
+[  64/1050] Compiling libraries/AP_Airspeed/AP_Airspeed_AUAV.cpp
+[  65/1050] Compiling libraries/AP_Airspeed/AP_Airspeed_Health.cpp
+[  66/1050] Compiling libraries/AP_Airspeed/AP_Airspeed_MS4525.cpp
+[  67/1050] Compiling libraries/AP_Airspeed/AP_Airspeed_ASP5033.cpp
+[  68/1050] Compiling libraries/AP_Airspeed/AP_Airspeed_DLVR.cpp
+[  69/1050] Compiling libraries/AP_Airspeed/AP_Airspeed_MS5525.cpp
+[  70/1050] Compiling libraries/AP_Airspeed/AP_Airspeed_MSP.cpp
+[  71/1050] Compiling libraries/AP_Airspeed/AP_Airspeed_SDP3X.cpp
+[  72/1050] Compiling libraries/AP_Airspeed/AP_Airspeed_SITL.cpp
+[  73/1050] Compiling libraries/AP_Airspeed/AP_Airspeed_Backend.cpp
+[  74/1050] Compiling libraries/AP_Airspeed/AP_Airspeed_analog.cpp
+[  75/1050] Compiling libraries/AP_Baro/AP_Baro_AUAV.cpp
+[  76/1050] Compiling libraries/AP_Baro/AP_Baro_BMP581.cpp
+[  77/1050] Compiling libraries/AP_Baro/AP_Baro_DPS280.cpp
+[  78/1050] Compiling libraries/AP_Baro/AP_Baro_SPL06.cpp
+[  79/1050] Compiling libraries/AP_Baro/AP_Baro_atmosphere.cpp
+[  80/1050] Compiling libraries/AP_Baro/AP_Baro_BMP388.cpp
+[  81/1050] Compiling libraries/AP_Baro/AP_Baro_BMP085.cpp
+[  82/1050] Compiling libraries/AP_Baro/AP_Baro_MS5611.cpp
+[  83/1050] Compiling libraries/AP_Baro/AP_Baro_MSP.cpp
+[  84/1050] Compiling libraries/AP_Baro/AP_Baro_BMP280.cpp
+[  85/1050] Compiling libraries/AP_Baro/AP_Baro_Wind.cpp
+[  86/1050] Compiling libraries/AP_Baro/AP_Baro_FBM320.cpp
+[  87/1050] Compiling libraries/AP_Baro/AP_Baro_DroneCAN.cpp
+[  88/1050] Compiling libraries/AP_Baro/AP_Baro_Logging.cpp
+[  89/1050] Compiling libraries/AP_Baro/AP_Baro_ICM20789.cpp
+[  90/1050] Compiling libraries/AP_Baro/AP_Baro_ICP201XX.cpp
+[  91/1050] Compiling libraries/AP_Baro/AP_Baro_KellerLD.cpp
+[  92/1050] Compiling libraries/AP_Baro/AP_Baro_Dummy.cpp
+[  93/1050] Compiling libraries/AP_Baro/AP_Baro_LPS2XH.cpp
+[  94/1050] Compiling libraries/AP_Baro/AP_Baro_ICP101XX.cpp
+[  95/1050] Compiling libraries/AP_Baro/AP_Baro_ExternalAHRS.cpp
+[  96/1050] Compiling libraries/AP_Baro/AP_Baro_HIL.cpp
+[  97/1050] Compiling libraries/AP_BattMonitor/AP_BattMonitor_Sum.cpp
+[  98/1050] Compiling libraries/AP_BattMonitor/AP_BattMonitor_Backend.cpp
+[  99/1050] Compiling libraries/AP_BattMonitor/AP_BattMonitor_SMBus.cpp
+[ 100/1050] Compiling libraries/AP_BattMonitor/AP_BattMonitor_Torqeedo.cpp
+[ 101/1050] Compiling libraries/AP_BattMonitor/AP_BattMonitor_AD7091R5.cpp
+[ 102/1050] Compiling libraries/AP_BattMonitor/AP_BattMonitor_Analog.cpp
+[ 103/1050] Compiling libraries/AP_BattMonitor/AP_BattMonitor_Synthetic_Current.cpp
+[ 104/1050] Compiling libraries/AP_BattMonitor/AP_BattMonitor_Bebop.cpp
+[ 105/1050] Compiling libraries/AP_BattMonitor/AP_BattMonitor_SMBus_Rotoye.cpp
+[ 106/1050] Compiling libraries/AP_BattMonitor/AP_BattMonitor_DroneCAN.cpp
+[ 107/1050] Compiling libraries/AP_BattMonitor/AP_BattMonitor_SMBus_NeoDesign.cpp
+[ 108/1050] Compiling libraries/AP_BattMonitor/AP_BattMonitor_Logging.cpp
+[ 109/1050] Compiling libraries/AP_BattMonitor/AP_BattMonitor_FuelFlow.cpp
+[ 110/1050] Compiling libraries/AP_BattMonitor/AP_BattMonitor_SMBus_Generic.cpp
+[ 111/1050] Compiling libraries/AP_BattMonitor/AP_BattMonitor_INA3221.cpp
+[ 112/1050] Compiling libraries/AP_BattMonitor/AP_BattMonitor_INA239.cpp
+[ 113/1050] Compiling libraries/AP_BattMonitor/AP_BattMonitor_INA2xx.cpp
+[ 114/1050] Compiling libraries/AP_BattMonitor/AP_BattMonitor_FuelLevel_PWM.cpp
+[ 115/1050] Compiling libraries/AP_BattMonitor/AP_BattMonitor_FuelLevel_Analog.cpp
+[ 116/1050] Compiling libraries/AP_BattMonitor/AP_BattMonitor_LTC2946.cpp
+[ 117/1050] Compiling libraries/AP_BattMonitor/AP_BattMonitor_TIBQ76952.cpp
+[ 118/1050] Compiling libraries/AP_BattMonitor/AP_BattMonitor_EFI.cpp
+[ 119/1050] Compiling libraries/AP_BattMonitor/AP_BattMonitor_Generator.cpp
+[ 120/1050] Compiling libraries/AP_BattMonitor/AP_BattMonitor_SMBus_Solo.cpp
+[ 121/1050] Compiling libraries/AP_BattMonitor/AP_BattMonitor_ESC.cpp
+[ 122/1050] Compiling libraries/AP_BattMonitor/AP_BattMonitor_Scripting.cpp
+[ 123/1050] Compiling libraries/AP_BattMonitor/AP_BattMonitor_SMBus_SUI.cpp
+[ 124/1050] Compiling libraries/AP_Beacon/AP_Beacon_Pozyx.cpp
+[ 125/1050] Compiling libraries/AP_Beacon/AP_Beacon_SITL.cpp
+[ 126/1050] Compiling libraries/AP_Beacon/AP_Beacon_Nooploop.cpp
+[ 127/1050] Compiling libraries/AP_Beacon/AP_Beacon_Marvelmind.cpp
+[ 128/1050] Compiling libraries/AP_Beacon/AP_Beacon_Backend.cpp
+[ 129/1050] Compiling libraries/AP_Beacon/AP_Beacon.cpp
+[ 130/1050] Compiling libraries/AP_BoardConfig/IMU_heater.cpp
+[ 131/1050] Compiling libraries/AP_BoardConfig/board_drivers.cpp
+[ 132/1050] Compiling libraries/AP_Button/AP_Button.cpp
+[ 133/1050] Compiling libraries/AP_Camera/AP_Camera_Params.cpp
+[ 134/1050] Compiling libraries/AP_Camera/AP_Camera_Relay.cpp
+[ 135/1050] Compiling libraries/AP_Camera/AP_Camera_Mount.cpp
+[ 136/1050] Compiling libraries/AP_Camera/AP_Camera_MAVLinkCamV2.cpp
+[ 137/1050] Compiling libraries/AP_Camera/AP_Camera_Logging.cpp
+[ 138/1050] Compiling libraries/AP_Camera/AP_Camera_Scripting.cpp
+[ 139/1050] Compiling libraries/AP_Camera/AP_Camera_MAVLink.cpp
+[ 140/1050] Compiling libraries/AP_Camera/AP_Camera_Backend.cpp
+[ 141/1050] Compiling libraries/AP_Camera/AP_Camera_Servo.cpp
+[ 142/1050] Compiling libraries/AP_Camera/AP_Camera.cpp
+[ 143/1050] Compiling libraries/AP_Camera/AP_Camera_SoloGimbal.cpp
+[ 144/1050] Compiling libraries/AP_Camera/AP_RunCam.cpp
+[ 145/1050] Compiling libraries/AP_CheckFirmware/monocypher.cpp
+[ 146/1050] Compiling libraries/AP_CheckFirmware/AP_CheckFirmware.cpp
+[ 147/1050] Compiling libraries/AP_CheckFirmware/AP_CheckFirmware_secure_command.cpp
+[ 148/1050] Compiling libraries/AP_Common/float16.cpp
+[ 149/1050] Compiling libraries/AP_Common/sorting.cpp
+[ 150/1050] Compiling libraries/AP_Common/Location.cpp
+[ 151/1050] Compiling libraries/AP_Common/time.cpp
+[ 152/1050] Compiling libraries/AP_Common/c++.cpp
+[ 153/1050] Compiling libraries/AP_Common/AP_ExpandingArray.cpp
+[ 154/1050] Compiling libraries/AP_Common/AP_FWVersion.cpp
+[ 155/1050] Compiling libraries/AP_Common/AP_Common.cpp
+[ 156/1050] Compiling libraries/AP_Common/ExpandingString.cpp
+[ 157/1050] Compiling libraries/AP_Common/NMEA.cpp
+[ 158/1050] Compiling libraries/AP_Compass/AP_Compass_IST8310.cpp
+[ 159/1050] Compiling libraries/AP_Compass/AP_Compass_Calibration.cpp
+[ 160/1050] Compiling libraries/AP_Compass/AP_Compass_IIS2MDC.cpp
+[ 161/1050] Compiling libraries/AP_Compass/AP_Compass_LIS3MDL.cpp
+[ 162/1050] Compiling libraries/AP_Compass/AP_Compass_LSM303D.cpp
+[ 163/1050] Compiling libraries/AP_Compass/AP_Compass_ExternalAHRS.cpp
+[ 164/1050] Compiling libraries/AP_Compass/AP_Compass_MAG3110.cpp
+[ 165/1050] Compiling libraries/AP_Compass/AP_Compass_HMC5843.cpp
+[ 166/1050] Compiling libraries/AP_Compass/AP_Compass_LSM9DS1.cpp
+[ 167/1050] Compiling libraries/AP_Compass/AP_Compass_QMC5883P.cpp
+[ 168/1050] Compiling libraries/AP_Compass/AP_Compass_BMM350.cpp
+[ 169/1050] Compiling libraries/AP_Compass/AP_Compass_IST8308.cpp
+[ 170/1050] Compiling libraries/AP_Compass/AP_Compass.cpp
+[ 171/1050] Compiling libraries/AP_Compass/AP_Compass_AK8963.cpp
+[ 172/1050] Compiling libraries/AP_Compass/AP_Compass_BMM150.cpp
+[ 173/1050] Compiling libraries/AP_Compass/CompassCalibrator.cpp
+[ 174/1050] Compiling libraries/AP_Compass/AP_Compass_Logging.cpp
+[ 175/1050] Compiling libraries/AP_Compass/Compass_PerMotor.cpp
+[ 176/1050] Compiling libraries/AP_Compass/Compass_learn.cpp
+[ 177/1050] Compiling libraries/AP_Compass/AP_Compass_MSP.cpp
+[ 178/1050] Compiling libraries/AP_Compass/AP_Compass_Backend.cpp
+[ 179/1050] Compiling libraries/AP_Compass/AP_Compass_QMC5883L.cpp
+[ 180/1050] Compiling libraries/AP_Compass/AP_Compass_RM3100.cpp
+[ 181/1050] Compiling libraries/AP_Compass/AP_Compass_DroneCAN.cpp
+[ 182/1050] Compiling libraries/AP_Compass/AP_Compass_SITL.cpp
+[ 183/1050] Compiling libraries/AP_Compass/AP_Compass_MMC5xx3.cpp
+[ 184/1050] Compiling libraries/AP_Compass/AP_Compass_MMC3416.cpp
+[ 185/1050] Compiling libraries/AP_Compass/AP_Compass_AK09916.cpp
+[ 186/1050] Compiling libraries/AP_CustomRotations/AP_CustomRotations.cpp
+[ 187/1050] Compiling libraries/AP_CustomRotations/AP_CustomRotations_params.cpp
+[ 188/1050] Compiling libraries/AP_DAL/AP_DAL_Airspeed.cpp
+[ 189/1050] Compiling libraries/AP_DAL/AP_DAL_Compass.cpp
+[ 190/1050] Compiling libraries/AP_DAL/AP_DAL_Baro.cpp
+[ 191/1050] Compiling libraries/AP_DAL/AP_DAL_GPS.cpp
+[ 192/1050] Compiling libraries/AP_DAL/AP_DAL_InertialSensor.cpp
+[ 193/1050] Compiling libraries/AP_DDS/AP_DDS_ExternalControl.cpp
+[ 194/1050] Compiling libraries/AP_DDS/AP_DDS_Type_Conversions.cpp
+[ 195/1050] Compiling libraries/AP_DDS/AP_DDS_UDP.cpp
+[ 196/1050] Compiling libraries/AP_DDS/AP_DDS_Serial.cpp
+[ 197/1050] Compiling libraries/AP_DDS/AP_DDS_External_Odom.cpp
+[ 198/1050] Compiling libraries/AP_DDS/AP_DDS_Client.cpp
+[ 199/1050] Compiling libraries/AP_Declination/AP_Declination.cpp
+[ 200/1050] Compiling libraries/AP_Declination/tables.cpp
+[ 201/1050] Compiling libraries/AP_Devo_Telem/AP_Devo_Telem.cpp
+[ 202/1050] Compiling libraries/AP_EFI/AP_EFI_ThrottleLinearisation.cpp
+[ 203/1050] Compiling libraries/AP_EFI/AP_EFI_Loweheiser.cpp
+[ 204/1050] Compiling libraries/AP_EFI/AP_EFI_Serial_MS.cpp
+[ 205/1050] Compiling libraries/AP_EFI/AP_EFI_Serial_Hirth.cpp
+[ 206/1050] Compiling libraries/AP_EFI/AP_EFI_Serial_Lutan.cpp
+[ 207/1050] Compiling libraries/AP_EFI/AP_EFI_Scripting.cpp
+[ 208/1050] Compiling libraries/AP_EFI/AP_EFI_Currawong_ECU.cpp
+[ 209/1050] Compiling libraries/AP_EFI/AP_EFI_DroneCAN.cpp
+[ 210/1050] Compiling libraries/AP_EFI/AP_EFI_NWPMU.cpp
+[ 211/1050] Compiling libraries/AP_EFI/AP_EFI_Backend.cpp
+[ 212/1050] Compiling libraries/AP_EFI/AP_EFI.cpp
+[ 213/1050] Compiling libraries/AP_EFI/AP_EFI_MAV.cpp
+[ 214/1050] Compiling libraries/AP_ESC_Telem/AP_ESC_Telem_SITL.cpp
+[ 215/1050] Compiling libraries/AP_ESC_Telem/AP_ESC_Telem.cpp
+[ 216/1050] Compiling libraries/AP_ExternalAHRS/AP_ExternalAHRS_backend.cpp
+[ 217/1050] Compiling libraries/AP_ExternalAHRS/MicroStrain_common.cpp
+[ 218/1050] Compiling libraries/AP_ExternalAHRS/AP_ExternalAHRS_SensAItion.cpp
+[ 219/1050] Compiling libraries/AP_ExternalAHRS/AP_ExternalAHRS_MicroStrain7.cpp
+[ 220/1050] Compiling libraries/AP_ExternalAHRS/AP_ExternalAHRS_SensAItion_Parser.cpp
+[ 221/1050] Compiling libraries/AP_ExternalAHRS/AP_ExternalAHRS_VectorNav.cpp
+[ 222/1050] Compiling libraries/AP_ExternalAHRS/AP_ExternalAHRS_MicroStrain5.cpp
+[ 223/1050] Compiling libraries/AP_ExternalAHRS/AP_ExternalAHRS.cpp
+[ 224/1050] Compiling libraries/AP_ExternalAHRS/AP_ExternalAHRS_GSOF.cpp
+[ 225/1050] Compiling libraries/AP_ExternalControl/AP_ExternalControl.cpp
+[ 226/1050] Compiling libraries/AP_FETtecOneWire/AP_FETtecOneWire.cpp
+[ 227/1050] Compiling libraries/AP_Filesystem/AP_Filesystem_FlashMemory_LittleFS.cpp
+[ 228/1050] Compiling libraries/AP_Filesystem/AP_Filesystem_ESP32.cpp
+[ 229/1050] Compiling libraries/AP_Filesystem/AP_Filesystem_FATFS.cpp
+[ 230/1050] Compiling libraries/AP_Filesystem/AP_Filesystem_Param.cpp
+[ 231/1050] Compiling libraries/AP_Filesystem/posix_compat.cpp
+[ 232/1050] Compiling libraries/AP_Filesystem/AP_Filesystem.cpp
+[ 233/1050] Compiling libraries/AP_Filesystem/AP_Filesystem_Mission.cpp
+[ 234/1050] Compiling libraries/AP_Filesystem/AP_Filesystem_backend.cpp
+[ 235/1050] Compiling libraries/AP_Filesystem/AP_Filesystem_ROMFS.cpp
+[ 236/1050] Compiling libraries/AP_Filesystem/AP_Filesystem_Sys.cpp
+[ 237/1050] Compiling libraries/AP_FlashStorage/AP_FlashStorage.cpp
+[ 238/1050] Compiling libraries/AP_Frsky_Telem/AP_Frsky_MAVlite_SPortToMAVlite.cpp
+[ 239/1050] Compiling libraries/AP_Frsky_Telem/AP_Frsky_Parameters.cpp
+[ 240/1050] Compiling libraries/AP_Frsky_Telem/AP_Frsky_MAVlite_Message.cpp
+[ 241/1050] Compiling libraries/AP_Frsky_Telem/AP_Frsky_Telem.cpp
+[ 242/1050] Compiling libraries/AP_Frsky_Telem/AP_Frsky_MAVlite_MAVliteToSPort.cpp
+[ 243/1050] Compiling libraries/AP_Frsky_Telem/AP_Frsky_MAVliteMsgHandler.cpp
+[ 244/1050] Compiling libraries/AP_Frsky_Telem/AP_Frsky_SPort.cpp
+[ 245/1050] Compiling libraries/AP_Frsky_Telem/AP_Frsky_D.cpp
+[ 246/1050] Compiling libraries/AP_Frsky_Telem/AP_Frsky_Backend.cpp
+[ 247/1050] Compiling libraries/AP_GPS/AP_GPS_UBLOX_CFGv2.cpp
+[ 248/1050] Compiling libraries/AP_GPS/AP_GPS_ERB.cpp
+[ 249/1050] Compiling libraries/AP_GPS/AP_GPS_NOVA.cpp
+[ 250/1050] Compiling libraries/AP_GPS/AP_GPS_UBLOX.cpp
+[ 251/1050] Compiling libraries/AP_GPS/AP_GPS_SIRF.cpp
+[ 252/1050] Compiling libraries/AP_GPS/AP_GPS_SITL.cpp
+[ 253/1050] Compiling libraries/AP_GPS/AP_GPS_Params.cpp
+[ 254/1050] Compiling libraries/AP_GPS/AP_GPS_SBP2.cpp
+[ 255/1050] Compiling libraries/AP_GPS/AP_GPS_SBF.cpp
+[ 256/1050] Compiling libraries/AP_GPS/AP_GPS_SBP.cpp
+[ 257/1050] Compiling libraries/AP_GPS/AP_GPS_NMEA.cpp
+[ 258/1050] Compiling libraries/AP_GPS/GPS_Backend.cpp
+[ 259/1050] Compiling libraries/AP_GPS/AP_GPS_DroneCAN.cpp
+[ 260/1050] Compiling libraries/AP_GPS/AP_GPS_MAV.cpp
+[ 261/1050] Compiling libraries/AP_GPS/AP_GPS_GSOF.cpp
+[ 262/1050] Compiling libraries/AP_GPS/RTCM3_Parser.cpp
+[ 263/1050] Compiling libraries/AP_GPS/AP_GPS_ExternalAHRS.cpp
+[ 264/1050] Compiling libraries/AP_GPS/AP_GPS_Blended.cpp
+[ 265/1050] Compiling libraries/AP_GPS/AP_GPS.cpp
+[ 266/1050] Compiling libraries/AP_GPS/AP_GPS_MSP.cpp
+[ 267/1050] Compiling libraries/AP_GPS/MovingBase.cpp
+[ 268/1050] Compiling libraries/AP_GSOF/AP_GSOF.cpp
+[ 269/1050] Compiling libraries/AP_Generator/AP_Generator_Cortex.cpp
+[ 270/1050] Compiling libraries/AP_Generator/AP_Generator_IE_650_800.cpp
+[ 271/1050] Compiling libraries/AP_Generator/AP_Generator_RichenPower.cpp
+[ 272/1050] Compiling libraries/AP_Generator/AP_Generator_Loweheiser.cpp
+[ 273/1050] Compiling libraries/AP_Generator/AP_Generator_IE_FuelCell.cpp
+[ 274/1050] Compiling libraries/AP_Generator/AP_Generator.cpp
+[ 275/1050] Compiling libraries/AP_Generator/AP_Generator_Backend.cpp
+[ 276/1050] Compiling libraries/AP_Generator/AP_Generator_IE_2400.cpp
+[ 277/1050] Compiling libraries/AP_Gripper/AP_Gripper_EPM.cpp
+[ 278/1050] Compiling libraries/AP_Gripper/AP_Gripper.cpp
+[ 279/1050] Compiling libraries/AP_Gripper/AP_Gripper_Backend.cpp
+[ 280/1050] Compiling libraries/AP_Gripper/AP_Gripper_Servo.cpp
+[ 281/1050] Compiling libraries/AP_Hott_Telem/AP_Hott_Telem.cpp
+[ 282/1050] Compiling libraries/AP_ICEngine/AP_ICEngine.cpp
+[ 283/1050] Compiling libraries/AP_IOMCU/AP_IOMCU.cpp
+[ 284/1050] Compiling libraries/AP_IOMCU/fw_uploader.cpp
+[ 285/1050] Compiling libraries/AP_IRLock/AP_IRLock_I2C.cpp
+[ 286/1050] Compiling libraries/AP_IRLock/AP_IRLock_SITL_Gazebo.cpp
+[ 287/1050] Compiling libraries/AP_IRLock/AP_IRLock_SITL.cpp
+[ 288/1050] Compiling libraries/AP_IRLock/AP_IRLock.cpp
+[ 289/1050] Compiling libraries/AP_InertialSensor/AP_InertialSensor_SCHA63T.cpp
+[ 290/1050] Compiling libraries/AP_InertialSensor/AP_InertialSensor_Invensense.cpp
+[ 291/1050] Compiling libraries/AP_InertialSensor/AP_InertialSensor_NONE.cpp
+[ 292/1050] Compiling libraries/AP_InertialSensor/AP_InertialSensor_Params.cpp
+[ 293/1050] Compiling libraries/AP_InertialSensor/AP_InertialSensor_Logging.cpp
+[ 294/1050] Compiling libraries/AP_InertialSensor/AP_InertialSensor_SITL.cpp
+[ 295/1050] Compiling libraries/AP_InertialSensor/AP_InertialSensor_LSM9DS0.cpp
+[ 296/1050] Compiling libraries/AP_InertialSensor/AP_InertialSensor_Invensensev2.cpp
+[ 297/1050] Compiling libraries/AP_InertialSensor/AP_InertialSensor_LSM6DSV.cpp
+[ 298/1050] Compiling libraries/AP_InertialSensor/AP_InertialSensor_LSM9DS1.cpp
+[ 299/1050] Compiling libraries/AP_InertialSensor/AP_InertialSensor_BMI270.cpp
+[ 300/1050] Compiling libraries/AP_InertialSensor/AP_InertialSensor_ASM330.cpp
+[ 301/1050] Compiling libraries/AP_InertialSensor/BatchSampler.cpp
+[ 302/1050] Compiling libraries/AP_InertialSensor/AP_InertialSensor_L3G4200D.cpp
+[ 303/1050] Compiling libraries/AP_InertialSensor/AP_InertialSensor_ZeroOne_FPGA_SCH16T.cpp
+[ 304/1050] Compiling libraries/AP_InertialSensor/AP_InertialSensor_BMI088.cpp
+[ 305/1050] Compiling libraries/AP_InertialSensor/AP_InertialSensor_ADIS1647x.cpp
+[ 306/1050] Compiling libraries/AP_InertialSensor/AP_InertialSensor_BMI160.cpp
+[ 307/1050] Compiling libraries/AP_InertialSensor/AP_InertialSensor_ExternalAHRS.cpp
+[ 308/1050] Compiling libraries/AP_InertialSensor/AP_InertialSensor_ADIS16607.cpp
+[ 309/1050] Compiling libraries/AP_InertialSensor/AP_InertialSensor_BMI055.cpp
+[ 310/1050] Compiling libraries/AP_InertialSensor/AP_InertialSensor_tempcal.cpp
+[ 311/1050] Compiling libraries/AP_InertialSensor/AuxiliaryBus.cpp
+[ 312/1050] Compiling libraries/AP_InternalError/AP_InternalError.cpp
+[ 313/1050] Compiling libraries/AP_JSON/AP_JSON.cpp
+[ 314/1050] Compiling libraries/AP_KDECAN/AP_KDECAN.cpp
+[ 315/1050] Compiling libraries/AP_LTM_Telem/AP_LTM_Telem.cpp
+[ 316/1050] Compiling libraries/AP_LightWareSerial/AP_LightWareSerial.cpp
+[ 317/1050] Compiling libraries/AP_Logger/LogFile.cpp
+[ 318/1050] Compiling libraries/AP_Logger/AP_Logger_W25NXX.cpp
+[ 319/1050] Compiling libraries/AP_Logger/AP_Logger_MAVLinkLogTransfer.cpp
+[ 320/1050] Compiling libraries/AP_Logger/AP_Logger_MAVLink.cpp
+[ 321/1050] Compiling libraries/AP_Logger/AP_Logger_Flash_JEDEC.cpp
+[ 322/1050] Compiling libraries/AP_Logger/AP_Logger_Block.cpp
+[ 323/1050] Compiling libraries/AP_MSP/AP_MSP_Telem_Backend.cpp
+[ 324/1050] Compiling libraries/AP_MSP/msp_sbuf.cpp
+[ 325/1050] Compiling libraries/AP_MSP/AP_MSP_Telem_DJI.cpp
+[ 326/1050] Compiling libraries/AP_MSP/AP_MSP.cpp
+[ 327/1050] Compiling libraries/AP_MSP/msp.cpp
+[ 328/1050] Compiling libraries/AP_MSP/AP_MSP_Telem_DisplayPort.cpp
+[ 329/1050] Compiling libraries/AP_MSP/AP_MSP_Telem_Generic.cpp
+[ 330/1050] Compiling libraries/AP_Math/vector3.cpp
+[ 331/1050] Compiling libraries/AP_Math/matrix_alg.cpp
+[ 332/1050] Compiling libraries/AP_Math/location.cpp
+[ 333/1050] Compiling libraries/AP_Math/quaternion.cpp
+[ 334/1050] Compiling libraries/AP_Math/matrixN.cpp
+[ 335/1050] Compiling libraries/AP_Math/location_double.cpp
+[ 336/1050] Compiling libraries/AP_Math/polyfit.cpp
+[ 337/1050] Compiling libraries/AP_Math/matrix3.cpp
+[ 338/1050] Compiling libraries/AP_Math/control.cpp
+[ 339/1050] Compiling libraries/AP_Math/spline5.cpp
+[ 340/1050] Compiling libraries/AP_Math/chirp.cpp
+[ 341/1050] Compiling libraries/AP_Math/SplineCurve.cpp
+[ 342/1050] Compiling libraries/AP_Math/crc.cpp
+[ 343/1050] Compiling libraries/AP_Math/vector2.cpp
+[ 344/1050] Compiling libraries/AP_Math/AP_Math.cpp
+[ 345/1050] Compiling libraries/AP_Math/polygon.cpp
+[ 346/1050] Compiling libraries/AP_Math/AP_GeodesicGrid.cpp
+[ 347/1050] Compiling libraries/AP_Mission/AP_Mission_Commands.cpp
+[ 348/1050] Compiling libraries/AP_Mission/AP_Mission_ChangeDetector.cpp
+[ 349/1050] Compiling libraries/AP_Module/AP_Module.cpp
+[ 350/1050] Compiling libraries/AP_Motors/AP_Motors6DOF.cpp
+[ 351/1050] Compiling libraries/AP_Motors/AP_MotorsHeli_Swash.cpp
+[ 352/1050] Compiling libraries/AP_Motors/AP_MotorsHeli_RSC.cpp
+[ 353/1050] Compiling libraries/AP_Motors/AP_MotorsMatrix_6DoF_Scripting.cpp
+[ 354/1050] Compiling libraries/AP_Motors/AP_MotorsTailsitter.cpp
+[ 355/1050] Compiling libraries/AP_Motors/AP_Motors_Class.cpp
+[ 356/1050] Compiling libraries/AP_Motors/AP_MotorsSingle.cpp
+[ 357/1050] Compiling libraries/AP_Motors/AP_MotorsHeli_Single.cpp
+[ 358/1050] Compiling libraries/AP_Motors/AP_MotorsCoax.cpp
+[ 359/1050] Compiling libraries/AP_Motors/AP_MotorsHeli_Quad.cpp
+[ 360/1050] Compiling libraries/AP_Motors/AP_MotorsHeli.cpp
+[ 361/1050] Compiling libraries/AP_Motors/AP_MotorsHeli_Dual.cpp
+[ 362/1050] Compiling libraries/AP_Motors/AP_MotorsMatrix_Scripting_Dynamic.cpp
+[ 363/1050] Compiling libraries/AP_Mount/AP_Mount_SoloGimbal.cpp
+[ 364/1050] Compiling libraries/AP_Mount/AP_Mount_CADDX.cpp
+[ 365/1050] Compiling libraries/AP_Mount/AP_Mount_Alexmos.cpp
+[ 366/1050] Compiling libraries/AP_Mount/AP_Mount_MAVLink.cpp
+[ 367/1050] Compiling libraries/AP_Mount/AP_Mount_SToRM32_serial.cpp
+[ 368/1050] Compiling libraries/AP_Mount/AP_Mount_Backend_Serial.cpp
+[ 369/1050] Compiling libraries/AP_Mount/AP_Mount_Backend.cpp
+[ 370/1050] Compiling libraries/AP_Mount/AP_Mount.cpp
+[ 371/1050] Compiling libraries/AP_Mount/AP_Mount_Params.cpp
+[ 372/1050] Compiling libraries/AP_Mount/AP_Mount_Viewpro.cpp
+[ 373/1050] Compiling libraries/AP_Mount/AP_Mount_Topotek.cpp
+[ 374/1050] Compiling libraries/AP_Mount/AP_Mount_Servo.cpp
+[ 375/1050] Compiling libraries/AP_Mount/AP_Mount_SToRM32.cpp
+[ 376/1050] Compiling libraries/AP_Mount/AP_Mount_Siyi.cpp
+[ 377/1050] Compiling libraries/AP_Mount/AP_Mount_Xacti.cpp
+[ 378/1050] Compiling libraries/AP_Mount/AP_Mount_XFRobot.cpp
+[ 379/1050] Compiling libraries/AP_Mount/AP_Mount_Scripting.cpp
+[ 380/1050] Compiling libraries/AP_Mount/SoloGimbal_Parameters.cpp
+[ 381/1050] Compiling libraries/AP_Mount/SoloGimbal.cpp
+[ 382/1050] Compiling libraries/AP_Mount/SoloGimbalEKF.cpp
+[ 383/1050] Compiling libraries/AP_MultiHeap/MultiHeap_malloc.cpp
+[ 384/1050] Compiling libraries/AP_MultiHeap/AP_MultiHeap.cpp
+[ 385/1050] Compiling libraries/AP_MultiHeap/MultiHeap_chibios.cpp
+[ 386/1050] Compiling libraries/AP_NMEA_Output/AP_NMEA_Output.cpp
+[ 387/1050] Compiling libraries/AP_NavEKF/EKFGSF_yaw.cpp
+[ 388/1050] Compiling libraries/AP_NavEKF/EKF_Buffer.cpp
+[ 389/1050] Compiling libraries/AP_NavEKF/AP_NavEKF_Source.cpp
+[ 390/1050] Compiling libraries/AP_NavEKF/EKFGSF_Logging.cpp
+[ 391/1050] Compiling libraries/AP_NavEKF/AP_NavEKF_core_common.cpp
+[ 392/1050] Compiling libraries/AP_NavEKF2/AP_NavEKF2_RngBcnFusion.cpp
+[ 393/1050] Compiling libraries/AP_NavEKF2/AP_NavEKF_GyroBias.cpp
+[ 394/1050] Compiling libraries/AP_NavEKF2/AP_NavEKF2_PosVelFusion.cpp
+[ 395/1050] Compiling libraries/AP_NavEKF2/AP_NavEKF2_core.cpp
+[ 396/1050] Compiling libraries/AP_NavEKF2/AP_NavEKF2_Measurements.cpp
+[ 397/1050] Compiling libraries/AP_NavEKF2/AP_NavEKF2_Outputs.cpp
+[ 398/1050] Compiling libraries/AP_NavEKF2/AP_NavEKF2_Logging.cpp
+[ 399/1050] Compiling libraries/AP_NavEKF2/AP_NavEKF2_MagFusion.cpp
+[ 400/1050] Compiling libraries/AP_NavEKF2/AP_NavEKF2_AirDataFusion.cpp
+[ 401/1050] Compiling libraries/AP_NavEKF2/AP_NavEKF2_VehicleStatus.cpp
+[ 402/1050] Compiling libraries/AP_NavEKF2/AP_NavEKF2_Control.cpp
+[ 403/1050] Compiling modules/lwip/src/netif/ppp/pppcrypt.c
+[ 404/1050] Compiling modules/lwip/src/netif/ppp/multilink.c
+[ 405/1050] Compiling modules/lwip/src/netif/ppp/magic.c
+[ 406/1050] Compiling modules/lwip/src/netif/bridgeif.c
+[ 407/1050] Compiling modules/lwip/src/core/ipv4/ip4_frag.c
+[ 408/1050] Compiling modules/lwip/src/core/ipv4/icmp.c
+[ 409/1050] Compiling modules/lwip/src/core/ipv4/etharp.c
+[ 410/1050] Compiling modules/lwip/src/core/ipv4/igmp.c
+[ 411/1050] Compiling modules/lwip/src/core/ipv4/dhcp.c
+[ 412/1050] Compiling modules/lwip/src/core/ipv4/autoip.c
+[ 413/1050] Compiling modules/lwip/src/core/ipv4/acd.c
+[ 414/1050] Compiling modules/lwip/src/core/udp.c
+[ 415/1050] Compiling modules/lwip/src/core/timeouts.c
+[ 416/1050] Compiling modules/lwip/src/core/ipv4/ip4.c
+[ 417/1050] Compiling modules/lwip/src/api/netifapi.c
+[ 418/1050] Compiling modules/lwip/src/core/tcp_out.c
+[ 419/1050] Compiling modules/lwip/src/core/sys.c
+[ 420/1050] Compiling modules/lwip/src/core/stats.c
+[ 421/1050] Compiling modules/lwip/src/core/raw.c
+[ 422/1050] Compiling modules/lwip/src/core/tcp.c
+[ 423/1050] Compiling modules/lwip/src/core/pbuf.c
+[ 424/1050] Compiling modules/lwip/src/core/tcp_in.c
+[ 425/1050] Compiling modules/lwip/src/core/memp.c
+[ 426/1050] Compiling modules/lwip/src/core/netif.c
+[ 427/1050] Compiling modules/lwip/src/netif/ethernet.c
+[ 428/1050] Compiling modules/lwip/src/core/init.c
+[ 429/1050] Compiling modules/lwip/src/core/dns.c
+[ 430/1050] Compiling modules/lwip/src/core/inet_chksum.c
+[ 431/1050] Compiling modules/lwip/src/core/ip.c
+[ 432/1050] Compiling modules/lwip/src/core/def.c
+[ 433/1050] Compiling modules/lwip/src/core/mem.c
+[ 434/1050] Compiling modules/lwip/src/netif/lowpan6.c
+[ 435/1050] Compiling modules/lwip/src/api/if_api.c
+[ 436/1050] Compiling libraries/AP_Networking/lwip_hal/arch/evtimer.c
+[ 437/1050] Compiling modules/lwip/src/core/altcp_tcp.c
+[ 438/1050] Compiling modules/lwip/src/core/altcp.c
+[ 439/1050] Compiling libraries/AP_Networking/AP_Networking_tests.cpp
+[ 440/1050] Compiling libraries/AP_Networking/AP_Networking_macaddr.cpp
+[ 441/1050] Compiling libraries/AP_Networking/AP_Networking_port.cpp
+[ 442/1050] Compiling libraries/AP_Networking/AP_Networking_address.cpp
+[ 443/1050] Compiling modules/lwip/src/core/altcp_alloc.c
+[ 444/1050] Compiling libraries/AP_Networking/AP_Networking_CAN.cpp
+[ 445/1050] Compiling libraries/AP_Networking/AP_Networking_ChibiOS.cpp
+[ 446/1050] Compiling libraries/AP_Networking/AP_Networking_PPP.cpp
+[ 447/1050] Compiling libraries/AP_Networking/AP_Networking_SITL_TUN.cpp
+[ 448/1050] Compiling libraries/AP_Networking/AP_Networking.cpp
+[ 449/1050] Compiling libraries/AP_Networking/AP_Networking_Backend.cpp
+[ 450/1050] Compiling modules/lwip/src/api/netbuf.c
+[ 451/1050] Compiling modules/lwip/src/api/netdb.c
+[ 452/1050] Compiling modules/lwip/src/netif/ppp/utils.c
+[ 453/1050] Compiling modules/lwip/src/netif/ppp/pppapi.c
+[ 454/1050] Compiling modules/lwip/src/netif/ppp/ppp.c
+[ 455/1050] Compiling modules/lwip/src/core/ipv4/ip4_addr.c
+[ 456/1050] Compiling modules/lwip/src/netif/ppp/fsm.c
+[ 457/1050] Compiling modules/lwip/src/api/err.c
+[ 458/1050] Compiling modules/lwip/src/netif/ppp/pppoe.c
+[ 459/1050] Compiling modules/lwip/src/netif/ppp/ipcp.c
+[ 460/1050] Compiling modules/lwip/src/netif/ppp/chap-new.c
+[ 461/1050] Compiling modules/lwip/src/netif/ppp/lcp.c
+[ 462/1050] Compiling modules/lwip/src/netif/zepif.c
+[ 463/1050] Compiling modules/lwip/src/netif/slipif.c
+[ 464/1050] Compiling modules/lwip/src/netif/ppp/upap.c
+[ 465/1050] Compiling modules/lwip/src/netif/ppp/chap_ms.c
+[ 466/1050] Compiling modules/lwip/src/netif/ppp/mppe.c
+[ 467/1050] Compiling modules/lwip/src/netif/ppp/auth.c
+[ 468/1050] Compiling modules/lwip/src/netif/lowpan6_common.c
+[ 469/1050] Compiling modules/lwip/src/netif/ppp/vj.c
+[ 470/1050] Compiling modules/lwip/src/netif/lowpan6_ble.c
+[ 471/1050] Compiling modules/lwip/src/netif/ppp/ccp.c
+[ 472/1050] Compiling modules/lwip/src/api/sockets.c
+[ 473/1050] Compiling modules/lwip/src/api/api_msg.c
+[ 474/1050] Compiling modules/lwip/src/netif/ppp/ipv6cp.c
+[ 475/1050] Compiling modules/lwip/src/netif/ppp/pppol2tp.c
+[ 476/1050] Compiling modules/lwip/src/netif/bridgeif_fdb.c
+[ 477/1050] Compiling modules/lwip/src/api/tcpip.c
+[ 478/1050] Compiling modules/lwip/src/netif/ppp/pppos.c
+[ 479/1050] Compiling modules/lwip/src/netif/ppp/chap-md5.c
+[ 480/1050] Compiling modules/lwip/src/api/api_lib.c
+[ 481/1050] Compiling modules/lwip/src/netif/ppp/eui64.c
+[ 482/1050] Compiling modules/lwip/src/netif/ppp/demand.c
+[ 483/1050] Compiling libraries/AP_Networking/lwip_hal/arch/sys_arch.cpp
+[ 484/1050] Compiling modules/lwip/src/netif/ppp/eap.c
+[ 485/1050] Compiling modules/lwip/src/netif/ppp/ecp.c
+[ 486/1050] Compiling libraries/AP_Notify/ToneAlarm.cpp
+[ 487/1050] Compiling libraries/AP_Notify/VRBoard_LED.cpp
+[ 488/1050] Compiling libraries/AP_Notify/RGBLed.cpp
+[ 489/1050] Compiling libraries/AP_Notify/LP5562.cpp
+[ 490/1050] Compiling libraries/AP_Notify/DiscreteRGBLed.cpp
+[ 491/1050] Compiling libraries/AP_Notify/Buzzer.cpp
+[ 492/1050] Compiling libraries/AP_Notify/ToshibaLED_I2C.cpp
+[ 493/1050] Compiling libraries/AP_Notify/Display_SITL.cpp
+[ 494/1050] Compiling libraries/AP_Notify/ScriptingLED.cpp
+[ 495/1050] Compiling libraries/AP_Notify/SITL_SFML_LED.cpp
+[ 496/1050] Compiling libraries/AP_Notify/SerialLED.cpp
+[ 497/1050] Compiling libraries/AP_Notify/ProfiLED.cpp
+[ 498/1050] Compiling libraries/AP_Notify/PixRacerLED.cpp
+[ 499/1050] Compiling libraries/AP_Notify/IS31FL3195.cpp
+[ 500/1050] Compiling libraries/AP_Notify/PCA9685LED_I2C.cpp
+[ 501/1050] Compiling libraries/AP_Notify/RCOutputRGBLed.cpp
+[ 502/1050] Compiling libraries/AP_Notify/GPIO_LED_1.cpp
+[ 503/1050] Compiling libraries/AP_Notify/NeoPixel.cpp
+[ 504/1050] Compiling libraries/AP_Notify/Led_Sysfs.cpp
+[ 505/1050] Compiling libraries/AP_Notify/ExternalLED.cpp
+[ 506/1050] Compiling libraries/AP_Notify/DroneCAN_RGB_LED.cpp
+[ 507/1050] Compiling libraries/AP_Notify/AP_BoardLED.cpp
+[ 508/1050] Compiling libraries/AP_Notify/MMLPlayer.cpp
+[ 509/1050] Compiling libraries/AP_Notify/NCP5623.cpp
+[ 510/1050] Compiling libraries/AP_Notify/Display_SSD1306_I2C.cpp
+[ 511/1050] Compiling libraries/AP_Notify/NavigatorLED.cpp
+[ 512/1050] Compiling libraries/AP_Notify/OreoLED_I2C.cpp
+[ 513/1050] Compiling libraries/AP_Notify/DShotLED.cpp
+[ 514/1050] Compiling libraries/AP_Notify/AP_BoardLED2.cpp
+[ 515/1050] Compiling libraries/AP_Notify/Display_SH1106_I2C.cpp
+[ 516/1050] Compiling libraries/AP_Notify/DiscoLED.cpp
+[ 517/1050] Compiling libraries/AP_Notify/AP_Notify.cpp
+[ 518/1050] Compiling libraries/AP_Notify/Display.cpp
+[ 519/1050] Compiling libraries/AP_OLC/AP_OLC.cpp
+[ 520/1050] Compiling libraries/AP_OSD/AP_OSD.cpp
+[ 521/1050] Compiling libraries/AP_OSD/AP_OSD_Backend.cpp
+[ 522/1050] Compiling libraries/AP_OSD/AP_OSD_MAX7456.cpp
+[ 523/1050] Compiling libraries/AP_OSD/AP_OSD_MSP.cpp
+[ 524/1050] Compiling libraries/AP_OSD/AP_OSD_MSP_DisplayPort.cpp
+[ 525/1050] Compiling libraries/AP_OSD/AP_OSD_SITL.cpp
+[ 526/1050] Compiling libraries/AP_OSD/AP_OSD_Setting.cpp
+[ 527/1050] Compiling libraries/AP_OpenDroneID/AP_OpenDroneID_DroneCAN.cpp
+[ 528/1050] Compiling libraries/AP_OpenDroneID/AP_OpenDroneID.cpp
+[ 529/1050] Compiling libraries/AP_OpticalFlow/AP_OpticalFlow_Pixart.cpp
+[ 530/1050] Compiling libraries/AP_OpticalFlow/AP_OpticalFlow_MAV.cpp
+[ 531/1050] Compiling libraries/AP_OpticalFlow/AP_OpticalFlow_SITL.cpp
+[ 532/1050] Compiling libraries/AP_OpticalFlow/AP_OpticalFlow_Calibrator.cpp
+[ 533/1050] Compiling libraries/AP_OpticalFlow/AP_OpticalFlow_MSP.cpp
+[ 534/1050] Compiling libraries/AP_OpticalFlow/AP_OpticalFlow_HereFlow.cpp
+[ 535/1050] Compiling libraries/AP_OpticalFlow/AP_OpticalFlow.cpp
+[ 536/1050] Compiling libraries/AP_OpticalFlow/AP_OpticalFlow_CXOF.cpp
+[ 537/1050] Compiling libraries/AP_OpticalFlow/AP_OpticalFlow_Backend.cpp
+[ 538/1050] Compiling libraries/AP_OpticalFlow/AP_OpticalFlow_Onboard.cpp
+[ 539/1050] Compiling libraries/AP_OpticalFlow/AP_OpticalFlow_PX4Flow.cpp
+[ 540/1050] Compiling libraries/AP_OpticalFlow/AP_OpticalFlow_UPFLOW.cpp
+[ 541/1050] Compiling libraries/AP_Parachute/AP_Parachute.cpp
+[ 542/1050] Compiling libraries/AP_Param/AP_Param.cpp
+[ 543/1050] Compiling libraries/AP_Param/AP_ParamT.cpp
+[ 544/1050] Compiling libraries/AP_Proximity/AP_Proximity_TeraRangerTowerEvo.cpp
+[ 545/1050] Compiling libraries/AP_Proximity/AP_Proximity_TeraRangerTower.cpp
+[ 546/1050] Compiling libraries/AP_Proximity/AP_Proximity_Backend.cpp
+[ 547/1050] Compiling libraries/AP_Proximity/AP_Proximity.cpp
+[ 548/1050] Compiling libraries/AP_Proximity/AP_Proximity_Scripting.cpp
+[ 549/1050] Compiling libraries/AP_Proximity/AP_Proximity_DroneCAN.cpp
+[ 550/1050] Compiling libraries/AP_Proximity/AP_Proximity_MAV.cpp
+[ 551/1050] Compiling libraries/AP_Proximity/AP_Proximity_RangeFinder.cpp
+[ 552/1050] Compiling libraries/AP_Proximity/AP_Proximity_SITL.cpp
+[ 553/1050] Compiling libraries/AP_Proximity/AP_Proximity_RPLidarA2.cpp
+[ 554/1050] Compiling libraries/AP_Proximity/AP_Proximity_Params.cpp
+[ 555/1050] Compiling libraries/AP_Proximity/AP_Proximity_MR72_CAN.cpp
+[ 556/1050] Compiling libraries/AP_Proximity/AP_Proximity_LightWareSF45B.cpp
+[ 557/1050] Compiling libraries/AP_Proximity/AP_Proximity_LD06.cpp
+[ 558/1050] Compiling libraries/AP_Proximity/AP_Proximity_Boundary_3D.cpp
+[ 559/1050] Compiling libraries/AP_Proximity/AP_Proximity_LightWareSF40C.cpp
+[ 560/1050] Compiling libraries/AP_Proximity/AP_Proximity_Backend_Serial.cpp
+[ 561/1050] Compiling libraries/AP_Proximity/AP_Proximity_Cygbot_D1.cpp
+[ 562/1050] Compiling libraries/AP_Proximity/AP_Proximity_AirSimSITL.cpp
+[ 563/1050] Compiling libraries/AP_RAMTRON/AP_RAMTRON.cpp
+[ 564/1050] Compiling libraries/AP_RCMapper/AP_RCMapper.cpp
+[ 565/1050] Compiling libraries/AP_RCProtocol/AP_RCProtocol_DSM.cpp
+[ 566/1050] Compiling libraries/AP_RCProtocol/spm_srxl.cpp
+[ 567/1050] Compiling libraries/AP_RCProtocol/AP_RCProtocol_DroneCAN.cpp
+[ 568/1050] Compiling libraries/AP_RCProtocol/SoftSerial.cpp
+[ 569/1050] Compiling libraries/AP_RCProtocol/AP_RCProtocol_PPMSum.cpp
+[ 570/1050] Compiling libraries/AP_RCProtocol/AP_RCProtocol_Radio.cpp
+[ 571/1050] Compiling libraries/AP_RCProtocol/AP_RCProtocol_IBUS.cpp
+[ 572/1050] Compiling libraries/AP_RCProtocol/AP_RCProtocol_FDM.cpp
+[ 573/1050] Compiling libraries/AP_RCProtocol/AP_RCProtocol_Backend.cpp
+[ 574/1050] Compiling libraries/AP_RCProtocol/AP_RCProtocol_IOMCU.cpp
+[ 575/1050] Compiling libraries/AP_RCProtocol/AP_RCProtocol_Emlid_RCIO.cpp
+[ 576/1050] Compiling libraries/AP_RCProtocol/AP_RCProtocol_Joystick_SFML.cpp
+[ 577/1050] Compiling libraries/AP_RCProtocol/AP_RCProtocol_MAVLinkRadio.cpp
+[ 578/1050] Compiling libraries/AP_RCProtocol/AP_RCProtocol_SBUS.cpp
+[ 579/1050] Compiling libraries/AP_RCProtocol/AP_RCProtocol_SRXL.cpp
+[ 580/1050] Compiling libraries/AP_RCProtocol/AP_RCProtocol_ST24.cpp
+[ 581/1050] Compiling libraries/AP_RCProtocol/AP_RCProtocol_SUMD.cpp
+[ 582/1050] Compiling libraries/AP_RCTelemetry/AP_Spektrum_Telem.cpp
+[ 583/1050] Compiling libraries/AP_RCTelemetry/AP_GHST_Telem.cpp
+[ 584/1050] Compiling libraries/AP_ROMFS/tinflate.cpp
+[ 585/1050] Compiling libraries/AP_ROMFS/AP_ROMFS.cpp
+[ 586/1050] Compiling libraries/AP_RPM/RPM_Pin.cpp
+[ 587/1050] Compiling libraries/AP_RPM/RPM_EFI.cpp
+[ 588/1050] Compiling libraries/AP_RPM/RPM_ESC_Telem.cpp
+[ 589/1050] Compiling libraries/AP_RPM/AP_RPM.cpp
+[ 590/1050] Compiling libraries/AP_RPM/RPM_Generator.cpp
+[ 591/1050] Compiling libraries/AP_RPM/RPM_HarmonicNotch.cpp
+[ 592/1050] Compiling libraries/AP_RPM/RPM_DroneCAN.cpp
+[ 593/1050] Compiling libraries/AP_RPM/RPM_Backend.cpp
+[ 594/1050] Compiling libraries/AP_RPM/AP_RPM_Params.cpp
+[ 595/1050] Compiling libraries/AP_RPM/RPM_SITL.cpp
+[ 596/1050] Compiling libraries/AP_RSSI/AP_RSSI.cpp
+[ 597/1050] Compiling libraries/AP_RTC/AP_RTC.cpp
+[ 598/1050] Compiling libraries/AP_RTC/JitterCorrection.cpp
+[ 599/1050] Compiling libraries/AP_Radio/AP_Radio_cypress.cpp
+[ 600/1050] Compiling libraries/AP_Radio/driver_cc2500.cpp
+[ 601/1050] Compiling libraries/AP_Radio/AP_Radio_backend.cpp
+[ 602/1050] Compiling libraries/AP_Radio/AP_Radio_cc2500.cpp
+[ 603/1050] Compiling libraries/AP_Radio/driver_bk2425.cpp
+[ 604/1050] Compiling libraries/AP_Radio/AP_Radio_bk2425.cpp
+[ 605/1050] Compiling libraries/AP_Radio/AP_Radio.cpp
+[ 606/1050] Compiling libraries/AP_RangeFinder/AP_RangeFinder_Benewake_TFS20L.cpp
+[ 607/1050] Compiling libraries/AP_RangeFinder/AP_RangeFinder_Wasp.cpp
+[ 608/1050] Compiling libraries/AP_RangeFinder/AP_RangeFinder_MaxsonarI2CXL.cpp
+[ 609/1050] Compiling libraries/AP_RangeFinder/AP_RangeFinder_Lanbao.cpp
+[ 610/1050] Compiling libraries/AP_RangeFinder/AP_RangeFinder_BBB_PRU.cpp
+[ 611/1050] Compiling libraries/AP_RangeFinder/AP_RangeFinder_Ainstein_LR_D1.cpp
+[ 612/1050] Compiling libraries/AP_RangeFinder/AP_RangeFinder_Bebop.cpp
+[ 613/1050] Compiling libraries/AP_RangeFinder/AP_RangeFinder_BLPing.cpp
+[ 614/1050] Compiling libraries/AP_RangeFinder/AP_RangeFinder_Backend.cpp
+[ 615/1050] Compiling libraries/AP_RangeFinder/AP_RangeFinder_TOFSenseP_CAN.cpp
+[ 616/1050] Compiling libraries/AP_RangeFinder/AP_RangeFinder.cpp
+[ 617/1050] Compiling libraries/AP_RangeFinder/AP_RangeFinder_VL53L0X.cpp
+[ 618/1050] Compiling libraries/AP_RangeFinder/AP_RangeFinder_TeraRangerI2C.cpp
+[ 619/1050] Compiling libraries/AP_RangeFinder/AP_RangeFinder_MaxsonarSerialLV.cpp
+[ 620/1050] Compiling libraries/AP_RangeFinder/AP_RangeFinder_VL53L1X.cpp
+[ 621/1050] Compiling libraries/AP_RangeFinder/AP_RangeFinder_USD1_CAN.cpp
+[ 622/1050] Compiling libraries/AP_RangeFinder/AP_RangeFinder_MAVLink.cpp
+[ 623/1050] Compiling libraries/AP_RangeFinder/AP_RangeFinder_USD1_Serial.cpp
+[ 624/1050] Compiling libraries/AP_RangeFinder/AP_RangeFinder_analog.cpp
+[ 625/1050] Compiling libraries/AP_RangeFinder/AP_RangeFinder_LightWare_GRF.cpp
+[ 626/1050] Compiling libraries/AP_RangeFinder/AP_RangeFinder_LightWareSerial.cpp
+[ 627/1050] Compiling libraries/AP_RangeFinder/AP_RangeFinder_DTS6012M.cpp
+[ 628/1050] Compiling libraries/AP_RangeFinder/AP_RangeFinder_Backend_CAN.cpp
+[ 629/1050] Compiling libraries/AP_RangeFinder/AP_RangeFinder_TeraRanger_Serial.cpp
+[ 630/1050] Compiling libraries/AP_RangeFinder/AP_RangeFinder_LightWare_GRF_I2C.cpp
+[ 631/1050] Compiling libraries/AP_RangeFinder/AP_RangeFinder_Lua.cpp
+[ 632/1050] Compiling libraries/AP_RangeFinder/AP_RangeFinder_LightWare_GRF_Common.cpp
+[ 633/1050] Compiling libraries/AP_RangeFinder/AP_RangeFinder_HC_SR04.cpp
+[ 634/1050] Compiling libraries/AP_RangeFinder/AP_RangeFinder_GYUS42v2.cpp
+[ 635/1050] Compiling libraries/AP_RangeFinder/AP_RangeFinder_Benewake_TFMiniPlus.cpp
+[ 636/1050] Compiling libraries/AP_RangeFinder/AP_RangeFinder_JRE_Serial.cpp
+[ 637/1050] Compiling libraries/AP_RangeFinder/AP_RangeFinder_LeddarOne.cpp
+[ 638/1050] Compiling libraries/AP_RangeFinder/AP_RangeFinder_DroneCAN.cpp
+[ 639/1050] Compiling libraries/AP_RangeFinder/AP_RangeFinder_LightWareI2C.cpp
+[ 640/1050] Compiling libraries/AP_RangeFinder/AP_RangeFinder_MSP.cpp
+[ 641/1050] Compiling libraries/AP_RangeFinder/AP_RangeFinder_NoopLoop.cpp
+[ 642/1050] Compiling libraries/AP_RangeFinder/AP_RangeFinder_Benewake.cpp
+[ 643/1050] Compiling libraries/AP_RangeFinder/AP_RangeFinder_Backend_I2C.cpp
+[ 644/1050] Compiling libraries/AP_RangeFinder/AP_RangeFinder_Params.cpp
+[ 645/1050] Compiling libraries/AP_RangeFinder/AP_RangeFinder_TOFSenseF_I2C.cpp
+[ 646/1050] Compiling libraries/AP_RangeFinder/AP_RangeFinder_NMEA.cpp
+[ 647/1050] Compiling libraries/AP_RangeFinder/AP_RangeFinder_PWM.cpp
+[ 648/1050] Compiling libraries/AP_RangeFinder/AP_RangeFinder_NRA24_CAN.cpp
+[ 649/1050] Compiling libraries/AP_RangeFinder/AP_RangeFinder_RDS02UF.cpp
+[ 650/1050] Compiling libraries/AP_RangeFinder/AP_RangeFinder_Backend_Serial.cpp
+[ 651/1050] Compiling libraries/AP_RangeFinder/AP_RangeFinder_LeddarVu8.cpp
+[ 652/1050] Compiling libraries/AP_RangeFinder/AP_RangeFinder_PulsedLightLRF.cpp
+[ 653/1050] Compiling libraries/AP_RangeFinder/AP_RangeFinder_Benewake_CAN.cpp
+[ 654/1050] Compiling libraries/AP_RangeFinder/AP_RangeFinder_SITL.cpp
+[ 655/1050] Compiling libraries/AP_Relay/AP_Relay_Params.cpp
+[ 656/1050] Compiling libraries/AP_RobotisServo/AP_RobotisServo.cpp
+[ 657/1050] Compiling libraries/AP_SBusOut/AP_SBusOut.cpp
+[ 658/1050] Compiling libraries/AP_Scheduler/PerfInfo.cpp
+[ 659/1050] Compiling libraries/AP_SerialLED/AP_SerialLED.cpp
+[ 660/1050] Compiling libraries/AP_SerialManager/AP_SerialManager.cpp
+[ 661/1050] Compiling libraries/AP_ServoRelayEvents/AP_ServoRelayEvents.cpp
+[ 662/1050] Compiling libraries/AP_Servo_Telem/AP_Servo_Telem.cpp
+[ 663/1050] Compiling libraries/AP_SmartRTL/AP_SmartRTL.cpp
+[ 664/1050] Compiling libraries/AP_Stats/AP_Stats.cpp
+[ 665/1050] Compiling libraries/AP_SurfaceDistance/AP_SurfaceDistance.cpp
+[ 666/1050] Compiling libraries/AP_TempCalibration/AP_TempCalibration.cpp
+[ 667/1050] Compiling libraries/AP_TemperatureSensor/AP_TemperatureSensor_TSYS01.cpp
+[ 668/1050] Compiling libraries/AP_TemperatureSensor/AP_TemperatureSensor_TSYS03.cpp
+[ 669/1050] Compiling libraries/AP_TemperatureSensor/AP_TemperatureSensor_MAX31865.cpp
+[ 670/1050] Compiling libraries/AP_TemperatureSensor/AP_TemperatureSensor_Params.cpp
+[ 671/1050] Compiling libraries/AP_TemperatureSensor/AP_TemperatureSensor_MCP9600.cpp
+[ 672/1050] Compiling libraries/AP_TemperatureSensor/AP_TemperatureSensor_SHT3x.cpp
+[ 673/1050] Compiling libraries/AP_TemperatureSensor/AP_TemperatureSensor_Analog.cpp
+[ 674/1050] Compiling libraries/AP_TemperatureSensor/AP_TemperatureSensor_DroneCAN.cpp
+[ 675/1050] Compiling libraries/AP_TemperatureSensor/AP_TemperatureSensor_Backend.cpp
+[ 676/1050] Compiling libraries/AP_TemperatureSensor/AP_TemperatureSensor_MLX90614.cpp
+[ 677/1050] Compiling libraries/AP_Terrain/TerrainIO.cpp
+[ 678/1050] Compiling libraries/AP_Terrain/TerrainUtil.cpp
+[ 679/1050] Compiling libraries/AP_Terrain/TerrainGCS.cpp
+[ 680/1050] Compiling libraries/AP_Terrain/TerrainMission.cpp
+[ 681/1050] Compiling libraries/AP_Torqeedo/AP_Torqeedo.cpp
+[ 682/1050] Compiling libraries/AP_Torqeedo/AP_Torqeedo_TQBus.cpp
+[ 683/1050] Compiling libraries/AP_Torqeedo/AP_Torqeedo_Backend.cpp
+[ 684/1050] Compiling libraries/AP_Torqeedo/AP_Torqeedo_Params.cpp
+[ 685/1050] Compiling libraries/AP_Tuning/AP_Tuning.cpp
+[ 686/1050] Compiling libraries/AP_Vehicle/Parameters.cpp
+[ 687/1050] Compiling libraries/AP_VideoTX/AP_VideoTX.cpp
+[ 688/1050] Compiling libraries/AP_VideoTX/AP_Tramp.cpp
+[ 689/1050] Compiling libraries/AP_VideoTX/AP_SmartAudio.cpp
+[ 690/1050] Compiling libraries/AP_VisualOdom/AP_VisualOdom.cpp
+[ 691/1050] Compiling libraries/AP_VisualOdom/AP_VisualOdom_MAV.cpp
+[ 692/1050] Compiling libraries/AP_VisualOdom/AP_VisualOdom_Logging.cpp
+[ 693/1050] Compiling libraries/AP_VisualOdom/AP_VisualOdom_Backend.cpp
+[ 694/1050] Compiling libraries/AP_VisualOdom/AP_VisualOdom_IntelT265.cpp
+[ 695/1050] Compiling libraries/AP_Volz_Protocol/AP_Volz_Protocol.cpp
+[ 696/1050] Compiling libraries/AP_WheelEncoder/AP_WheelEncoder.cpp
+[ 697/1050] Compiling libraries/AP_WheelEncoder/WheelEncoder_Backend.cpp
+[ 698/1050] Compiling libraries/AP_WheelEncoder/AP_WheelRateControl.cpp
+[ 699/1050] Compiling libraries/AP_WheelEncoder/WheelEncoder_Quadrature.cpp
+[ 700/1050] Compiling libraries/AP_WheelEncoder/WheelEncoder_SITL_Quadrature.cpp
+[ 701/1050] Compiling libraries/AP_Winch/AP_Winch_Daiwa.cpp
+[ 702/1050] Compiling libraries/AP_Winch/AP_Winch_PWM.cpp
+[ 703/1050] Compiling libraries/AP_Winch/AP_Winch.cpp
+[ 704/1050] Compiling libraries/AP_Winch/AP_Winch_Backend.cpp
+[ 705/1050] Compiling libraries/Filter/SlewLimiter.cpp
+[ 706/1050] Compiling libraries/Filter/DerivativeFilter.cpp
+[ 707/1050] Compiling libraries/Filter/LowPassFilter2p.cpp
+[ 708/1050] Compiling libraries/Filter/AP_Filter_params.cpp
+[ 709/1050] Compiling libraries/Filter/LowPassFilter.cpp
+[ 710/1050] Compiling libraries/Filter/NotchFilter.cpp
+[ 711/1050] Compiling libraries/Filter/ModeFilter.cpp
+[ 712/1050] Compiling libraries/Filter/AP_NotchFilter_params.cpp
+[ 713/1050] Compiling libraries/Filter/AP_Filter.cpp
+[ 714/1050] Compiling libraries/GCS_MAVLink/MissionItemProtocol.cpp
+[ 715/1050] Compiling libraries/GCS_MAVLink/MissionItemProtocol_Fence.cpp
+[ 716/1050] Compiling libraries/GCS_MAVLink/GCS_serial_control.cpp
+[ 717/1050] Compiling libraries/GCS_MAVLink/GCS_DeviceOp.cpp
+[ 718/1050] Compiling libraries/GCS_MAVLink/GCS_Param.cpp
+[ 719/1050] Compiling libraries/GCS_MAVLink/MAVLink_routing.cpp
+[ 720/1050] Compiling libraries/GCS_MAVLink/GCS_Signing.cpp
+[ 721/1050] Compiling libraries/GCS_MAVLink/MissionItemProtocol_Waypoints.cpp
+[ 722/1050] Compiling libraries/GCS_MAVLink/GCS_MAVLink.cpp
+[ 723/1050] Compiling libraries/GCS_MAVLink/MissionItemProtocol_Rally.cpp
+[ 724/1050] Compiling libraries/GCS_MAVLink/GCS_ServoRelay.cpp
+[ 725/1050] Compiling libraries/GCS_MAVLink/GCS_FTP.cpp
+[ 726/1050] Compiling libraries/RC_Channel/RC_Channels.cpp
+[ 727/1050] Compiling libraries/SRV_Channel/SRV_Channels.cpp
+[ 728/1050] Compiling libraries/SRV_Channel/SRV_Channel_aux.cpp
+[ 729/1050] Compiling libraries/SRV_Channel/SRV_Channel.cpp
+[ 730/1050] Compiling libraries/AP_HAL/Semaphores.cpp
+[ 731/1050] Compiling libraries/AP_HAL/RCOutput.cpp
+[ 732/1050] Compiling libraries/AP_HAL/GPIO.cpp
+[ 733/1050] Compiling libraries/AP_HAL/system.cpp
+[ 734/1050] Compiling libraries/AP_HAL/Device.cpp
+[ 735/1050] Compiling libraries/AP_HAL/utility/getopt_cpp.cpp
+[ 736/1050] Compiling libraries/AP_HAL/UARTDriver.cpp
+[ 737/1050] Compiling libraries/AP_HAL/utility/DataRateLimit.cpp
+[ 738/1050] Compiling libraries/AP_HAL/utility/dsm.cpp
+[ 739/1050] Compiling libraries/AP_HAL/utility/BetterStream.cpp
+[ 740/1050] Compiling libraries/AP_HAL/utility/ftoa_engine.cpp
+[ 741/1050] Compiling libraries/AP_HAL/DSP.cpp
+[ 742/1050] Compiling libraries/AP_HAL/Util.cpp
+[ 743/1050] Compiling libraries/AP_HAL/utility/utoa_invert.cpp
+[ 744/1050] Compiling libraries/AP_HAL/utility/RCOutput_Tap.cpp
+[ 745/1050] Compiling libraries/AP_HAL/utility/Socket.cpp
+[ 746/1050] Compiling libraries/AP_HAL/HAL.cpp
+[ 747/1050] Compiling libraries/AP_HAL/Storage.cpp
+[ 748/1050] Compiling libraries/AP_HAL/utility/RingBuffer.cpp
+[ 749/1050] Compiling libraries/AP_HAL/CANIface.cpp
+[ 750/1050] Compiling libraries/AP_HAL/utility/replace.cpp
+[ 751/1050] Compiling libraries/AP_HAL/utility/RCOutput_Tap_Linux.cpp
+[ 752/1050] Compiling libraries/AP_HAL/Scheduler.cpp
+[ 753/1050] Compiling libraries/AP_HAL/utility/Socket_native.cpp
+[ 754/1050] Compiling libraries/AP_HAL/utility/print_vprintf.cpp
+[ 755/1050] Compiling libraries/AP_HAL/utility/packetise.cpp
+[ 756/1050] Compiling libraries/AP_HAL_Empty/Semaphores.cpp
+[ 757/1050] Compiling libraries/AP_HAL_Empty/RCInput.cpp
+[ 758/1050] Compiling libraries/AP_HAL_Empty/GPIO.cpp
+[ 759/1050] Compiling libraries/AP_HAL_Empty/AnalogIn.cpp
+[ 760/1050] Compiling libraries/AP_HAL_Empty/UARTDriver.cpp
+[ 761/1050] Compiling libraries/AP_HAL_Empty/RCOutput.cpp
+[ 762/1050] Compiling libraries/AP_HAL_Empty/HAL_Empty_Class.cpp
+[ 763/1050] Compiling libraries/AP_HAL_Empty/Storage.cpp
+[ 764/1050] Compiling libraries/AP_HAL_ChibiOS/RCOutput_iofirmware.cpp
+[ 765/1050] Compiling libraries/AP_HAL_ChibiOS/SoftSigReaderInt.cpp
+[ 766/1050] Compiling libraries/AP_HAL_ChibiOS/RCOutput_serial.cpp
+[ 767/1050] Compiling libraries/AP_HAL_ChibiOS/CanIface.cpp
+[ 768/1050] Compiling libraries/AP_HAL_ChibiOS/Device.cpp
+[ 769/1050] Compiling libraries/AP_HAL_ChibiOS/AnalogIn.cpp
+[ 770/1050] Compiling libraries/AP_HAL_ChibiOS/SPIDevice.cpp
+[ 771/1050] Compiling libraries/AP_HAL_ChibiOS/WSPIDevice.cpp
+[ 772/1050] Compiling libraries/AP_HAL_ChibiOS/sdcard.cpp
+[ 773/1050] Compiling libraries/AP_HAL_ChibiOS/RCOutput.cpp
+[ 774/1050] Compiling libraries/AP_HAL_ChibiOS/RCInput.cpp
+[ 775/1050] Compiling libraries/AP_HAL_ChibiOS/I2CDevice.cpp
+[ 776/1050] Compiling libraries/AP_HAL_ChibiOS/DSP.cpp
+[ 777/1050] Compiling libraries/AP_HAL_ChibiOS/stdio.cpp
+[ 778/1050] Compiling libraries/AP_HAL_ChibiOS/shared_dma.cpp
+[ 779/1050] Compiling libraries/AP_HAL_ChibiOS/CANFDIface.cpp
+[ 780/1050] Compiling libraries/AP_HAL_ChibiOS/SoftSigReader.cpp
+[ 781/1050] Compiling libraries/AP_HAL_ChibiOS/Util.cpp
+[ 782/1050] Compiling libraries/AP_HAL_ChibiOS/Semaphores.cpp
+[ 783/1050] Compiling libraries/AP_HAL_ChibiOS/ap_setjmp.c
+[ 784/1050] Compiling libraries/AP_HAL_ChibiOS/Scheduler.cpp
+[ 785/1050] Compiling libraries/AP_HAL_ChibiOS/RCOutput_bdshot.cpp
+[ 786/1050] Compiling libraries/AP_HAL_ChibiOS/UARTDriver.cpp
+[ 787/1050] Compiling libraries/AP_Scripting/AP_Scripting_SerialAccess.cpp
+[ 788/1050] Compiling libraries/AP_Scripting/AP_Scripting_SerialDevice.cpp
+[ 789/1050] Compiling libraries/AP_Scripting/AP_Scripting_CANSensor.cpp
+[ 790/1050] Compiling libraries/AP_Scripting/AP_Scripting.cpp
+[ 791/1050] Compiling libraries/AP_Scripting/lua/src/lauxlib.c
+[ 792/1050] Compiling libraries/AP_Scripting/lua/src/lutf8lib.c
+[ 793/1050] Compiling libraries/AP_Scripting/lua/src/lstate.c
+[ 794/1050] Compiling libraries/AP_Scripting/lua/src/liolib.c
+[ 795/1050] Compiling libraries/AP_Scripting/lua/src/lvm.c
+[ 796/1050] Compiling libraries/AP_Scripting/lua/src/lua.c
+[ 797/1050] Compiling libraries/AP_Scripting/lua/src/luac.c
+[ 798/1050] Compiling libraries/AP_Scripting/lua/src/lstring.c
+[ 799/1050] Compiling libraries/AP_Scripting/lua/src/ltable.c
+[ 800/1050] Compiling libraries/AP_Scripting/lua/src/ltablib.c
+[ 801/1050] Compiling libraries/AP_Scripting/lua/src/lparser.c
+[ 802/1050] Compiling libraries/AP_Scripting/lua/src/lmem.c
+[ 803/1050] Compiling libraries/AP_Scripting/lua/src/lopcodes.c
+[ 804/1050] Compiling libraries/AP_Scripting/lua/src/loslib.c
+[ 805/1050] Compiling libraries/AP_Scripting/lua/src/lmathlib.c
+[ 806/1050] Compiling libraries/AP_Scripting/lua/src/loadlib.c
+[ 807/1050] Compiling libraries/AP_Scripting/lua/src/lbitlib.c
+[ 808/1050] Compiling libraries/AP_Scripting/lua/src/lundump.c
+[ 809/1050] Compiling libraries/AP_Scripting/lua/src/lgc.c
+[ 810/1050] Compiling libraries/AP_Scripting/lua/src/lstrlib.c
+[ 811/1050] Compiling libraries/AP_Scripting/lua/src/lzio.c
+[ 812/1050] Compiling libraries/AP_Scripting/lua/src/ldebug.c
+[ 813/1050] Compiling libraries/AP_Scripting/lua/src/lbaselib.c
+[ 814/1050] Compiling libraries/AP_Scripting/lua/src/lctype.c
+[ 815/1050] Compiling libraries/AP_Scripting/lua/src/lcode.c
+[ 816/1050] Compiling libraries/AP_Scripting/lua/src/ldump.c
+[ 817/1050] Compiling libraries/AP_Scripting/lua/src/lapi.c
+[ 818/1050] Compiling libraries/AP_Scripting/lua/src/lcorolib.c
+[ 819/1050] Compiling libraries/AP_Scripting/lua/src/linit.c
+[ 820/1050] Compiling libraries/AP_Scripting/lua/src/llex.c
+[ 821/1050] Compiling libraries/AP_Scripting/lua/src/lobject.c
+[ 822/1050] Compiling libraries/AP_Scripting/lua/src/ldo.c
+[ 823/1050] Compiling libraries/AP_Scripting/lua/src/lfunc.c
+[ 824/1050] Compiling libraries/AP_Scripting/lua/src/ltm.c
+[ 825/1050] Compiling libraries/AP_Scripting/lua/src/ldblib.c
+[ 826/1050] Compiling libraries/AP_ADSB/sagetech-sdk/sgEncodeGPS.c
+[ 827/1050] Compiling libraries/AP_ADSB/sagetech-sdk/sgDecodeSVR.c
+[ 828/1050] Compiling libraries/AP_ADSB/sagetech-sdk/toAlt.c
+[ 829/1050] Compiling libraries/AP_ADSB/sagetech-sdk/sgDecodeInstall.c
+[ 830/1050] Compiling libraries/AP_ADSB/sagetech-sdk/icao2Buf.c
+[ 831/1050] Compiling libraries/AP_ADSB/sagetech-sdk/sgDecodeMSR.c
+[ 832/1050] Compiling libraries/AP_ADSB/sagetech-sdk/uint322Buf.c
+[ 833/1050] Compiling libraries/AP_ADSB/sagetech-sdk/toUint16.c
+[ 834/1050] Compiling libraries/AP_ADSB/sagetech-sdk/toIcao.c
+[ 835/1050] Compiling libraries/AP_ADSB/sagetech-sdk/toHeading.c
+[ 836/1050] Compiling libraries/AP_ADSB/sagetech-sdk/charArray2Buf.c
+[ 837/1050] Compiling libraries/AP_ADSB/sagetech-sdk/calcChecksum.c
+[ 838/1050] Compiling libraries/AP_ADSB/sagetech-sdk/toUint32.c
+[ 839/1050] Compiling libraries/AP_ADSB/sagetech-sdk/sgDecodeAck.c
+[ 840/1050] Compiling libraries/AP_ADSB/sagetech-sdk/toInt32.c
+[ 841/1050] Compiling libraries/AP_ADSB/sagetech-sdk/float2Buf.c
+[ 842/1050] Compiling libraries/AP_ADSB/sagetech-sdk/sgEncodeTargetReq.c
+[ 843/1050] Compiling libraries/AP_ADSB/sagetech-sdk/sgEncodeInstall.c
+[ 844/1050] Compiling libraries/AP_ADSB/sagetech-sdk/sgEncodeOperating.c
+[ 845/1050] Compiling libraries/AP_ADSB/sagetech-sdk/uint162Buf.c
+[ 846/1050] Compiling libraries/AP_ADSB/sagetech-sdk/sgEncodeDataReq.c
+[ 847/1050] Compiling libraries/AP_ADSB/sagetech-sdk/target.c
+[ 848/1050] Compiling libraries/AP_ADSB/sagetech-sdk/toTOA.c
+[ 849/1050] Compiling libraries/AP_ADSB/sagetech-sdk/sgEncodeFlightId.c
+[ 850/1050] Compiling libraries/AP_ADSB/sagetech-sdk/sgDecodeFlightId.c
+[ 851/1050] Compiling libraries/AP_ADSB/sagetech-sdk/appendChecksum.c
+[ 852/1050] Compiling libraries/AP_ADSB/sagetech-sdk/toLatLon.c
+[ 853/1050] Compiling libraries/AP_ADSB/sagetech-sdk/toGS.c
+[ 854/1050] Compiling libraries/AP_ADSB/sagetech-sdk/toInt16.c
+[ 855/1050] Compiling libraries/AP_ADSB/sagetech-sdk/toVel.c
+[ 856/1050] Compiling libraries/AP_ADSB/sagetech-sdk/toHeading2.c
+[ 857/1050] Compiling libraries/AP_AHRS/AP_AHRS_Backend.cpp
+[ 858/1050] Compiling libraries/AP_AHRS/AP_AHRS_DCM.cpp
+[ 859/1050] Compiling libraries/AP_AHRS/AP_AHRS.cpp
+[ 860/1050] Compiling libraries/AP_Airspeed/AP_Airspeed_NMEA.cpp
+[ 861/1050] Compiling libraries/AP_Airspeed/AP_Airspeed_Params.cpp
+[ 862/1050] Compiling libraries/AP_Airspeed/AP_Airspeed.cpp
+[ 863/1050] Compiling libraries/AP_Baro/AP_Baro_Backend.cpp
+[ 864/1050] Compiling libraries/AP_Baro/AP_Baro.cpp
+[ 865/1050] Compiling libraries/AP_Baro/AP_Baro_SITL.cpp
+[ 866/1050] Compiling libraries/AP_BattMonitor/AP_BattMonitor_Params.cpp
+[ 867/1050] Compiling libraries/AP_BattMonitor/AP_BattMonitor.cpp
+[ 868/1050] Compiling libraries/AP_BoardConfig/AP_BoardConfig.cpp
+[ 869/1050] Compiling libraries/AP_HAL/SIMState.cpp
+[ 870/1050] Compiling libraries/AP_InertialSensor/AP_InertialSensor_Backend.cpp
+[ 871/1050] Compiling libraries/AP_InertialSensor/AP_InertialSensor_Invensensev3.cpp
+[ 872/1050] Compiling libraries/AP_InertialSensor/AP_InertialSensor.cpp
+[ 873/1050] Compiling libraries/AP_InertialSensor/FastRateBuffer.cpp
+[ 874/1050] Compiling libraries/AP_Math/SCurve.cpp
+[ 875/1050] Compiling libraries/AP_Mission/AP_Mission.cpp
+[ 876/1050] Compiling libraries/AP_DAL/AP_DAL_RangeFinder.cpp
+[ 877/1050] Compiling libraries/AP_DAL/AP_DAL_VisualOdom.cpp
+[ 878/1050] Compiling libraries/AP_DAL/AP_DAL_Beacon.cpp
+[ 879/1050] Compiling libraries/AP_DAL/AP_DAL.cpp
+[ 880/1050] Compiling libraries/AP_NavEKF2/AP_NavEKF2_OptFlowFusion.cpp
+[ 881/1050] Compiling libraries/AP_NavEKF2/AP_NavEKF2.cpp
+[ 882/1050] Compiling libraries/AP_NavEKF3/AP_NavEKF3_RngBcnFusion.cpp
+[ 883/1050] Compiling libraries/AP_NavEKF3/AP_NavEKF3.cpp
+[ 884/1050] Compiling libraries/AP_NavEKF3/AP_NavEKF3_Measurements.cpp
+[ 885/1050] Compiling libraries/AP_NavEKF3/AP_NavEKF3_AirDataFusion.cpp
+[ 886/1050] Compiling libraries/AP_NavEKF3/AP_NavEKF3_VehicleStatus.cpp
+[ 887/1050] Compiling libraries/AP_NavEKF3/AP_NavEKF3_OptFlowFusion.cpp
+[ 888/1050] Compiling libraries/AP_NavEKF3/AP_NavEKF3_GyroBias.cpp
+[ 889/1050] Compiling libraries/AP_NavEKF3/AP_NavEKF3_PosVelFusion.cpp
+[ 890/1050] Compiling libraries/AP_NavEKF3/AP_NavEKF3_MagFusion.cpp
+[ 891/1050] Compiling libraries/AP_NavEKF3/AP_NavEKF3_Outputs.cpp
+[ 892/1050] Compiling libraries/AP_NavEKF3/AP_NavEKF3_Control.cpp
+[ 893/1050] Compiling libraries/AP_NavEKF3/AP_NavEKF3_core.cpp
+[ 894/1050] Compiling libraries/AP_NavEKF3/AP_NavEKF3_Logging.cpp
+[ 895/1050] Compiling libraries/AP_Rally/AP_Rally.cpp
+[ 896/1050] Compiling libraries/AP_Scheduler/AP_Scheduler.cpp
+[ 897/1050] Compiling libraries/AP_Terrain/AP_Terrain.cpp
+[ 898/1050] Compiling libraries/AP_Vehicle/AP_Vehicle.cpp
+[ 899/1050] Compiling libraries/AP_Logger/LoggerMessageWriter.cpp
+[ 900/1050] Compiling libraries/AP_Logger/AP_Logger.cpp
+[ 901/1050] Compiling libraries/AP_Logger/AP_Logger_Backend.cpp
+[ 902/1050] Compiling libraries/AP_Logger/AP_Logger_File.cpp
+[ 903/1050] Compiling libraries/Filter/HarmonicNotchFilter.cpp
+[ 904/1050] Compiling libraries/GCS_MAVLink/GCS.cpp
+[ 905/1050] Compiling libraries/GCS_MAVLink/GCS_Fence.cpp
+[ 906/1050] Compiling libraries/GCS_MAVLink/GCS_Dummy.cpp
+[ 907/1050] Compiling libraries/GCS_MAVLink/GCS_MAVLink_Parameters.cpp
+[ 908/1050] Compiling libraries/GCS_MAVLink/GCS_Common.cpp
+[ 909/1050] Compiling libraries/RC_Channel/RC_Channel.cpp
+[ 910/1050] Compiling libraries/StorageManager/StorageManager.cpp
+[ 911/1050] Compiling libraries/AP_Frsky_Telem/AP_Frsky_SPort_Passthrough.cpp
+[ 912/1050] Compiling libraries/AP_IBus_Telem/AP_IBus_Telem.cpp
+[ 913/1050] Compiling libraries/AP_Relay/AP_Relay.cpp
+[ 914/1050] Compiling libraries/AP_RCProtocol/AP_RCProtocol_CRSF.cpp
+[ 915/1050] Compiling libraries/AP_RCProtocol/AP_RCProtocol.cpp
+[ 916/1050] Compiling libraries/AP_RCProtocol/AP_RCProtocol_SRXL2.cpp
+[ 917/1050] Compiling libraries/AP_RCProtocol/AP_RCProtocol_GHST.cpp
+[ 918/1050] Compiling libraries/AP_RCProtocol/AP_RCProtocol_FPort2.cpp
+[ 919/1050] Compiling libraries/AP_RCProtocol/AP_RCProtocol_UDP.cpp
+[ 920/1050] Compiling libraries/AP_RCProtocol/AP_RCProtocol_FPort.cpp
+[ 921/1050] Compiling libraries/AP_BLHeli/AP_BLHeli.cpp
+[ 922/1050] Compiling libraries/AP_Proximity/AP_Proximity_Utils.cpp
+[ 923/1050] Compiling libraries/AC_Fence/AC_PolyFence_loader.cpp
+[ 924/1050] Compiling libraries/AC_Fence/AC_Fence.cpp
+[ 925/1050] Compiling libraries/AC_Avoidance/AP_OADatabase.cpp
+[ 926/1050] Compiling libraries/AC_Avoidance/AP_OABendyRuler.cpp
+[ 927/1050] Compiling libraries/AC_Avoidance/AC_Avoid.cpp
+[ 928/1050] Compiling libraries/AP_LandingGear/AP_LandingGear.cpp
+[ 929/1050] Compiling libraries/AP_OSD/AP_OSD_ParamSetting.cpp
+[ 930/1050] Compiling libraries/AP_OSD/AP_OSD_Screen.cpp
+[ 931/1050] Compiling libraries/AP_OSD/AP_OSD_ParamScreen.cpp
+[ 932/1050] Compiling libraries/AP_Filesystem/AP_Filesystem_posix.cpp
+[ 933/1050] Compiling libraries/AP_ADSB/AP_ADSB_Sagetech_MXS.cpp
+[ 934/1050] Compiling libraries/AP_ADSB/AP_ADSB.cpp
+[ 935/1050] Compiling libraries/AP_ESC_Telem/AP_ESC_Telem_Backend.cpp
+[ 936/1050] Compiling libraries/AP_GyroFFT/AP_GyroFFT.cpp
+[ 937/1050] Compiling libraries/AP_RCTelemetry/AP_RCTelemetry.cpp
+[ 938/1050] Compiling libraries/AP_RCTelemetry/AP_CRSF_Telem.cpp
+[ 939/1050] Compiling libraries/AP_ExternalAHRS/AP_ExternalAHRS_SBG.cpp
+[ 940/1050] Compiling libraries/AP_ExternalAHRS/AP_ExternalAHRS_InertialLabs.cpp
+[ 941/1050] Compiling libraries/AP_TemperatureSensor/AP_TemperatureSensor.cpp
+[ 942/1050] Compiling libraries/AP_AIS/AP_AIS.cpp
+[ 943/1050] Compiling libraries/AP_Arming/AP_Arming.cpp
+[ 944/1050] Compiling libraries/AP_Follow/AP_Follow.cpp
+[ 945/1050] Compiling libraries/AC_AttitudeControl/AC_WeatherVane.cpp
+[ 946/1050] Compiling libraries/AC_AttitudeControl/AC_PosControl.cpp
+[ 947/1050] Compiling libraries/AC_AttitudeControl/AC_AttitudeControl.cpp
+[ 948/1050] Compiling libraries/AC_PrecLand/AC_PrecLand.cpp
+[ 949/1050] Compiling libraries/AC_WPNav/AC_Loiter.cpp
+[ 950/1050] Compiling libraries/AC_WPNav/AC_WPNav.cpp
+[ 951/1050] Compiling libraries/AC_WPNav/AC_Circle.cpp
+[ 952/1050] Compiling libraries/AP_Motors/AP_MotorsMulticopter.cpp
+[ 953/1050] Compiling libraries/AP_Motors/AP_MotorsTri.cpp
+[ 954/1050] Compiling libraries/AP_Motors/AP_MotorsMatrix.cpp
+[ 955/1050] Compiling libraries/AP_Motors/AP_Motors_Thrust_Linearization.cpp
+[ 956/1050] Compiling libraries/AP_Avoidance/AP_Avoidance.cpp
+[ 957/1050] Compiling libraries/AC_AutoTune/AC_AutoTune.cpp
+[ 958/1050] Compiling libraries/AC_AutoTune/AC_AutoTune_Multi.cpp
+[ 959/1050] Compiling libraries/AP_HAL_ChibiOS/GPIO.cpp
+[ 960/1050] Compiling libraries/AP_HAL_ChibiOS/Storage.cpp
+[ 961/1050] Compiling libraries/AP_HAL_ChibiOS/HAL_ChibiOS_Class.cpp
+[ 962/1050] Compiling libraries/AP_HAL_ChibiOS/system.cpp
+[ 963/1050] Compiling libraries/AP_Scripting/lua_scripts.cpp
+[ 964/1050] Compiling build/mini-pix/libraries/AP_Scripting/lua_generated_bindings.cpp
+[ 965/1050] Compiling libraries/AP_Scripting/AP_Scripting_CRSFMenu.cpp
+[ 966/1050] Compiling libraries/AP_Scripting/lua_boxed_numerics.cpp
+[ 967/1050] Compiling libraries/AP_Scripting/lua_bindings.cpp
+[ 968/1050] Compiling libraries/AP_Scripting/AP_Scripting_helpers.cpp
+[ 969/1050] Compiling ArduCopter/mode_sport.cpp
+[ 970/1050] Compiling ArduCopter/mode_althold.cpp
+[ 971/1050] Compiling ArduCopter/mode_guided_nogps.cpp
+[ 972/1050] Compiling ArduCopter/mode_stabilize_heli.cpp
+[ 973/1050] Compiling ArduCopter/mode_loiter.cpp
+[ 974/1050] Compiling ArduCopter/esc_calibration.cpp
+[ 975/1050] Compiling ArduCopter/ekf_check.cpp
+[ 976/1050] Compiling ArduCopter/land_detector.cpp
+[ 977/1050] Compiling ArduCopter/mode_autorotate.cpp
+[ 978/1050] Compiling ArduCopter/standby.cpp
+[ 979/1050] Compiling ArduCopter/Copter.cpp
+[ 980/1050] Compiling ArduCopter/mode_drift.cpp
+[ 981/1050] Compiling ArduCopter/compassmot.cpp
+[ 982/1050] Linking build/mini-pix/lib/libArduCopter_libs.a
+[ 983/1050] Compiling ArduCopter/toy_mode.cpp
+[ 984/1050] Compiling ArduCopter/terrain.cpp
+[ 985/1050] Compiling ArduCopter/radio.cpp
+[ 986/1050] Compiling ArduCopter/mode_rtl.cpp
+[ 987/1050] Compiling ArduCopter/mode.cpp
+[ 988/1050] Compiling ArduCopter/mode_zigzag.cpp
+[ 989/1050] Compiling ArduCopter/mode_brake.cpp
+[ 990/1050] Compiling ArduCopter/AP_Rally.cpp
+[ 991/1050] Compiling ArduCopter/mode_turtle.cpp
+[ 992/1050] Compiling ArduCopter/avoidance_adsb.cpp
+[ 993/1050] Compiling ArduCopter/AP_ExternalControl_Copter.cpp
+[ 994/1050] Compiling ArduCopter/takeoff_check.cpp
+[ 995/1050] Compiling ArduCopter/autoyaw.cpp
+[ 996/1050] Compiling ArduCopter/crash_check.cpp
+[ 997/1050] Compiling ArduCopter/mode_systemid.cpp
+[ 998/1050] Compiling ArduCopter/afs_copter.cpp
+[ 999/1050] Compiling ArduCopter/mode_guided_custom.cpp
+[1000/1050] Compiling ArduCopter/mode_smart_rtl.cpp
+[1001/1050] Compiling ArduCopter/AP_State.cpp
+[1002/1050] Compiling ArduCopter/mode_auto.cpp
+[1003/1050] Compiling ArduCopter/system.cpp
+[1004/1050] Compiling ArduCopter/Parameters.cpp
+[1005/1050] Compiling ArduCopter/rate_thread.cpp
+[1006/1050] Compiling ArduCopter/UserCode.cpp
+[1007/1050] Compiling ArduCopter/surface_tracking.cpp
+[1008/1050] Compiling ArduCopter/motors.cpp
+[1009/1050] Compiling ArduCopter/mode_flip.cpp
+[1010/1050] Compiling ArduCopter/AP_Arming_Copter.cpp
+[1011/1050] Compiling ArduCopter/mode_guided.cpp
+[1012/1050] Compiling ArduCopter/mode_avoid_adsb.cpp
+[1013/1050] Compiling ArduCopter/landing_gear.cpp
+[1014/1050] Compiling ArduCopter/takeoff.cpp
+[1015/1050] Compiling ArduCopter/failsafe.cpp
+[1016/1050] Compiling ArduCopter/Log.cpp
+[1017/1050] Compiling ArduCopter/motor_test.cpp
+[1018/1050] Compiling ArduCopter/inertia.cpp
+[1019/1050] Compiling ArduCopter/mode_poshold.cpp
+[1020/1050] Compiling ArduCopter/Attitude.cpp
+[1021/1050] Compiling ArduCopter/avoidance.cpp
+[1022/1050] Compiling ArduCopter/mode_acro_heli.cpp
+[1023/1050] Compiling ArduCopter/mode_land.cpp
+[1024/1050] Compiling ArduCopter/baro_ground_effect.cpp
+[1025/1050] Compiling ArduCopter/mode_flowhold.cpp
+[1026/1050] Compiling ArduCopter/navigation.cpp
+[1027/1050] Compiling ArduCopter/GCS_MAVLink_Copter.cpp
+[1028/1050] Compiling ArduCopter/mode_throw.cpp
+[1029/1050] Compiling ArduCopter/events.cpp
+[1030/1050] Compiling ArduCopter/commands.cpp
+[1031/1050] Compiling ArduCopter/mode_autotune.cpp
+[1032/1050] Compiling ArduCopter/GCS_Copter.cpp
+[1033/1050] Compiling ArduCopter/mode_follow.cpp
+[1034/1050] Compiling ArduCopter/RC_Channel_Copter.cpp
+[1035/1050] Compiling ArduCopter/fence.cpp
+[1036/1050] Compiling ArduCopter/tuning.cpp
+[1037/1050] Compiling ArduCopter/UserParameters.cpp
+[1038/1050] Compiling ArduCopter/sensors.cpp
+[1039/1050] Compiling ArduCopter/precision_landing.cpp
+[1040/1050] Compiling ArduCopter/mode_circle.cpp
+[1041/1050] Compiling ArduCopter/mode_stabilize.cpp
+[1042/1050] Compiling ArduCopter/heli.cpp
+[1043/1050] Compiling ArduCopter/mode_acro.cpp
+[1044/1050] Linking build/mini-pix/bin/arducopter
+[1045/1050] Generating bin/arducopter.bin
+[1046/1050] checking symbols build/mini-pix/bin/arducopter
+[1047/1050] app_descriptor set_app_descriptor: build/mini-pix/bin/arducopter build/mini-pix/bin/arducopter.bin
+Applying APP_DESCRIPTOR aabad32a8863d6b4
+Applying APP_DESCRIPTOR aabad32a8863d6b4 to elf
+[1048/1050] apj_gen build/mini-pix/bin/arducopter.bin
+[1049/1050] bin cleanup build/mini-pix/bin/arducopter.bin
+[1050/1050] Generating bin/arducopter_with_bl.hex
+Waf: Leaving directory `/home/flash/ardupilot/build/mini-pix'
+
+BUILD SUMMARY
+Build directory: /home/flash/ardupilot/build/mini-pix
+Target          Text (B)  Data (B)  BSS (B)  Total Flash Used (B)  Free Flash (B)  External Flash Used (B)
+----------------------------------------------------------------------------------------------------------
+bin/arducopter    872000      1712    74000                873712          158472  Not Applicable         
+
+'copter' finished successfully (1m44.638s)
+(venv-ardupilot) flash@be6c13119726:~/ardupilot$ ls                                                                          
+--help_private_key.dat  ArduCopter  Blimp               Doxyfile.in  Tools        docs                   mykey_public_key.dat  venv-signing
+--help_public_key.dat   ArduPlane   CODE_OF_CONDUCT.md  Makefile     Vagrantfile  libraries              pyproject.toml        waf
+AGENTS.md               ArduSub     COPYING.txt         README.md    benchmarks   modules                tasklist.json         wscript
+AntennaTracker          BUILD.md    Dockerfile          Rover        build        mykey_private_key.dat  tests
+(venv-ardupilot) flash@be6c13119726:~/ardupilot$ ./Tools/scripts/signing/make_secure_fw.py build/mini-pix/bin/arducopter.apj mykey_private_key.dat
+must use monocypher 3.1.3.2, please run: python3 -m pip install pymonocypher==3.1.3.2
+(venv-ardupilot) flash@be6c13119726:~/ardupilot$ python3 -m pip install pymonocypher==3.1.3.2
+Collecting pymonocypher==3.1.3.2
+  Using cached pymonocypher-3.1.3.2.tar.gz (409 kB)
+  Installing build dependencies ... done
+  Getting requirements to build wheel ... done
+  Preparing metadata (pyproject.toml) ... done
+Requirement already satisfied: numpy>=1.23 in /home/flash/venv-ardupilot/lib/python3.14/site-packages (from pymonocypher==3.1.3.2) (2.4.6)
+Building wheels for collected packages: pymonocypher
+  Building wheel for pymonocypher (pyproject.toml) ... error
+  error: subprocess-exited-with-error
+  
+  × Building wheel for pymonocypher (pyproject.toml) did not run successfully.
+  │ exit code: 1
+  ╰─> [75 lines of output]
+      /tmp/pip-build-env-zy82q4lu/overlay/lib/python3.14/site-packages/setuptools/dist.py:765: SetuptoolsDeprecationWarning: License classifiers are deprecated.
+      !!
+      
+              ********************************************************************************
+              Please consider removing the following classifiers in favor of a SPDX license expression:
+      
+              License :: OSI Approved :: BSD License
+              License :: CC0 1.0 Universal (CC0 1.0) Public Domain Dedication
+      
+              See https://packaging.python.org/en/latest/guides/writing-pyproject-toml/#license for details.
+              ********************************************************************************
+      
+      !!
+        self._finalize_license_expression()
+      running bdist_wheel
+      running build
+      running build_ext
+      building 'monocypher' extension
+      creating build/temp.linux-x86_64-cpython-314
+      x86_64-linux-gnu-gcc -fno-strict-overflow -Wsign-compare -DNDEBUG -g -O2 -Wall -fPIC -I. -I/home/flash/venv-ardupilot/include -I/usr/include/python3.14 -c c_monocypher.c -o build/temp.linux-x86_64-cpython-314/c_monocypher.o -DBLAKE2_NO_UNROLLING
+      c_monocypher.c:852:1: warning: ‘Py_UNICODE’ is deprecated [-Wdeprecated-declarations]
+        852 | static CYTHON_INLINE size_t __Pyx_Py_UNICODE_strlen(const Py_UNICODE *u) {
+            | ^~~~~~
+      c_monocypher.c: In function ‘__Pyx_Py_UNICODE_strlen’:
+      c_monocypher.c:853:5: warning: ‘Py_UNICODE’ is deprecated [-Wdeprecated-declarations]
+        853 |     const Py_UNICODE *u_end = u;
+            |     ^~~~~
+      c_monocypher.c: In function ‘__pyx_tp_dealloc_10monocypher_Blake2b’:
+      c_monocypher.c:6794:134: error: implicit declaration of function ‘_PyGC_FINALIZED’ [-Wimplicit-function-declaration]
+       6794 |   if (unlikely(PyType_HasFeature(Py_TYPE(o), Py_TPFLAGS_HAVE_FINALIZE) && Py_TYPE(o)->tp_finalize) && (!PyType_IS_GC(Py_TYPE(o)) || !_PyGC_FINALIZED(o))) {
+            |                                                                                                                                      ^~~~~~~~~~~~~~~
+      c_monocypher.c: In function ‘__Pyx_PyUnicode_Join’:
+      c_monocypher.c:9692:13: error: implicit declaration of function ‘_PyUnicode_FastCopyCharacters’; did you mean ‘PyUnicode_CopyCharacters’? [-Wimplicit-function-declaration]
+       9692 |             _PyUnicode_FastCopyCharacters(result_uval, char_pos, uval, 0, ulength);
+            |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+            |             PyUnicode_CopyCharacters
+      c_monocypher.c: In function ‘__Pyx_PyInt_As_int’:
+      c_monocypher.c:11110:27: error: too few arguments to function ‘_PyLong_AsByteArray’; expected 6, have 5
+      11110 |                 int ret = _PyLong_AsByteArray((PyLongObject *)v,
+            |                           ^~~~~~~~~~~~~~~~~~~
+      In file included from /usr/include/python3.14/longobject.h:171,
+                       from /usr/include/python3.14/Python.h:84,
+                       from c_monocypher.c:28:
+      /usr/include/python3.14/cpython/longobject.h:84:17: note: declared here
+         84 | PyAPI_FUNC(int) _PyLong_AsByteArray(PyLongObject* v,
+            |                 ^~~~~~~~~~~~~~~~~~~
+      c_monocypher.c: In function ‘__Pyx_PyInt_As_size_t’:
+      c_monocypher.c:11306:27: error: too few arguments to function ‘_PyLong_AsByteArray’; expected 6, have 5
+      11306 |                 int ret = _PyLong_AsByteArray((PyLongObject *)v,
+            |                           ^~~~~~~~~~~~~~~~~~~
+      /usr/include/python3.14/cpython/longobject.h:84:17: note: declared here
+         84 | PyAPI_FUNC(int) _PyLong_AsByteArray(PyLongObject* v,
+            |                 ^~~~~~~~~~~~~~~~~~~
+      c_monocypher.c: In function ‘__Pyx_PyInt_As_uint32_t’:
+      c_monocypher.c:11502:27: error: too few arguments to function ‘_PyLong_AsByteArray’; expected 6, have 5
+      11502 |                 int ret = _PyLong_AsByteArray((PyLongObject *)v,
+            |                           ^~~~~~~~~~~~~~~~~~~
+      /usr/include/python3.14/cpython/longobject.h:84:17: note: declared here
+         84 | PyAPI_FUNC(int) _PyLong_AsByteArray(PyLongObject* v,
+            |                 ^~~~~~~~~~~~~~~~~~~
+      c_monocypher.c: In function ‘__Pyx_PyInt_As_uint8_t’:
+      c_monocypher.c:11698:27: error: too few arguments to function ‘_PyLong_AsByteArray’; expected 6, have 5
+      11698 |                 int ret = _PyLong_AsByteArray((PyLongObject *)v,
+            |                           ^~~~~~~~~~~~~~~~~~~
+      /usr/include/python3.14/cpython/longobject.h:84:17: note: declared here
+         84 | PyAPI_FUNC(int) _PyLong_AsByteArray(PyLongObject* v,
+            |                 ^~~~~~~~~~~~~~~~~~~
+      c_monocypher.c: In function ‘__Pyx_PyInt_As_long’:
+      c_monocypher.c:11932:27: error: too few arguments to function ‘_PyLong_AsByteArray’; expected 6, have 5
+      11932 |                 int ret = _PyLong_AsByteArray((PyLongObject *)v,
+            |                           ^~~~~~~~~~~~~~~~~~~
+      /usr/include/python3.14/cpython/longobject.h:84:17: note: declared here
+         84 | PyAPI_FUNC(int) _PyLong_AsByteArray(PyLongObject* v,
+            |                 ^~~~~~~~~~~~~~~~~~~
+      error: command '/usr/lib/ccache/x86_64-linux-gnu-gcc' failed with exit code 1
+      [end of output]
+  
+  note: This error originates from a subprocess, and is likely not a problem with pip.
+  ERROR: Failed building wheel for pymonocypher
+Failed to build pymonocypher                                                                                                                                           
+error: failed-wheel-build-for-install
+
+× Failed to build installable wheels for some pyproject.toml based projects
+╰─> pymonocypher
+(venv-ardupilot) flash@be6c13119726:~/ardupilot$ history
+    1  cd flash
+    2  ls
+    3  git clone https://github.com/ardupilot/ardupilot.git
+    4  cd ardupilot
+    5  git submodule update --init --recursive
+    6  ls
+    7  Tools/environment_install/install-prereqs-ubuntu.sh -y
+    8  apt insatll sudo
+    9  apt install sudo
+   10  exit
+   11  ls
+   12  cd
+   13  cd ardupilot
+   14  ls
+   15  cd build
+   16  ls
+   17  rm -fr nimi*
+   18  ls
+   19  rm -fr mini*
+   20  ls
+   21  cd ..
+   22  ls
+   23  ./waf configure --board mini-pix --signed-fw
+   24  waf copter
+   25  ./waf copter
+   26  ls
+   27  ./Tools/scripts/signing/make_secure_fw.py build/mini-pix/bin/arducopter.apj mykey_private_key.dat
+   28  python3 -m pip install pymonocypher==3.1.3.2
+   29  history
+(venv-ardupilot) flash@be6c13119726:~/ardupilot$ python3 -m pip install pymonocypher==3.1.3.2
+Collecting pymonocypher==3.1.3.2
+  Using cached pymonocypher-3.1.3.2.tar.gz (409 kB)
+  Installing build dependencies ... done
+  Getting requirements to build wheel ... done
+  Preparing metadata (pyproject.toml) ... done
+Requirement already satisfied: numpy>=1.23 in /home/flash/venv-ardupilot/lib/python3.14/site-packages (from pymonocypher==3.1.3.2) (2.4.6)
+Building wheels for collected packages: pymonocypher
+  Building wheel for pymonocypher (pyproject.toml) ... error
+  error: subprocess-exited-with-error
+  
+  × Building wheel for pymonocypher (pyproject.toml) did not run successfully.
+  │ exit code: 1
+  ╰─> [75 lines of output]
+      /tmp/pip-build-env-zlp4qmbn/overlay/lib/python3.14/site-packages/setuptools/dist.py:765: SetuptoolsDeprecationWarning: License classifiers are deprecated.
+      !!
+      
+              ********************************************************************************
+              Please consider removing the following classifiers in favor of a SPDX license expression:
+      
+              License :: OSI Approved :: BSD License
+              License :: CC0 1.0 Universal (CC0 1.0) Public Domain Dedication
+      
+              See https://packaging.python.org/en/latest/guides/writing-pyproject-toml/#license for details.
+              ********************************************************************************
+      
+      !!
+        self._finalize_license_expression()
+      running bdist_wheel
+      running build
+      running build_ext
+      building 'monocypher' extension
+      creating build/temp.linux-x86_64-cpython-314
+      x86_64-linux-gnu-gcc -fno-strict-overflow -Wsign-compare -DNDEBUG -g -O2 -Wall -fPIC -I. -I/home/flash/venv-ardupilot/include -I/usr/include/python3.14 -c c_monocypher.c -o build/temp.linux-x86_64-cpython-314/c_monocypher.o -DBLAKE2_NO_UNROLLING
+      c_monocypher.c:852:1: warning: ‘Py_UNICODE’ is deprecated [-Wdeprecated-declarations]
+        852 | static CYTHON_INLINE size_t __Pyx_Py_UNICODE_strlen(const Py_UNICODE *u) {
+            | ^~~~~~
+      c_monocypher.c: In function ‘__Pyx_Py_UNICODE_strlen’:
+      c_monocypher.c:853:5: warning: ‘Py_UNICODE’ is deprecated [-Wdeprecated-declarations]
+        853 |     const Py_UNICODE *u_end = u;
+            |     ^~~~~
+      c_monocypher.c: In function ‘__pyx_tp_dealloc_10monocypher_Blake2b’:
+      c_monocypher.c:6794:134: error: implicit declaration of function ‘_PyGC_FINALIZED’ [-Wimplicit-function-declaration]
+       6794 |   if (unlikely(PyType_HasFeature(Py_TYPE(o), Py_TPFLAGS_HAVE_FINALIZE) && Py_TYPE(o)->tp_finalize) && (!PyType_IS_GC(Py_TYPE(o)) || !_PyGC_FINALIZED(o))) {
+            |                                                                                                                                      ^~~~~~~~~~~~~~~
+      c_monocypher.c: In function ‘__Pyx_PyUnicode_Join’:
+      c_monocypher.c:9692:13: error: implicit declaration of function ‘_PyUnicode_FastCopyCharacters’; did you mean ‘PyUnicode_CopyCharacters’? [-Wimplicit-function-declaration]
+       9692 |             _PyUnicode_FastCopyCharacters(result_uval, char_pos, uval, 0, ulength);
+            |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+            |             PyUnicode_CopyCharacters
+      c_monocypher.c: In function ‘__Pyx_PyInt_As_int’:
+      c_monocypher.c:11110:27: error: too few arguments to function ‘_PyLong_AsByteArray’; expected 6, have 5
+      11110 |                 int ret = _PyLong_AsByteArray((PyLongObject *)v,
+            |                           ^~~~~~~~~~~~~~~~~~~
+      In file included from /usr/include/python3.14/longobject.h:171,
+                       from /usr/include/python3.14/Python.h:84,
+                       from c_monocypher.c:28:
+      /usr/include/python3.14/cpython/longobject.h:84:17: note: declared here
+         84 | PyAPI_FUNC(int) _PyLong_AsByteArray(PyLongObject* v,
+            |                 ^~~~~~~~~~~~~~~~~~~
+      c_monocypher.c: In function ‘__Pyx_PyInt_As_size_t’:
+      c_monocypher.c:11306:27: error: too few arguments to function ‘_PyLong_AsByteArray’; expected 6, have 5
+      11306 |                 int ret = _PyLong_AsByteArray((PyLongObject *)v,
+            |                           ^~~~~~~~~~~~~~~~~~~
+      /usr/include/python3.14/cpython/longobject.h:84:17: note: declared here
+         84 | PyAPI_FUNC(int) _PyLong_AsByteArray(PyLongObject* v,
+            |                 ^~~~~~~~~~~~~~~~~~~
+      c_monocypher.c: In function ‘__Pyx_PyInt_As_uint32_t’:
+      c_monocypher.c:11502:27: error: too few arguments to function ‘_PyLong_AsByteArray’; expected 6, have 5
+      11502 |                 int ret = _PyLong_AsByteArray((PyLongObject *)v,
+            |                           ^~~~~~~~~~~~~~~~~~~
+      /usr/include/python3.14/cpython/longobject.h:84:17: note: declared here
+         84 | PyAPI_FUNC(int) _PyLong_AsByteArray(PyLongObject* v,
+            |                 ^~~~~~~~~~~~~~~~~~~
+      c_monocypher.c: In function ‘__Pyx_PyInt_As_uint8_t’:
+      c_monocypher.c:11698:27: error: too few arguments to function ‘_PyLong_AsByteArray’; expected 6, have 5
+      11698 |                 int ret = _PyLong_AsByteArray((PyLongObject *)v,
+            |                           ^~~~~~~~~~~~~~~~~~~
+      /usr/include/python3.14/cpython/longobject.h:84:17: note: declared here
+         84 | PyAPI_FUNC(int) _PyLong_AsByteArray(PyLongObject* v,
+            |                 ^~~~~~~~~~~~~~~~~~~
+      c_monocypher.c: In function ‘__Pyx_PyInt_As_long’:
+      c_monocypher.c:11932:27: error: too few arguments to function ‘_PyLong_AsByteArray’; expected 6, have 5
+      11932 |                 int ret = _PyLong_AsByteArray((PyLongObject *)v,
+            |                           ^~~~~~~~~~~~~~~~~~~
+      /usr/include/python3.14/cpython/longobject.h:84:17: note: declared here
+         84 | PyAPI_FUNC(int) _PyLong_AsByteArray(PyLongObject* v,
+            |                 ^~~~~~~~~~~~~~~~~~~
+      error: command '/usr/lib/ccache/x86_64-linux-gnu-gcc' failed with exit code 1
+      [end of output]
+  
+  note: This error originates from a subprocess, and is likely not a problem with pip.
+  ERROR: Failed building wheel for pymonocypher
+Failed to build pymonocypher                                                                                                                                           
+error: failed-wheel-build-for-install
+
+× Failed to build installable wheels for some pyproject.toml based projects
+╰─> pymonocypher
+(venv-ardupilot) flash@be6c13119726:~/ardupilot$ sudo apt install python3.11 python3.11-venv
+[sudo: authenticate] Password:      
+python3.11 is already the newest version (3.11.15-1+resolute1).
+python3.11-venv is already the newest version (3.11.15-1+resolute1).
+Summary:                    
+  Upgrading: 0, Installing: 0, Removing: 0, Not Upgrading: 6
+(venv-ardupilot) flash@be6c13119726:~/ardupilot$ python3.11 -m venv venv-signing
+source venv-signing/bin/activate
+
+pip install --upgrade pip
+pip install pymonocypher==3.1.3.2
+Requirement already satisfied: pip in ./venv-signing/lib/python3.11/site-packages (26.1.2)
+Requirement already satisfied: pymonocypher==3.1.3.2 in ./venv-signing/lib/python3.11/site-packages (3.1.3.2)
+Requirement already satisfied: numpy>=1.23 in ./venv-signing/lib/python3.11/site-packages (from pymonocypher==3.1.3.2) (2.4.6)
+(venv-signing) flash@be6c13119726:~/ardupilot$ ./Tools/scripts/signing/make_secure_fw.py build/mini-pix/bin/arducopter.apj mykey_private_key.dat
+Applying signature
+Wrote build/mini-pix/bin/arducopter.apj
+(venv-signing) flash@be6c13119726:~/ardupilot$ ./Tools/scripts/build_bootloaders.py mini-pix --signing-key=mykey_public_key.dat
+Building for mini-pix
+Building secure bootloader
+Running (./waf configure --board mini-pix --bootloader --no-submodule-update --Werror --signed-fw)
+Setting top to                           : /home/flash/ardupilot 
+Setting out to                           : /home/flash/ardupilot/build 
+Autoconfiguration                        : enabled 
+Checking for program 'python'            : /home/flash/ardupilot/venv-signing/bin/python3 
+Checking for python version >= 3.9.0     : 3.11.15 
+Setting board to                         : mini-pix 
+Using toolchain                          : arm-none-eabi 
+Checking for 'g++' (C++ compiler)        : /usr/bin/arm-none-eabi-g++ 
+Checking for 'gcc' (C compiler)          : /usr/bin/arm-none-eabi-gcc 
+Checking for c flags '-MMD'              : yes 
+Checking for cxx flags '-MMD'            : yes 
+Checking for program 'arm-none-eabi-nm'  : /usr/bin/arm-none-eabi-nm 
+CXX Compiler                             : g++ 14.2.1 
+Checking for program 'make'              : /usr/bin/make 
+Checking for program 'arm-none-eabi-objcopy' : /usr/bin/arm-none-eabi-objcopy 
+Processing /home/flash/ardupilot/libraries/AP_HAL_ChibiOS/hwdef/mini-pix/hwdef-bl.dat
+Setup for MCU STM32F405xx
+Writing hwdef setup in /home/flash/ardupilot/build/mini-pix/hwdef.h
+Writing DMA map
+Setting up as bootloader
+Generating ldscript.ld
+env set ENABLE_DFU_BOOT=0
+env set PROCESS_STACK=0x1C00
+env set MAIN_STACK=0x600
+env set IOMCU_FW=0
+env set IOMCU_FW_WITH_HEATER=0
+env set PERIPH_FW=0
+env set BOARD_FLASH_SIZE=1024
+env set EXT_FLASH_SIZE_MB=0
+env set INT_FLASH_PRIMARY=False
+env set ENABLE_CRASHDUMP=False
+env set CPU_FLAGS=['-mcpu=cortex-m4', '-mfpu=fpv4-sp-d16', '-mfloat-abi=hard']
+env set CORTEX=cortex-m4
+env set APJ_BOARD_ID=3
+env set APJ_BOARD_TYPE=STM32F405xx
+env set USBID=0x1209/0x5741
+env set FLASH_RESERVE_START_KB=0
+env set EXT_FLASH_RESERVE_START_KB=0
+env set FLASH_TOTAL=32768
+env set HAS_EXTERNAL_FLASH_SECTIONS=0
+env set ROMFS_FILES=[('hwdef.dat', '/home/flash/ardupilot/build/mini-pix/hw.dat')]
+env set CHIBIOS_BUILD_FLAGS=USE_FATFS=no CHIBIOS_STARTUP_MK=os/common/startup/ARMCMx/compilers/GCC/mk/startup_stm32f4xx.mk CHIBIOS_PLATFORM_MK=os/hal/ports/STM32/STM32F4xx/platform.mk MCU=cortex-m4
+Enabling ChibiOS asserts                     : no 
+Disabling Watchdog                           : no 
+Enabling malloc guard                        : no 
+Enabling ChibiOS thread statistics           : no 
+Enabling -Werror                             : yes 
+Checking for intelhex module:                : disabled 
+Enabled OpenDroneID                          : no 
+Enabled firmware ID checking                 : yes 
+GPS Debug Logging                            : no 
+Enabled custom controller                    : no 
+Checking for HAVE_CMATH_ISFINITE             : yes 
+Checking for HAVE_CMATH_ISINF                : yes 
+Checking for HAVE_CMATH_ISNAN                : yes 
+Checking for NEED_CMATH_ISFINITE_STD_NAMESPACE : yes 
+Checking for NEED_CMATH_ISINF_STD_NAMESPACE    : yes 
+Checking for NEED_CMATH_ISNAN_STD_NAMESPACE    : yes 
+Checking for header endian.h                   : not found 
+Checking for header byteswap.h                 : not found 
+Checking for HAVE_MEMRCHR                      : no 
+Configured VSCode Intellisense:                : no 
+DC_DSDL compiler in                            : /home/flash/ardupilot/modules/DroneCAN/dronecan_dsdlc 
+Source is git repository                       : yes 
+Update submodules                              : no 
+Checking for program 'git'                     : /usr/bin/git 
+Gtest                                          : STM32 boards currently don't support compiling gtest 
+Checking for program 'arm-none-eabi-size'      : /usr/bin/arm-none-eabi-size 
+Benchmarks                                     : disabled 
+Unit tests                                     : disabled 
+Scripting                                      : disabled 
+Scripting runtime checks                       : enabled 
+Debug build                                    : disabled 
+Coverage build                                 : disabled 
+Consistent build                               : disabled 
+Force 32-bit build                             : disabled 
+Checking for program 'rsync'                   : not found 
+Removing target_list file /home/flash/ardupilot/build/mini-pix/target_list
+'configure' finished successfully (1.119s)
+Running (./waf clean)
+'clean' finished successfully (1.227s)
+Running (./waf bootloader)
+Waf: Entering directory `/home/flash/ardupilot/build/mini-pix'
+Embedding file hwdef.dat:/home/flash/ardupilot/build/mini-pix/hw.dat
+[1/6] Creating build/mini-pix/modules/ChibiOS/include_dirs
+[2/6] Compiling libraries/AP_Scripting/generator/src/main.c
+[3/6] Creating build/mini-pix/ap_version.h
+[4/6] Creating build/mini-pix/chibios_flags.h
+[5/6] Linking build/mini-pix/modules/ChibiOS/libch.a
+[6/6] Processing /home/flash/ardupilot/build/mini-pix/libraries/AP_Scripting/lua_generated_bindings.cpp,/home/flash/ardupilot/build/mini-pix/libraries/AP_Scripting/lua_generated_bindings.h: libraries/AP_Scripting/generator/description/bindings.desc build/mini-pix/gen-bindings -> build/mini-pix/libraries/AP_Scripting/lua_generated_bindings.cpp build/mini-pix/libraries/AP_Scripting/lua_generated_bindings.h                                                                                              
+[1/108] ChibiOS: Compiling crt0_v7m.S
+[2/108] ChibiOS: Compiling vectors.S
+[3/108] ChibiOS: Compiling chcoreasm.S
+[4/108] ChibiOS: Compiling chcore.c
+[5/108] ChibiOS: Compiling crt1.c
+[6/108] ChibiOS: Compiling bufstreams.c
+[7/108] ChibiOS: Compiling chprintf.c
+[8/108] ChibiOS: Compiling chscanf.c
+[9/108] ChibiOS: Compiling memstreams.c
+[10/108] ChibiOS: Compiling nullstreams.c
+[11/108] ChibiOS: Compiling osal.c
+[12/108] ChibiOS: Compiling hal_adc_lld.c
+[13/108] ChibiOS: Compiling hal_can_lld.c
+[14/108] ChibiOS: Compiling hal_crypto_lld.c
+[15/108] ChibiOS: Compiling hal_dac_lld.c
+[16/108] ChibiOS: Compiling stm32_dma.c
+[17/108] ChibiOS: Compiling stm32_exti.c
+[18/108] ChibiOS: Compiling hal_pal_lld.c
+[19/108] ChibiOS: Compiling hal_i2c_lld.c
+[20/108] ChibiOS: Compiling hal_mac_lld.c
+[21/108] ChibiOS: Compiling hal_usb_lld.c
+[22/108] ChibiOS: Compiling hal_wspi_lld.c
+[23/108] ChibiOS: Compiling hal_rtc_lld.c
+[24/108] ChibiOS: Compiling hal_sdc_lld.c
+[25/108] ChibiOS: Compiling hal_i2s_lld.c
+[26/108] ChibiOS: Compiling hal_spi_lld.c
+[27/108] ChibiOS: Compiling hal_st_lld.c
+[28/108] ChibiOS: Compiling hal_eicu_lld.c
+[29/108] ChibiOS: Compiling hal_gpt_lld.c
+[30/108] ChibiOS: Compiling hal_icu_lld.c
+[31/108] ChibiOS: Compiling hal_pwm_lld.c
+[32/108] ChibiOS: Compiling hal_serial_lld.c
+[33/108] ChibiOS: Compiling hal_uart_lld.c
+[34/108] ChibiOS: Compiling hal_wdg_lld.c
+[35/108] ChibiOS: Compiling hal_efl_lld.c
+[36/108] ChibiOS: Compiling hal_lld.c
+[37/108] ChibiOS: Compiling stm32_isr.c
+[38/108] ChibiOS: Compiling nvic.c
+[39/108] ChibiOS: Compiling hal.c
+[40/108] ChibiOS: Compiling hal_adc.c
+[41/108] ChibiOS: Compiling hal_buffers.c
+[42/108] ChibiOS: Compiling hal_can.c
+[43/108] ChibiOS: Compiling hal_crypto.c
+[44/108] ChibiOS: Compiling hal_dac.c
+[45/108] ChibiOS: Compiling hal_efl.c
+[46/108] ChibiOS: Compiling hal_eicu.c
+[47/108] ChibiOS: Compiling hal_flash.c
+[48/108] ChibiOS: Compiling hal_gpt.c
+[49/108] ChibiOS: Compiling hal_i2c.c
+[50/108] ChibiOS: Compiling hal_i2s.c
+[52/108] ChibiOS: Compiling hal_mac.c
+[51/108] ChibiOS: Compiling hal_icu.c
+[53/108] ChibiOS: Compiling hal_mmc_spi.c
+[54/108] ChibiOS: Compiling hal_mmcsd.c
+[55/108] ChibiOS: Compiling hal_pal.c
+[56/108] ChibiOS: Compiling hal_pwm.c
+[57/108] ChibiOS: Compiling hal_queues.c
+[58/108] ChibiOS: Compiling hal_rtc.c
+[59/108] ChibiOS: Compiling hal_safety.c
+[60/108] ChibiOS: Compiling hal_sdc.c
+[61/108] ChibiOS: Compiling hal_serial.c
+[62/108] ChibiOS: Compiling hal_serial_usb.c
+[63/108] ChibiOS: Compiling hal_sio.c
+[64/108] ChibiOS: Compiling hal_spi.c
+[65/108] ChibiOS: Compiling hal_st.c
+[66/108] ChibiOS: Compiling hal_trng.c
+[67/108] ChibiOS: Compiling hal_uart.c
+[68/108] ChibiOS: Compiling hal_usb.c
+[69/108] ChibiOS: Compiling hal_wdg.c
+[70/108] ChibiOS: Compiling hal_wspi.c
+[71/108] ChibiOS: Compiling chdelegates.c
+[72/108] ChibiOS: Compiling chfactory.c
+[73/108] ChibiOS: Compiling chmboxes.c
+[74/108] ChibiOS: Compiling chmemcore.c
+[75/108] ChibiOS: Compiling chmemheaps.c
+[76/108] ChibiOS: Compiling chmempools.c
+[77/108] ChibiOS: Compiling chobjcaches.c
+[78/108] ChibiOS: Compiling chpipes.c
+[79/108] ChibiOS: Compiling chcond.c
+[80/108] ChibiOS: Compiling chdebug.c
+[81/108] ChibiOS: Compiling chdynamic.c
+[82/108] ChibiOS: Compiling chevents.c
+[83/108] ChibiOS: Compiling chinstances.c
+[84/108] ChibiOS: Compiling chmsg.c
+[85/108] ChibiOS: Compiling chmtx.c
+[86/108] ChibiOS: Compiling chregistry.c
+[87/108] ChibiOS: Compiling chrfcu.c
+[88/108] ChibiOS: Compiling chschd.c
+[89/108] ChibiOS: Compiling chsem.c
+[90/108] ChibiOS: Compiling chstats.c
+[91/108] ChibiOS: Compiling chsys.c
+[92/108] ChibiOS: Compiling chthreads.c
+[93/108] ChibiOS: Compiling chtm.c
+[94/108] ChibiOS: Compiling chtrace.c
+[95/108] ChibiOS: Compiling chvt.c
+[96/108] ChibiOS: Compiling stubs.c
+[97/108] ChibiOS: Compiling board.c
+[98/108] ChibiOS: Compiling usbcfg.c
+[99/108] ChibiOS: Compiling usbcfg_dualcdc.c
+[100/108] ChibiOS: Compiling usbcfg_common.c
+[101/108] ChibiOS: Compiling flash.c
+[102/108] ChibiOS: Compiling malloc.c
+[104/108] ChibiOS: Compiling stm32_util.c
+[103/108] ChibiOS: Compiling hrt.c
+[105/108] ChibiOS: Compiling bouncebuffer.c
+[106/108] ChibiOS: Compiling watchdog.c
+[107/108] ChibiOS: Compiling sysperf.c
+[108/108] ChibiOS: Compiling ch.cpp
+
+ChibiOS: Done!
+
+arm-none-eabi-ar: creating modules/ChibiOS/libch.a
+
+No target_list file found, creating
+Generating compile_commands.json
+Build commands will be stored in build/mini-pix/compile_commands.json
+Generating compile_commands.json
+Build commands will be stored in build/mini-pix/compile_commands.json
+[  7/237] Compiling libraries/AP_HAL/utility/RCOutput_Tap.cpp
+[  8/237] Compiling libraries/AP_HAL/Scheduler.cpp
+[  9/237] Compiling libraries/AP_HAL/Device.cpp
+[ 10/237] Compiling libraries/AP_HAL/CANIface.cpp
+[ 11/237] Compiling libraries/AP_HAL/utility/DataRateLimit.cpp
+[ 12/237] Compiling libraries/AP_HAL/utility/utoa_invert.cpp
+[ 13/237] Compiling libraries/AP_HAL/utility/BetterStream.cpp
+[ 14/237] Compiling libraries/AP_HAL/RCOutput.cpp
+[ 15/237] Compiling libraries/AP_HAL/utility/replace.cpp
+[ 16/237] Compiling libraries/AP_HAL/system.cpp
+[ 17/237] Compiling libraries/AP_HAL/utility/packetise.cpp
+[ 18/237] Compiling libraries/AP_HAL/utility/getopt_cpp.cpp
+[ 19/237] Compiling libraries/AP_HAL/GPIO.cpp
+[ 20/237] Compiling libraries/AP_HAL/utility/Socket.cpp
+[ 21/237] Compiling libraries/AP_HAL/Storage.cpp
+[ 22/237] Compiling libraries/AP_HAL/utility/RingBuffer.cpp
+[ 23/237] Compiling libraries/AP_HAL/DSP.cpp
+[ 24/237] Compiling libraries/AP_HAL/utility/RCOutput_Tap_Linux.cpp
+[ 25/237] Compiling libraries/AP_HAL/Semaphores.cpp
+[ 26/237] Compiling libraries/AP_HAL/utility/print_vprintf.cpp
+[ 27/237] Compiling libraries/AP_HAL/HAL.cpp
+[ 28/237] Compiling libraries/AP_HAL/utility/Socket_native.cpp
+[ 29/237] Compiling libraries/AP_HAL/utility/dsm.cpp
+[ 30/237] Compiling libraries/AP_HAL/Util.cpp
+[ 31/237] Compiling libraries/AP_HAL/UARTDriver.cpp
+[ 32/237] Compiling libraries/AP_HAL/utility/ftoa_engine.cpp
+[ 33/237] Compiling libraries/AP_HAL_ChibiOS/DSP.cpp
+[ 34/237] Compiling libraries/AP_HAL_ChibiOS/RCOutput_serial.cpp
+[ 35/237] Compiling libraries/AP_HAL_ChibiOS/SPIDevice.cpp
+[ 36/237] Compiling libraries/AP_HAL_ChibiOS/Device.cpp
+[ 37/237] Compiling libraries/AP_HAL_ChibiOS/Scheduler.cpp
+[ 38/237] Compiling libraries/AP_HAL_ChibiOS/Semaphores.cpp
+[ 39/237] Compiling libraries/AP_HAL_ChibiOS/SoftSigReader.cpp
+[ 40/237] Compiling libraries/AP_HAL_ChibiOS/SoftSigReaderInt.cpp
+[ 41/237] Compiling libraries/AP_HAL_ChibiOS/UARTDriver.cpp
+[ 42/237] Compiling libraries/AP_HAL_ChibiOS/Util.cpp
+[ 43/237] Compiling libraries/AP_HAL_ChibiOS/WSPIDevice.cpp
+[ 44/237] Compiling libraries/AP_HAL_ChibiOS/ap_setjmp.c
+[ 45/237] Compiling libraries/AP_HAL_ChibiOS/sdcard.cpp
+[ 46/237] Compiling libraries/AP_HAL_ChibiOS/shared_dma.cpp
+[ 47/237] Compiling libraries/AP_HAL_ChibiOS/stdio.cpp
+[ 48/237] Compiling libraries/AP_HAL_ChibiOS/AnalogIn.cpp
+[ 49/237] Compiling libraries/AP_HAL_ChibiOS/I2CDevice.cpp
+[ 50/237] Compiling libraries/AP_HAL_ChibiOS/CANFDIface.cpp
+[ 51/237] Compiling libraries/AP_HAL_ChibiOS/RCInput.cpp
+[ 52/237] Compiling libraries/AP_HAL_ChibiOS/RCOutput.cpp
+[ 53/237] Compiling libraries/AP_HAL_ChibiOS/CanIface.cpp
+[ 54/237] Compiling libraries/AP_HAL_ChibiOS/RCOutput_bdshot.cpp
+[ 55/237] Compiling libraries/AP_HAL_ChibiOS/RCOutput_iofirmware.cpp
+[ 56/237] Compiling libraries/AP_Scripting/AP_Scripting.cpp
+[ 57/237] Compiling libraries/AP_Scripting/AP_Scripting_CANSensor.cpp
+[ 58/237] Compiling libraries/AP_Scripting/AP_Scripting_SerialAccess.cpp
+[ 59/237] Compiling libraries/AP_Scripting/AP_Scripting_SerialDevice.cpp
+[ 60/237] Compiling libraries/AP_Scripting/lua/src/lbaselib.c
+[ 61/237] Compiling libraries/AP_Scripting/lua/src/lstring.c
+[ 62/237] Compiling libraries/AP_Scripting/lua/src/lstate.c
+[ 63/237] Compiling libraries/AP_Scripting/lua/src/llex.c
+[ 64/237] Compiling libraries/AP_Scripting/lua/src/lutf8lib.c
+[ 65/237] Compiling libraries/AP_Scripting/lua/src/ltablib.c
+[ 66/237] Compiling libraries/AP_Scripting/lua/src/loslib.c
+[ 67/237] Compiling libraries/AP_Scripting/lua/src/lparser.c
+[ 68/237] Compiling libraries/AP_Scripting/lua/src/lauxlib.c
+[ 69/237] Compiling libraries/AP_Scripting/lua/src/lopcodes.c
+[ 70/237] Compiling libraries/AP_Scripting/lua/src/loadlib.c
+[ 71/237] Compiling libraries/AP_Scripting/lua/src/lvm.c
+[ 72/237] Compiling libraries/AP_Scripting/lua/src/lapi.c
+[ 73/237] Compiling libraries/AP_Scripting/lua/src/lmem.c
+[ 74/237] Compiling libraries/AP_Scripting/lua/src/lobject.c
+[ 75/237] Compiling libraries/AP_Scripting/lua/src/lbitlib.c
+[ 76/237] Compiling libraries/AP_Scripting/lua/src/lundump.c
+[ 77/237] Compiling libraries/AP_Scripting/lua/src/lstrlib.c
+[ 78/237] Compiling libraries/AP_Scripting/lua/src/lcode.c
+[ 79/237] Compiling libraries/AP_Scripting/lua/src/lcorolib.c
+[ 80/237] Compiling libraries/AP_Scripting/lua/src/lzio.c
+[ 81/237] Compiling libraries/AP_Scripting/lua/src/lctype.c
+[ 82/237] Compiling libraries/AP_Scripting/lua/src/ldblib.c
+[ 83/237] Compiling libraries/AP_Scripting/lua/src/luac.c
+[ 84/237] Compiling libraries/AP_Scripting/lua/src/lgc.c
+[ 85/237] Compiling libraries/AP_Scripting/lua/src/ldebug.c
+[ 86/237] Compiling libraries/AP_Scripting/lua/src/ldo.c
+[ 87/237] Compiling libraries/AP_Scripting/lua/src/linit.c
+[ 88/237] Compiling libraries/AP_Scripting/lua/src/liolib.c
+[ 89/237] Compiling libraries/AP_Scripting/lua/src/ltm.c
+[ 90/237] Compiling libraries/AP_Scripting/lua/src/ldump.c
+[ 91/237] Compiling libraries/AP_Scripting/lua/src/lfunc.c
+[ 92/237] Compiling libraries/AP_Scripting/lua/src/lmathlib.c
+[ 93/237] Compiling libraries/AP_Scripting/lua/src/ltable.c
+[ 94/237] Compiling libraries/AP_Scripting/lua/src/lua.c
+[ 95/237] Compiling libraries/AP_Common/AP_FWVersion.cpp
+[ 96/237] Compiling libraries/AP_Common/AP_ExpandingArray.cpp
+[ 97/237] Compiling libraries/AP_Common/ExpandingString.cpp
+[ 98/237] Compiling libraries/AP_Common/AP_Common.cpp
+[ 99/237] Compiling libraries/AP_Common/sorting.cpp
+[100/237] Compiling libraries/AP_Common/Location.cpp
+[101/237] Compiling libraries/AP_Common/time.cpp
+[102/237] Compiling libraries/AP_Common/float16.cpp
+[103/237] Compiling libraries/AP_Common/NMEA.cpp
+[104/237] Compiling libraries/AP_Common/c++.cpp
+[105/237] Compiling libraries/AP_Math/spline5.cpp
+[106/237] Compiling libraries/AP_Math/vector2.cpp
+[107/237] Compiling libraries/AP_Math/AP_GeodesicGrid.cpp
+[108/237] Compiling libraries/AP_Math/quaternion.cpp
+[109/237] Compiling libraries/AP_Math/matrix_alg.cpp
+[110/237] Compiling libraries/AP_Math/polyfit.cpp
+[111/237] Compiling libraries/AP_Math/matrixN.cpp
+[112/237] Compiling libraries/AP_Math/location_double.cpp
+[113/237] Compiling libraries/AP_Math/crc.cpp
+[114/237] Compiling libraries/AP_Math/AP_Math.cpp
+[115/237] Compiling libraries/AP_Math/matrix3.cpp
+[116/237] Compiling libraries/AP_Math/chirp.cpp
+[117/237] Compiling libraries/AP_Math/SplineCurve.cpp
+[118/237] Compiling libraries/AP_Math/location.cpp
+[119/237] Compiling libraries/AP_Math/polygon.cpp
+[120/237] Compiling libraries/AP_Math/control.cpp
+[121/237] Compiling libraries/AP_Math/vector3.cpp
+[122/237] Compiling modules/lwip/src/netif/ppp/auth.c
+[123/237] Compiling modules/lwip/src/netif/ppp/fsm.c
+[124/237] Compiling libraries/AP_Networking/lwip_hal/arch/sys_arch.cpp
+[125/237] Compiling modules/lwip/src/core/udp.c
+[126/237] Compiling modules/lwip/src/core/pbuf.c
+[127/237] Compiling modules/lwip/src/core/raw.c
+[128/237] Compiling modules/lwip/src/core/timeouts.c
+[129/237] Compiling modules/lwip/src/core/dns.c
+[130/237] Compiling modules/lwip/src/core/def.c
+[131/237] Compiling modules/lwip/src/netif/ppp/pppoe.c
+[132/237] Compiling modules/lwip/src/netif/ppp/mppe.c
+[133/237] Compiling modules/lwip/src/netif/ppp/ipcp.c
+[134/237] Compiling modules/lwip/src/netif/ppp/pppapi.c
+[135/237] Compiling modules/lwip/src/core/altcp_tcp.c
+[136/237] Compiling modules/lwip/src/netif/ppp/multilink.c
+[137/237] Compiling modules/lwip/src/core/ip.c
+[138/237] Compiling modules/lwip/src/netif/ppp/eui64.c
+[139/237] Compiling modules/lwip/src/netif/ppp/ecp.c
+[140/237] Compiling modules/lwip/src/netif/ppp/ipv6cp.c
+[141/237] Compiling modules/lwip/src/api/netifapi.c
+[142/237] Compiling modules/lwip/src/netif/ppp/chap-md5.c
+[143/237] Compiling modules/lwip/src/netif/zepif.c
+[144/237] Compiling modules/lwip/src/api/netdb.c
+[145/237] Compiling modules/lwip/src/netif/lowpan6.c
+[146/237] Compiling modules/lwip/src/api/tcpip.c
+[147/237] Compiling modules/lwip/src/api/netbuf.c
+[148/237] Compiling modules/lwip/src/api/if_api.c
+[149/237] Compiling modules/lwip/src/core/ipv4/dhcp.c
+[150/237] Compiling modules/lwip/src/netif/ppp/eap.c
+[151/237] Compiling modules/lwip/src/netif/ppp/chap-new.c
+[152/237] Compiling modules/lwip/src/api/api_lib.c
+[153/237] Compiling modules/lwip/src/core/ipv4/icmp.c
+[154/237] Compiling modules/lwip/src/core/ipv4/igmp.c
+[155/237] Compiling modules/lwip/src/core/tcp_out.c
+[156/237] Compiling modules/lwip/src/core/tcp_in.c
+[157/237] Compiling modules/lwip/src/netif/ppp/pppol2tp.c
+[158/237] Compiling modules/lwip/src/core/ipv4/autoip.c
+[159/237] Compiling modules/lwip/src/core/memp.c
+[160/237] Compiling modules/lwip/src/core/inet_chksum.c
+[161/237] Compiling modules/lwip/src/core/stats.c
+[162/237] Compiling modules/lwip/src/core/mem.c
+[163/237] Compiling modules/lwip/src/netif/ppp/chap_ms.c
+[164/237] Compiling libraries/AP_Networking/lwip_hal/arch/evtimer.c
+[165/237] Compiling modules/lwip/src/netif/ppp/vj.c
+[166/237] Compiling modules/lwip/src/netif/bridgeif_fdb.c
+[167/237] Compiling modules/lwip/src/netif/ppp/utils.c
+[168/237] Compiling modules/lwip/src/core/ipv4/ip4_frag.c
+[169/237] Compiling modules/lwip/src/netif/ppp/magic.c
+[170/237] Compiling modules/lwip/src/api/err.c
+[171/237] Compiling modules/lwip/src/core/ipv4/ip4_addr.c
+[172/237] Compiling modules/lwip/src/core/ipv4/etharp.c
+[173/237] Compiling modules/lwip/src/core/ipv4/ip4.c
+[174/237] Compiling libraries/AP_Networking/AP_Networking_tests.cpp
+[175/237] Compiling libraries/AP_Networking/AP_Networking_macaddr.cpp
+[176/237] Compiling modules/lwip/src/netif/lowpan6_common.c
+[177/237] Compiling modules/lwip/src/core/sys.c
+[178/237] Compiling modules/lwip/src/netif/ppp/lcp.c
+[179/237] Compiling modules/lwip/src/core/altcp_alloc.c
+[180/237] Compiling modules/lwip/src/core/altcp.c
+[181/237] Compiling modules/lwip/src/netif/ppp/upap.c
+[182/237] Compiling libraries/AP_Networking/AP_Networking_port.cpp
+[183/237] Compiling libraries/AP_Networking/AP_Networking_address.cpp
+[184/237] Compiling libraries/AP_Networking/AP_Networking_ChibiOS.cpp
+[185/237] Compiling libraries/AP_Networking/AP_Networking_PPP.cpp
+[186/237] Compiling libraries/AP_Networking/AP_Networking_SITL_TUN.cpp
+[187/237] Compiling libraries/AP_Networking/AP_Networking_CAN.cpp
+[188/237] Compiling libraries/AP_Networking/AP_Networking_Backend.cpp
+[189/237] Compiling modules/lwip/src/netif/slipif.c
+[190/237] Compiling modules/lwip/src/core/netif.c
+[191/237] Compiling modules/lwip/src/netif/ppp/pppcrypt.c
+[192/237] Compiling modules/lwip/src/api/sockets.c
+[193/237] Compiling modules/lwip/src/core/tcp.c
+[194/237] Compiling modules/lwip/src/netif/ppp/ppp.c
+[195/237] Compiling modules/lwip/src/netif/lowpan6_ble.c
+[196/237] Compiling modules/lwip/src/netif/bridgeif.c
+[197/237] Compiling modules/lwip/src/netif/ethernet.c
+[198/237] Compiling libraries/AP_Networking/AP_Networking.cpp
+[199/237] Compiling modules/lwip/src/netif/ppp/pppos.c
+[200/237] Compiling modules/lwip/src/netif/ppp/ccp.c
+[201/237] Compiling modules/lwip/src/core/ipv4/acd.c
+[202/237] Compiling modules/lwip/src/core/init.c
+[203/237] Compiling modules/lwip/src/netif/ppp/demand.c
+[204/237] Compiling modules/lwip/src/api/api_msg.c
+[205/237] Compiling libraries/AP_ROMFS/tinflate.cpp
+[206/237] Compiling libraries/AP_ROMFS/AP_ROMFS.cpp
+[207/237] Compiling libraries/AP_CheckFirmware/monocypher.cpp
+[208/237] Compiling libraries/AP_CheckFirmware/AP_CheckFirmware_secure_command.cpp
+[209/237] Compiling libraries/AP_CheckFirmware/AP_CheckFirmware.cpp
+[210/237] Compiling libraries/AP_Math/SCurve.cpp
+[211/237] Compiling libraries/AP_HAL/SIMState.cpp
+[212/237] Compiling libraries/AP_HAL_ChibiOS/GPIO.cpp
+[213/237] Compiling libraries/AP_HAL_ChibiOS/HAL_ChibiOS_Class.cpp
+[214/237] Compiling libraries/AP_HAL_ChibiOS/Storage.cpp
+[215/237] Compiling libraries/AP_HAL_ChibiOS/system.cpp
+[216/237] Compiling libraries/AP_Scripting/AP_Scripting_CRSFMenu.cpp
+[217/237] Compiling build/mini-pix/libraries/AP_Scripting/lua_generated_bindings.cpp
+[218/237] Compiling libraries/AP_Scripting/lua_scripts.cpp
+[219/237] Compiling libraries/AP_Scripting/lua_boxed_numerics.cpp
+[220/237] Compiling libraries/AP_Scripting/AP_Scripting_helpers.cpp
+[221/237] Compiling libraries/AP_Scripting/lua_bindings.cpp
+[222/237] Compiling modules/DroneCAN/libcanard/canard.c
+[223/237] Compiling Tools/AP_Bootloader/bl_protocol.cpp
+[224/237] Compiling Tools/AP_Bootloader/md5.cpp
+[225/237] Compiling Tools/AP_Bootloader/AP_Bootloader.cpp
+[226/237] Compiling Tools/AP_Bootloader/can.cpp
+[227/237] Compiling Tools/AP_Bootloader/custom.cpp
+[228/237] Compiling Tools/AP_Bootloader/support.cpp
+[229/237] Compiling Tools/AP_Bootloader/flash_from_sd.cpp
+[230/237] Compiling Tools/AP_Bootloader/network.cpp
+[231/237] Linking build/mini-pix/Tools/AP_Bootloader/liblibcanard.a
+[232/237] Linking build/mini-pix/lib/libAP_Bootloader_libs.a
+[233/237] Linking build/mini-pix/bootloader/AP_Bootloader
+[234/237] Generating bin/AP_Bootloader.bin
+[235/237] checking symbols build/mini-pix/bootloader/AP_Bootloader
+[236/237] apj_gen build/mini-pix/bin/AP_Bootloader.bin
+[237/237] bin cleanup build/mini-pix/bin/AP_Bootloader.bin
+Waf: Leaving directory `/home/flash/ardupilot/build/mini-pix'
+
+BUILD SUMMARY
+Build directory: /home/flash/ardupilot/build/mini-pix
+Target                    Text (B)  Data (B)  BSS (B)  Total Flash Used (B)  Free Flash (B)  External Flash Used (B)
+--------------------------------------------------------------------------------------------------------------------
+bootloader/AP_Bootloader     28024        64    11792                 28088            4680  Not Applicable         
+'bootloader' finished successfully (5.798s)
+Created Tools/bootloaders/mini-pix_bl.bin
+Created Tools/bootloaders/mini-pix_bl.elf
+Signing bootloader with mykey_public_key.dat
+Running (./Tools/scripts/signing/make_secure_bl.py Tools/bootloaders/mini-pix_bl.bin mykey_public_key.dat)
+Adding ArduPilot keys
+Applying Public Key Tools/scripts/signing/ArduPilotKeys/ArduPilot_public_key2.dat
+Applying Public Key Tools/scripts/signing/ArduPilotKeys/ArduPilot_public_key3.dat
+Applying Public Key Tools/scripts/signing/ArduPilotKeys/ArduPilot_public_key1.dat
+Applying Public Key mykey_public_key.dat
+Running (./Tools/scripts/signing/make_secure_bl.py Tools/bootloaders/mini-pix_bl.elf mykey_public_key.dat)
+Adding ArduPilot keys
+Applying Public Key Tools/scripts/signing/ArduPilotKeys/ArduPilot_public_key2.dat
+Applying Public Key Tools/scripts/signing/ArduPilotKeys/ArduPilot_public_key3.dat
+Applying Public Key Tools/scripts/signing/ArduPilotKeys/ArduPilot_public_key1.dat
+Applying Public Key mykey_public_key.dat
+Running (/home/flash/ardupilot/venv-signing/bin/python3 Tools/scripts/bin2hex.py --offset 0x08000000 Tools/bootloaders/mini-pix_bl.bin Tools/bootloaders/mini-pix_bl.hex)
+Traceback (most recent call last):
+  File "/home/flash/ardupilot/Tools/scripts/bin2hex.py", line 47, in <module>
+    from intelhex import bin2hex
+ModuleNotFoundError: No module named 'intelhex'
+Build failed: /home/flash/ardupilot/venv-signing/bin/python3 Tools/scripts/bin2hex.py --offset 0x08000000 Tools/bootloaders/mini-pix_bl.bin Tools/bootloaders/mini-pix_bl.hex
+Failed boards: ['mini-pix']
+(venv-signing) flash@be6c13119726:~/ardupilot$ exit
+exit
+root@be6c13119726:/# su flash
+(venv-ardupilot) flash@be6c13119726:/$ ./Tools/scripts/build_bootloaders.py mini-pix --signing-key=mykey_public_key.dat
+bash: ./Tools/scripts/build_bootloaders.py: No such file or directory
+(venv-ardupilot) flash@be6c13119726:/$ cd
+(venv-ardupilot) flash@be6c13119726:~$ cd ard*
+(venv-ardupilot) flash@be6c13119726:~/ardupilot$ ./Tools/scripts/build_bootloaders.py mini-pix --signing-key=mykey_public_key.dat
+Building for mini-pix
+Building secure bootloader
+Running (./waf configure --board mini-pix --bootloader --no-submodule-update --Werror --signed-fw)
+Setting top to                           : /home/flash/ardupilot 
+Setting out to                           : /home/flash/ardupilot/build 
+Autoconfiguration                        : enabled 
+Checking for program 'python'            : /home/flash/venv-ardupilot/bin/python3 
+Checking for python version >= 3.9.0     : 3.14.4 
+Setting board to                         : mini-pix 
+Using toolchain                          : arm-none-eabi 
+Checking for 'g++' (C++ compiler)        : /usr/lib/ccache/arm-none-eabi-g++ 
+Checking for 'gcc' (C compiler)          : /usr/lib/ccache/arm-none-eabi-gcc 
+Checking for c flags '-MMD'              : yes 
+Checking for cxx flags '-MMD'            : yes 
+Checking for program 'arm-none-eabi-nm'  : /opt/gcc-arm-none-eabi-10-2020-q4-major/bin/arm-none-eabi-nm 
+CXX Compiler                             : g++ 10.2.1 
+Checking for program 'make'              : /usr/bin/make 
+Checking for program 'arm-none-eabi-objcopy' : /opt/gcc-arm-none-eabi-10-2020-q4-major/bin/arm-none-eabi-objcopy 
+Processing /home/flash/ardupilot/libraries/AP_HAL_ChibiOS/hwdef/mini-pix/hwdef-bl.dat
+Setup for MCU STM32F405xx
+Writing hwdef setup in /home/flash/ardupilot/build/mini-pix/hwdef.h
+Writing DMA map
+Setting up as bootloader
+Generating ldscript.ld
+env set ENABLE_DFU_BOOT=0
+env set PROCESS_STACK=0x1C00
+env set MAIN_STACK=0x600
+env set IOMCU_FW=0
+env set IOMCU_FW_WITH_HEATER=0
+env set PERIPH_FW=0
+env set BOARD_FLASH_SIZE=1024
+env set EXT_FLASH_SIZE_MB=0
+env set INT_FLASH_PRIMARY=False
+env set ENABLE_CRASHDUMP=False
+env set CPU_FLAGS=['-mcpu=cortex-m4', '-mfpu=fpv4-sp-d16', '-mfloat-abi=hard']
+env set CORTEX=cortex-m4
+env set APJ_BOARD_ID=3
+env set APJ_BOARD_TYPE=STM32F405xx
+env set USBID=0x1209/0x5741
+env set FLASH_RESERVE_START_KB=0
+env set EXT_FLASH_RESERVE_START_KB=0
+env set FLASH_TOTAL=32768
+env set HAS_EXTERNAL_FLASH_SECTIONS=0
+env set ROMFS_FILES=[('hwdef.dat', '/home/flash/ardupilot/build/mini-pix/hw.dat')]
+env set CHIBIOS_BUILD_FLAGS=USE_FATFS=no CHIBIOS_STARTUP_MK=os/common/startup/ARMCMx/compilers/GCC/mk/startup_stm32f4xx.mk CHIBIOS_PLATFORM_MK=os/hal/ports/STM32/STM32F4xx/platform.mk MCU=cortex-m4
+Enabling ChibiOS asserts                     : no 
+Disabling Watchdog                           : no 
+Enabling malloc guard                        : no 
+Enabling ChibiOS thread statistics           : no 
+Enabling -Werror                             : yes 
+Checking for intelhex module:                : OK 
+Enabled OpenDroneID                          : no 
+Enabled firmware ID checking                 : yes 
+GPS Debug Logging                            : no 
+Enabled custom controller                    : no 
+Checking for HAVE_CMATH_ISFINITE             : yes 
+Checking for HAVE_CMATH_ISINF                : yes 
+Checking for HAVE_CMATH_ISNAN                : yes 
+Checking for NEED_CMATH_ISFINITE_STD_NAMESPACE : yes 
+Checking for NEED_CMATH_ISINF_STD_NAMESPACE    : yes 
+Checking for NEED_CMATH_ISNAN_STD_NAMESPACE    : yes 
+Checking for header endian.h                   : not found 
+Checking for header byteswap.h                 : not found 
+Checking for HAVE_MEMRCHR                      : no 
+Configured VSCode Intellisense:                : no 
+DC_DSDL compiler in                            : /home/flash/ardupilot/modules/DroneCAN/dronecan_dsdlc 
+Source is git repository                       : yes 
+Update submodules                              : no 
+Checking for program 'git'                     : /usr/bin/git 
+Gtest                                          : STM32 boards currently don't support compiling gtest 
+Checking for program 'arm-none-eabi-size'      : /opt/gcc-arm-none-eabi-10-2020-q4-major/bin/arm-none-eabi-size 
+Benchmarks                                     : disabled 
+Unit tests                                     : disabled 
+Scripting                                      : disabled 
+Scripting runtime checks                       : enabled 
+Debug build                                    : disabled 
+Coverage build                                 : disabled 
+Consistent build                               : disabled 
+Force 32-bit build                             : disabled 
+Checking for program 'rsync'                   : not found 
+Removing target_list file /home/flash/ardupilot/build/mini-pix/target_list
+'configure' finished successfully (1.566s)
+Running (./waf clean)
+'clean' finished successfully (0.880s)
+Running (./waf bootloader)
+Waf: Entering directory `/home/flash/ardupilot/build/mini-pix'
+Embedding file hwdef.dat:/home/flash/ardupilot/build/mini-pix/hw.dat
+[1/6] Creating build/mini-pix/modules/ChibiOS/include_dirs
+[2/6] Compiling libraries/AP_Scripting/generator/src/main.c
+[3/6] Creating build/mini-pix/ap_version.h
+[4/6] Creating build/mini-pix/chibios_flags.h
+[5/6] Linking build/mini-pix/modules/ChibiOS/libch.a
+[6/6] Processing /home/flash/ardupilot/build/mini-pix/libraries/AP_Scripting/lua_generated_bindings.cpp,/home/flash/ardupilot/build/mini-pix/libraries/AP_Scripting/lua_generated_bindings.h: libraries/AP_Scripting/generator/description/bindings.desc build/mini-pix/gen-bindings -> build/mini-pix/libraries/AP_Scripting/lua_generated_bindings.cpp build/mini-pix/libraries/AP_Scripting/lua_generated_bindings.h                                                                                              
+[1/108] ChibiOS: Compiling crt0_v7m.S
+[2/108] ChibiOS: Compiling vectors.S
+[3/108] ChibiOS: Compiling chcoreasm.S
+[4/108] ChibiOS: Compiling chcore.c
+[5/108] ChibiOS: Compiling crt1.c
+[6/108] ChibiOS: Compiling bufstreams.c
+[7/108] ChibiOS: Compiling chprintf.c
+[8/108] ChibiOS: Compiling chscanf.c
+[9/108] ChibiOS: Compiling memstreams.c
+[10/108] ChibiOS: Compiling nullstreams.c
+[11/108] ChibiOS: Compiling osal.c
+[12/108] ChibiOS: Compiling hal_adc_lld.c
+[13/108] ChibiOS: Compiling hal_can_lld.c
+[14/108] ChibiOS: Compiling hal_crypto_lld.c
+[15/108] ChibiOS: Compiling hal_dac_lld.c
+[16/108] ChibiOS: Compiling stm32_dma.c
+[17/108] ChibiOS: Compiling stm32_exti.c
+[18/108] ChibiOS: Compiling hal_pal_lld.c
+[19/108] ChibiOS: Compiling hal_i2c_lld.c
+[20/108] ChibiOS: Compiling hal_mac_lld.c
+[21/108] ChibiOS: Compiling hal_usb_lld.c
+[22/108] ChibiOS: Compiling hal_wspi_lld.c
+[23/108] ChibiOS: Compiling hal_rtc_lld.c
+[24/108] ChibiOS: Compiling hal_sdc_lld.c
+[25/108] ChibiOS: Compiling hal_i2s_lld.c
+[26/108] ChibiOS: Compiling hal_spi_lld.c
+[27/108] ChibiOS: Compiling hal_st_lld.c
+[28/108] ChibiOS: Compiling hal_eicu_lld.c
+[29/108] ChibiOS: Compiling hal_gpt_lld.c
+[30/108] ChibiOS: Compiling hal_icu_lld.c
+[31/108] ChibiOS: Compiling hal_pwm_lld.c
+[32/108] ChibiOS: Compiling hal_serial_lld.c
+[33/108] ChibiOS: Compiling hal_uart_lld.c
+[34/108] ChibiOS: Compiling hal_wdg_lld.c
+[35/108] ChibiOS: Compiling hal_efl_lld.c
+[36/108] ChibiOS: Compiling hal_lld.c
+[37/108] ChibiOS: Compiling stm32_isr.c
+[38/108] ChibiOS: Compiling nvic.c
+[39/108] ChibiOS: Compiling hal.c
+[40/108] ChibiOS: Compiling hal_adc.c
+[41/108] ChibiOS: Compiling hal_buffers.c
+[42/108] ChibiOS: Compiling hal_can.c
+[43/108] ChibiOS: Compiling hal_crypto.c
+[44/108] ChibiOS: Compiling hal_dac.c
+[45/108] ChibiOS: Compiling hal_efl.c
+[46/108] ChibiOS: Compiling hal_eicu.c
+[47/108] ChibiOS: Compiling hal_flash.c
+[48/108] ChibiOS: Compiling hal_gpt.c
+[49/108] ChibiOS: Compiling hal_i2c.c
+[50/108] ChibiOS: Compiling hal_i2s.c
+[51/108] ChibiOS: Compiling hal_icu.c
+[52/108] ChibiOS: Compiling hal_mac.c
+[53/108] ChibiOS: Compiling hal_mmc_spi.c
+[54/108] ChibiOS: Compiling hal_mmcsd.c
+[55/108] ChibiOS: Compiling hal_pal.c
+[56/108] ChibiOS: Compiling hal_pwm.c
+[57/108] ChibiOS: Compiling hal_queues.c
+[58/108] ChibiOS: Compiling hal_rtc.c
+[59/108] ChibiOS: Compiling hal_safety.c
+[60/108] ChibiOS: Compiling hal_sdc.c
+[61/108] ChibiOS: Compiling hal_serial.c
+[62/108] ChibiOS: Compiling hal_serial_usb.c
+[63/108] ChibiOS: Compiling hal_sio.c
+[64/108] ChibiOS: Compiling hal_spi.c
+[65/108] ChibiOS: Compiling hal_st.c
+[66/108] ChibiOS: Compiling hal_trng.c
+[67/108] ChibiOS: Compiling hal_uart.c
+[68/108] ChibiOS: Compiling hal_usb.c
+[69/108] ChibiOS: Compiling hal_wdg.c
+[70/108] ChibiOS: Compiling hal_wspi.c
+[71/108] ChibiOS: Compiling chdelegates.c
+[72/108] ChibiOS: Compiling chfactory.c
+[73/108] ChibiOS: Compiling chmboxes.c
+[74/108] ChibiOS: Compiling chmemcore.c
+[75/108] ChibiOS: Compiling chmemheaps.c
+[76/108] ChibiOS: Compiling chmempools.c
+[77/108] ChibiOS: Compiling chobjcaches.c
+[78/108] ChibiOS: Compiling chpipes.c
+[79/108] ChibiOS: Compiling chcond.c
+[80/108] ChibiOS: Compiling chdebug.c
+[81/108] ChibiOS: Compiling chdynamic.c
+[82/108] ChibiOS: Compiling chevents.c
+[83/108] ChibiOS: Compiling chinstances.c
+[84/108] ChibiOS: Compiling chmsg.c
+[85/108] ChibiOS: Compiling chmtx.c
+[86/108] ChibiOS: Compiling chregistry.c
+[87/108] ChibiOS: Compiling chrfcu.c
+[88/108] ChibiOS: Compiling chschd.c
+[89/108] ChibiOS: Compiling chsem.c
+[90/108] ChibiOS: Compiling chstats.c
+[91/108] ChibiOS: Compiling chsys.c
+[92/108] ChibiOS: Compiling chthreads.c
+[93/108] ChibiOS: Compiling chtm.c
+[94/108] ChibiOS: Compiling chtrace.c
+[95/108] ChibiOS: Compiling chvt.c
+[96/108] ChibiOS: Compiling stubs.c
+[97/108] ChibiOS: Compiling board.c
+[98/108] ChibiOS: Compiling usbcfg.c
+[99/108] ChibiOS: Compiling usbcfg_dualcdc.c
+[100/108] ChibiOS: Compiling usbcfg_common.c
+[101/108] ChibiOS: Compiling flash.c
+[102/108] ChibiOS: Compiling malloc.c
+[103/108] ChibiOS: Compiling hrt.c
+[104/108] ChibiOS: Compiling stm32_util.c
+[105/108] ChibiOS: Compiling bouncebuffer.c
+[106/108] ChibiOS: Compiling watchdog.c
+[107/108] ChibiOS: Compiling sysperf.c
+[108/108] ChibiOS: Compiling ch.cpp
+
+ChibiOS: Done!
+
+arm-none-eabi-ar: creating modules/ChibiOS/libch.a
+
+No target_list file found, creating
+Generating compile_commands.json
+Build commands will be stored in build/mini-pix/compile_commands.json
+Generating compile_commands.json
+Build commands will be stored in build/mini-pix/compile_commands.json
+[  7/238] Compiling libraries/AP_HAL/utility/RCOutput_Tap.cpp
+[  8/238] Compiling libraries/AP_HAL/Scheduler.cpp
+[  9/238] Compiling libraries/AP_HAL/Device.cpp
+[ 10/238] Compiling libraries/AP_HAL/CANIface.cpp
+[ 11/238] Compiling libraries/AP_HAL/utility/DataRateLimit.cpp
+[ 12/238] Compiling libraries/AP_HAL/utility/utoa_invert.cpp
+[ 13/238] Compiling libraries/AP_HAL/utility/BetterStream.cpp
+[ 14/238] Compiling libraries/AP_HAL/RCOutput.cpp
+[ 15/238] Compiling libraries/AP_HAL/utility/replace.cpp
+[ 16/238] Compiling libraries/AP_HAL/system.cpp
+[ 17/238] Compiling libraries/AP_HAL/utility/packetise.cpp
+[ 18/238] Compiling libraries/AP_HAL/utility/getopt_cpp.cpp
+[ 19/238] Compiling libraries/AP_HAL/utility/Socket_native.cpp
+[ 20/238] Compiling libraries/AP_HAL/Semaphores.cpp
+[ 21/238] Compiling libraries/AP_HAL/utility/RingBuffer.cpp
+[ 22/238] Compiling libraries/AP_HAL/DSP.cpp
+[ 23/238] Compiling libraries/AP_HAL/utility/Socket.cpp
+[ 24/238] Compiling libraries/AP_HAL/GPIO.cpp
+[ 25/238] Compiling libraries/AP_HAL/utility/print_vprintf.cpp
+[ 26/238] Compiling libraries/AP_HAL/HAL.cpp
+[ 27/238] Compiling libraries/AP_HAL/Storage.cpp
+[ 28/238] Compiling libraries/AP_HAL/utility/dsm.cpp
+[ 29/238] Compiling libraries/AP_HAL/Util.cpp
+[ 30/238] Compiling libraries/AP_HAL/UARTDriver.cpp
+[ 31/238] Compiling libraries/AP_HAL/utility/ftoa_engine.cpp
+[ 32/238] Compiling libraries/AP_HAL/utility/RCOutput_Tap_Linux.cpp
+[ 33/238] Compiling libraries/AP_HAL_ChibiOS/CANFDIface.cpp
+[ 34/238] Compiling libraries/AP_HAL_ChibiOS/DSP.cpp
+[ 35/238] Compiling libraries/AP_HAL_ChibiOS/RCOutput_serial.cpp
+[ 36/238] Compiling libraries/AP_HAL_ChibiOS/SPIDevice.cpp
+[ 37/238] Compiling libraries/AP_HAL_ChibiOS/CanIface.cpp
+[ 38/238] Compiling libraries/AP_HAL_ChibiOS/Scheduler.cpp
+[ 39/238] Compiling libraries/AP_HAL_ChibiOS/Semaphores.cpp
+[ 40/238] Compiling libraries/AP_HAL_ChibiOS/SoftSigReader.cpp
+[ 41/238] Compiling libraries/AP_HAL_ChibiOS/SoftSigReaderInt.cpp
+[ 42/238] Compiling libraries/AP_HAL_ChibiOS/UARTDriver.cpp
+[ 43/238] Compiling libraries/AP_HAL_ChibiOS/Util.cpp
+[ 44/238] Compiling libraries/AP_HAL_ChibiOS/WSPIDevice.cpp
+[ 45/238] Compiling libraries/AP_HAL_ChibiOS/ap_setjmp.c
+[ 46/238] Compiling libraries/AP_HAL_ChibiOS/sdcard.cpp
+[ 47/238] Compiling libraries/AP_HAL_ChibiOS/shared_dma.cpp
+[ 48/238] Compiling libraries/AP_HAL_ChibiOS/stdio.cpp
+[ 49/238] Compiling libraries/AP_HAL_ChibiOS/AnalogIn.cpp
+[ 50/238] Compiling libraries/AP_HAL_ChibiOS/I2CDevice.cpp
+[ 51/238] Compiling libraries/AP_HAL_ChibiOS/Device.cpp
+[ 52/238] Compiling libraries/AP_HAL_ChibiOS/RCInput.cpp
+[ 53/238] Compiling libraries/AP_HAL_ChibiOS/RCOutput.cpp
+[ 54/238] Compiling libraries/AP_HAL_ChibiOS/RCOutput_bdshot.cpp
+[ 55/238] Compiling libraries/AP_HAL_ChibiOS/RCOutput_iofirmware.cpp
+[ 56/238] Compiling libraries/AP_Scripting/AP_Scripting.cpp
+[ 57/238] Compiling libraries/AP_Scripting/AP_Scripting_CANSensor.cpp
+[ 58/238] Compiling libraries/AP_Scripting/AP_Scripting_SerialAccess.cpp
+[ 59/238] Compiling libraries/AP_Scripting/AP_Scripting_SerialDevice.cpp
+[ 60/238] Compiling libraries/AP_Scripting/lua/src/lzio.c
+[ 61/238] Compiling libraries/AP_Scripting/lua/src/lstring.c
+[ 62/238] Compiling libraries/AP_Scripting/lua/src/lopcodes.c
+[ 63/238] Compiling libraries/AP_Scripting/lua/src/llex.c
+[ 64/238] Compiling libraries/AP_Scripting/lua/src/lstrlib.c
+[ 65/238] Compiling libraries/AP_Scripting/lua/src/lstate.c
+[ 66/238] Compiling libraries/AP_Scripting/lua/src/loslib.c
+[ 67/238] Compiling libraries/AP_Scripting/lua/src/lparser.c
+[ 68/238] Compiling libraries/AP_Scripting/lua/src/lauxlib.c
+[ 69/238] Compiling libraries/AP_Scripting/lua/src/lobject.c
+[ 70/238] Compiling libraries/AP_Scripting/lua/src/lmathlib.c
+[ 71/238] Compiling libraries/AP_Scripting/lua/src/lapi.c
+[ 72/238] Compiling libraries/AP_Scripting/lua/src/lbaselib.c
+[ 73/238] Compiling libraries/AP_Scripting/lua/src/lmem.c
+[ 74/238] Compiling libraries/AP_Scripting/lua/src/loadlib.c
+[ 75/238] Compiling libraries/AP_Scripting/lua/src/lbitlib.c
+[ 76/238] Compiling libraries/AP_Scripting/lua/src/lvm.c
+[ 77/238] Compiling libraries/AP_Scripting/lua/src/lcode.c
+[ 78/238] Compiling libraries/AP_Scripting/lua/src/lcorolib.c
+[ 79/238] Compiling libraries/AP_Scripting/lua/src/lundump.c
+[ 80/238] Compiling libraries/AP_Scripting/lua/src/lctype.c
+[ 81/238] Compiling libraries/AP_Scripting/lua/src/ldblib.c
+[ 82/238] Compiling libraries/AP_Scripting/lua/src/lutf8lib.c
+[ 83/238] Compiling libraries/AP_Scripting/lua/src/lgc.c
+[ 84/238] Compiling libraries/AP_Scripting/lua/src/ldebug.c
+[ 85/238] Compiling libraries/AP_Scripting/lua/src/ldo.c
+[ 86/238] Compiling libraries/AP_Scripting/lua/src/linit.c
+[ 87/238] Compiling libraries/AP_Scripting/lua/src/liolib.c
+[ 88/238] Compiling libraries/AP_Scripting/lua/src/luac.c
+[ 89/238] Compiling libraries/AP_Scripting/lua/src/ltable.c
+[ 90/238] Compiling libraries/AP_Scripting/lua/src/lfunc.c
+[ 91/238] Compiling libraries/AP_Scripting/lua/src/ltm.c
+[ 92/238] Compiling libraries/AP_Scripting/lua/src/ltablib.c
+[ 93/238] Compiling libraries/AP_Scripting/lua/src/lua.c
+[ 94/238] Compiling libraries/AP_Scripting/lua/src/ldump.c
+[ 95/238] Compiling libraries/AP_Common/AP_ExpandingArray.cpp
+[ 96/238] Compiling libraries/AP_Common/Location.cpp
+[ 97/238] Compiling libraries/AP_Common/ExpandingString.cpp
+[ 98/238] Compiling libraries/AP_Common/AP_Common.cpp
+[ 99/238] Compiling libraries/AP_Common/time.cpp
+[100/238] Compiling libraries/AP_Common/AP_FWVersion.cpp
+[101/238] Compiling libraries/AP_Common/float16.cpp
+[102/238] Compiling libraries/AP_Common/NMEA.cpp
+[103/238] Compiling libraries/AP_Common/sorting.cpp
+[104/238] Compiling libraries/AP_Common/c++.cpp
+[105/238] Compiling libraries/AP_Math/spline5.cpp
+[106/238] Compiling libraries/AP_Math/polygon.cpp
+[107/238] Compiling libraries/AP_Math/matrixN.cpp
+[108/238] Compiling libraries/AP_Math/vector2.cpp
+[109/238] Compiling libraries/AP_Math/quaternion.cpp
+[110/238] Compiling libraries/AP_Math/matrix_alg.cpp
+[111/238] Compiling libraries/AP_Math/polyfit.cpp
+[112/238] Compiling libraries/AP_Math/location.cpp
+[113/238] Compiling libraries/AP_Math/SplineCurve.cpp
+[114/238] Compiling libraries/AP_Math/AP_Math.cpp
+[115/238] Compiling libraries/AP_Math/location_double.cpp
+[116/238] Compiling libraries/AP_Math/crc.cpp
+[117/238] Compiling libraries/AP_Math/chirp.cpp
+[118/238] Compiling libraries/AP_Math/control.cpp
+[119/238] Compiling libraries/AP_Math/matrix3.cpp
+[120/238] Compiling libraries/AP_Math/AP_GeodesicGrid.cpp
+[121/238] Compiling libraries/AP_Math/vector3.cpp
+[122/238] Compiling modules/lwip/src/netif/ppp/upap.c
+[123/238] Compiling modules/lwip/src/netif/ppp/chap_ms.c
+[124/238] Compiling modules/lwip/src/netif/ppp/vj.c
+[125/238] Compiling modules/lwip/src/netif/ppp/magic.c
+[126/238] Compiling modules/lwip/src/core/tcp.c
+[127/238] Compiling modules/lwip/src/core/pbuf.c
+[128/238] Compiling modules/lwip/src/core/timeouts.c
+[129/238] Compiling modules/lwip/src/core/ip.c
+[130/238] Compiling modules/lwip/src/core/dns.c
+[131/238] Compiling modules/lwip/src/core/def.c
+[132/238] Compiling modules/lwip/src/netif/ppp/pppoe.c
+[133/238] Compiling modules/lwip/src/netif/ppp/mppe.c
+[134/238] Compiling modules/lwip/src/netif/ppp/ipcp.c
+[135/238] Compiling modules/lwip/src/netif/ppp/pppapi.c
+[136/238] Compiling modules/lwip/src/core/altcp_tcp.c
+[137/238] Compiling modules/lwip/src/netif/ppp/multilink.c
+[138/238] Compiling modules/lwip/src/netif/ppp/ipv6cp.c
+[139/238] Compiling modules/lwip/src/netif/ppp/eui64.c
+[140/238] Compiling modules/lwip/src/netif/ppp/ecp.c
+[141/238] Compiling modules/lwip/src/netif/ppp/chap-new.c
+[142/238] Compiling modules/lwip/src/netif/ppp/chap-md5.c
+[143/238] Compiling modules/lwip/src/api/netifapi.c
+[144/238] Compiling modules/lwip/src/netif/zepif.c
+[145/238] Compiling modules/lwip/src/api/netdb.c
+[146/238] Compiling modules/lwip/src/netif/lowpan6.c
+[147/238] Compiling modules/lwip/src/api/tcpip.c
+[148/238] Compiling modules/lwip/src/api/netbuf.c
+[149/238] Compiling modules/lwip/src/api/if_api.c
+[150/238] Compiling modules/lwip/src/netif/ppp/eap.c
+[151/238] Compiling modules/lwip/src/core/ipv4/dhcp.c
+[152/238] Compiling modules/lwip/src/api/api_lib.c
+[153/238] Compiling modules/lwip/src/core/ipv4/igmp.c
+[154/238] Compiling modules/lwip/src/core/ipv4/autoip.c
+[155/238] Compiling modules/lwip/src/core/ipv4/icmp.c
+[156/238] Compiling modules/lwip/src/core/tcp_out.c
+[157/238] Compiling modules/lwip/src/core/tcp_in.c
+[158/238] Compiling modules/lwip/src/netif/ppp/pppol2tp.c
+[159/238] Compiling modules/lwip/src/core/memp.c
+[160/238] Compiling modules/lwip/src/core/stats.c
+[161/238] Compiling modules/lwip/src/core/inet_chksum.c
+[162/238] Compiling modules/lwip/src/core/mem.c
+[163/238] Compiling modules/lwip/src/netif/lowpan6_common.c
+[164/238] Compiling modules/lwip/src/core/ipv4/ip4.c
+[165/238] Compiling modules/lwip/src/netif/bridgeif_fdb.c
+[166/238] Compiling libraries/AP_Networking/lwip_hal/arch/evtimer.c
+[167/238] Compiling libraries/AP_Networking/lwip_hal/arch/sys_arch.cpp
+[168/238] Compiling modules/lwip/src/api/err.c
+[169/238] Compiling modules/lwip/src/core/ipv4/etharp.c
+[170/238] Compiling modules/lwip/src/netif/ppp/utils.c
+[171/238] Compiling modules/lwip/src/core/ipv4/ip4_frag.c
+[172/238] Compiling modules/lwip/src/netif/ppp/lcp.c
+[173/238] Compiling modules/lwip/src/core/ipv4/ip4_addr.c
+[174/238] Compiling modules/lwip/src/core/raw.c
+[175/238] Compiling modules/lwip/src/netif/slipif.c
+[176/238] Compiling modules/lwip/src/core/netif.c
+[177/238] Compiling modules/lwip/src/api/sockets.c
+[178/238] Compiling modules/lwip/src/core/sys.c
+[179/238] Compiling libraries/AP_Networking/AP_Networking_port.cpp
+[180/238] Compiling modules/lwip/src/core/altcp.c
+[181/238] Compiling modules/lwip/src/netif/ppp/auth.c
+[182/238] Compiling modules/lwip/src/core/altcp_alloc.c
+[183/238] Compiling libraries/AP_Networking/AP_Networking_tests.cpp
+[184/238] Compiling libraries/AP_Networking/AP_Networking_address.cpp
+[185/238] Compiling libraries/AP_Networking/AP_Networking_Backend.cpp
+[186/238] Compiling libraries/AP_Networking/AP_Networking_macaddr.cpp
+[187/238] Compiling libraries/AP_Networking/AP_Networking_SITL_TUN.cpp
+[188/238] Compiling libraries/AP_Networking/AP_Networking_CAN.cpp
+[189/238] Compiling libraries/AP_Networking/AP_Networking_ChibiOS.cpp
+[190/238] Compiling modules/lwip/src/netif/bridgeif.c
+[191/238] Compiling modules/lwip/src/core/ipv4/acd.c
+[192/238] Compiling modules/lwip/src/netif/ppp/ccp.c
+[193/238] Compiling modules/lwip/src/core/udp.c
+[194/238] Compiling libraries/AP_Networking/AP_Networking.cpp
+[195/238] Compiling modules/lwip/src/netif/lowpan6_ble.c
+[196/238] Compiling modules/lwip/src/netif/ppp/pppcrypt.c
+[197/238] Compiling libraries/AP_Networking/AP_Networking_PPP.cpp
+[198/238] Compiling modules/lwip/src/netif/ppp/pppos.c
+[199/238] Compiling modules/lwip/src/core/init.c
+[200/238] Compiling modules/lwip/src/api/api_msg.c
+[201/238] Compiling modules/lwip/src/netif/ppp/fsm.c
+[202/238] Compiling modules/lwip/src/netif/ethernet.c
+[203/238] Compiling modules/lwip/src/netif/ppp/ppp.c
+[204/238] Compiling modules/lwip/src/netif/ppp/demand.c
+[205/238] Compiling libraries/AP_ROMFS/AP_ROMFS.cpp
+[206/238] Compiling libraries/AP_ROMFS/tinflate.cpp
+[207/238] Compiling libraries/AP_CheckFirmware/monocypher.cpp
+[208/238] Compiling libraries/AP_CheckFirmware/AP_CheckFirmware.cpp
+[209/238] Compiling libraries/AP_CheckFirmware/AP_CheckFirmware_secure_command.cpp
+[210/238] Compiling libraries/AP_Math/SCurve.cpp
+[211/238] Compiling libraries/AP_HAL/SIMState.cpp
+[212/238] Compiling libraries/AP_HAL_ChibiOS/HAL_ChibiOS_Class.cpp
+[213/238] Compiling libraries/AP_HAL_ChibiOS/system.cpp
+[214/238] Compiling libraries/AP_HAL_ChibiOS/GPIO.cpp
+[215/238] Compiling libraries/AP_HAL_ChibiOS/Storage.cpp
+[216/238] Compiling libraries/AP_Scripting/lua_boxed_numerics.cpp
+[217/238] Compiling libraries/AP_Scripting/lua_scripts.cpp
+[218/238] Compiling libraries/AP_Scripting/AP_Scripting_CRSFMenu.cpp
+[219/238] Compiling build/mini-pix/libraries/AP_Scripting/lua_generated_bindings.cpp
+[220/238] Compiling libraries/AP_Scripting/AP_Scripting_helpers.cpp
+[221/238] Compiling libraries/AP_Scripting/lua_bindings.cpp
+[222/238] Compiling modules/DroneCAN/libcanard/canard.c
+[223/238] Compiling Tools/AP_Bootloader/AP_Bootloader.cpp
+[224/238] Compiling Tools/AP_Bootloader/flash_from_sd.cpp
+[225/238] Compiling Tools/AP_Bootloader/support.cpp
+[226/238] Compiling Tools/AP_Bootloader/bl_protocol.cpp
+[227/238] Compiling Tools/AP_Bootloader/network.cpp
+[228/238] Compiling Tools/AP_Bootloader/md5.cpp
+[229/238] Compiling Tools/AP_Bootloader/custom.cpp
+[230/238] Compiling Tools/AP_Bootloader/can.cpp
+[231/238] Linking build/mini-pix/lib/libAP_Bootloader_libs.a
+[232/238] Linking build/mini-pix/Tools/AP_Bootloader/liblibcanard.a
+[233/238] Linking build/mini-pix/bootloader/AP_Bootloader
+[234/238] Generating bin/AP_Bootloader.bin
+[235/238] checking symbols build/mini-pix/bootloader/AP_Bootloader
+[236/238] apj_gen build/mini-pix/bin/AP_Bootloader.bin
+[237/238] bin cleanup build/mini-pix/bin/AP_Bootloader.bin
+[238/238] Generating bin/AP_Bootloader.hex
+Waf: Leaving directory `/home/flash/ardupilot/build/mini-pix'
+
+BUILD SUMMARY
+Build directory: /home/flash/ardupilot/build/mini-pix
+Target                    Text (B)  Data (B)  BSS (B)  Total Flash Used (B)  Free Flash (B)  External Flash Used (B)
+--------------------------------------------------------------------------------------------------------------------
+bootloader/AP_Bootloader     26652        64    11788                 26716            6048  Not Applicable         
+'bootloader' finished successfully (14.567s)
+Created Tools/bootloaders/mini-pix_bl.bin
+Created Tools/bootloaders/mini-pix_bl.elf
+Signing bootloader with mykey_public_key.dat
+Running (./Tools/scripts/signing/make_secure_bl.py Tools/bootloaders/mini-pix_bl.bin mykey_public_key.dat)
+Adding ArduPilot keys
+Applying Public Key Tools/scripts/signing/ArduPilotKeys/ArduPilot_public_key2.dat
+Applying Public Key Tools/scripts/signing/ArduPilotKeys/ArduPilot_public_key3.dat
+Applying Public Key Tools/scripts/signing/ArduPilotKeys/ArduPilot_public_key1.dat
+Applying Public Key mykey_public_key.dat
+Running (./Tools/scripts/signing/make_secure_bl.py Tools/bootloaders/mini-pix_bl.elf mykey_public_key.dat)
+Adding ArduPilot keys
+Applying Public Key Tools/scripts/signing/ArduPilotKeys/ArduPilot_public_key2.dat
+Applying Public Key Tools/scripts/signing/ArduPilotKeys/ArduPilot_public_key3.dat
+Applying Public Key Tools/scripts/signing/ArduPilotKeys/ArduPilot_public_key1.dat
+Applying Public Key mykey_public_key.dat
+Running (/home/flash/venv-ardupilot/bin/python3 Tools/scripts/bin2hex.py --offset 0x08000000 Tools/bootloaders/mini-pix_bl.bin Tools/bootloaders/mini-pix_bl.hex)
+Created Tools/bootloaders/mini-pix_bl.hex
+(venv-ardupilot) flash@be6c13119726:~/ardupilot$ cat libraries/AP_HAL_ChibiOS/hwdef/mini-pix/hwdef-bl.dat
+# hw definition file for processing by chibios_pins.py
+# for bootloader for mini-pix hardware from RadioLink
+
+# MCU class and specific type
+MCU STM32F4xx STM32F405xx
+
+# board ID. See Tools/AP_Bootloader/board_types.txt
+APJ_BOARD_ID EXT_HW_RADIOLINK_MINI_PIX
+
+# crystal frequency
+OSCILLATOR_HZ 24000000
+
+# flash size
+FLASH_SIZE_KB 1024
+
+# don't allow bootloader to use more than 16k
+FLASH_USE_MAX_KB 32
+
+# bootloader loads at start of flash
+FLASH_RESERVE_START_KB 0
+
+# LEDs
+PB1 LED_BOOTLOADER OUTPUT LOW
+PE12 LED_ACTIVITY  OUTPUT LOW
+define HAL_LED_ON 0
+
+# the location where the bootloader will put the firmware
+FLASH_BOOTLOADER_LOAD_KB 32
+
+
+# order of UARTs (and USB)
+SERIAL_ORDER OTG1
+
+# USB pins
+PA11 OTG_FS_DM OTG1
+PA12 OTG_FS_DP OTG1
+
+# Add CS pins to ensure they are high in bootloader
+PC2 LPS22HB_CS CS
+PC15 MPU6500_CS CS
+PD10 FRAM_CS CS
